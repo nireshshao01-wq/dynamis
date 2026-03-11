@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>DYNAMIS Upload</title>
+
+<link rel="stylesheet" href="/css/style.css">
+
+<style>
+
+body{
+background:#0f172a;
+color:white;
+font-family:Segoe UI;
+margin:0;
+}
+
+.container{
+padding:40px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:10px;
+max-width:600px;
+}
+
+button{
+background:#2563eb;
+border:none;
+padding:10px 18px;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+
+input{
+padding:8px;
+margin:10px 0;
+}
+
+.result{
+margin-top:20px;
+background:#020617;
+padding:15px;
+border-radius:8px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Sidebar / Header -->
+
+<div id="header-placeholder"></div>
+<script src="/js/header-loader.js"></script>
+
+
+<div class="container">
+
+<h1>DYNAMIS Cloud Billing Upload</h1>
+
+<div class="card">
+
+<p>
+Upload AWS, Azure or GCP billing CSV for the currently selected client.
+</p>
+
+<form id="uploadForm">
+
+<label>Billing File</label>
+
+<br>
+
+<input type="file" name="file" required>
+
+<br><br>
+
+<button type="submit">Upload Billing Data</button>
+
+</form>
+
+<div id="result" class="result"></div>
+
+</div>
+
+</div>
+
+
+<script>
+
+document.getElementById("uploadForm").addEventListener("submit", async (e)=>{
+
+e.preventDefault()
+
+const clientId = localStorage.getItem("dynamis_client")
+
+if(!clientId){
+
+alert("Please select a client from the sidebar first.")
+
+return
+
+}
+
+const formData = new FormData(e.target)
+
+formData.append("client_id", clientId)
+
+const res = await fetch("/api/upload",{
+
+method:"POST",
+
+body:formData
+
+})
+
+const data = await res.json()
+
+console.log("UPLOAD RESULT:", data)
+
+
+document.getElementById("result").innerHTML = `
+
+<h3>Upload Results</h3>
+
+Cloud Provider: ${data.cloud || "Unknown"} <br>
+
+Total Cost Analysed: R ${(data.totalCost || 0).toLocaleString()} <br>
+
+Projected Optimisation Opportunity: R ${(data.projectedSavings || 0).toLocaleString()}
+
+`
+
+})
+
+</script>
+
+</body>
+
+</html>

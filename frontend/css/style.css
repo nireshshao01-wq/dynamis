@@ -1,0 +1,285 @@
+/* GLOBAL */
+
+body{
+background:#0f172a;
+color:white;
+font-family:Segoe UI, Arial, sans-serif;
+margin:0;
+}
+
+/* APP LAYOUT */
+
+.app-layout{
+display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+height:100vh;
+width:220px;
+background:#020617;
+padding:20px;
+box-shadow:4px 0 10px rgba(0,0,0,0.5);
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+margin-bottom:30px;
+color:white;
+}
+
+.sidebar nav{
+display:flex;
+flex-direction:column;
+}
+
+.sidebar a{
+color:#cbd5f5;
+text-decoration:none;
+padding:10px 0;
+font-size:15px;
+}
+
+.sidebar a:hover{
+color:white;
+}
+
+/* MAIN CONTENT */
+
+.container{
+margin-left:240px;
+padding:30px;
+max-width:1300px;
+}
+
+/* TITLES */
+
+h1{
+margin-bottom:20px;
+}
+
+/* CLIENT SELECT */
+
+select{
+padding:8px;
+margin-top:5px;
+margin-bottom:20px;
+border-radius:6px;
+border:none;
+}
+
+/* EXEC PANEL */
+
+.exec-panel{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:10px;
+margin-bottom:20px;
+}
+
+.exec-card{
+background:#020617;
+border:1px solid #1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+.exec-title{
+font-size:14px;
+color:#94a3b8;
+}
+
+.exec-value{
+font-size:26px;
+font-weight:bold;
+margin-top:5px;
+}
+
+/* KPI CARDS */
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.4);
+margin-top:20px;
+}
+
+.value{
+font-size:26px;
+margin-top:10px;
+font-weight:bold;
+}
+
+/* CHART AREA */
+
+.chart-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+margin-top:30px;
+}
+
+.chart-grid .card{
+height:350px;
+display:flex;
+flex-direction:column;
+}
+
+canvas{
+max-height:260px !important;
+}
+
+/* AI CFO NARRATOR */
+
+.ai-narrator-card{
+background:#020617;
+border:1px solid #1e293b;
+padding:30px;
+border-radius:10px;
+margin-top:30px;
+}
+
+.ai-narrator-card h2{
+color:#22c55e;
+margin-bottom:20px;
+}
+
+.waste-counter{
+display:flex;
+flex-direction:column;
+align-items:center;
+margin-bottom:20px;
+}
+
+.counter-label{
+font-size:14px;
+opacity:0.7;
+}
+
+.counter-value{
+font-size:42px;
+font-weight:bold;
+color:#f97316;
+}
+
+/* INSIGHTS */
+
+.insight-card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+margin-top:30px;
+}
+
+ul{
+margin-top:10px;
+padding-left:20px;
+}
+
+li{
+margin-bottom:8px;
+}
+
+/* CLOUD WASTE HEATMAP */
+
+.heatmap{
+margin-top:20px;
+}
+
+.heat-row{
+display:flex;
+align-items:center;
+margin-bottom:12px;
+gap:15px;
+}
+
+.heat-row span{
+width:140px;
+font-size:14px;
+}
+
+.heat-bar{
+flex:1;
+background:#1e293b;
+height:18px;
+border-radius:6px;
+overflow:hidden;
+}
+
+.heat-bar div{
+height:100%;
+width:0%;
+background:linear-gradient(90deg,#22c55e,#f97316);
+transition:width 1s ease;
+}
+
+/* OPPORTUNITY TABLE */
+
+.opportunity-table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+.opportunity-table th{
+text-align:left;
+padding:12px;
+border-bottom:1px solid #334155;
+font-size:14px;
+color:#94a3b8;
+}
+
+.opportunity-table td{
+padding:12px;
+border-bottom:1px solid #1e293b;
+font-size:14px;
+}
+
+/* CLIENT GRID */
+
+.client-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+.card-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.chart-grid{
+grid-template-columns:1fr;
+}
+
+.exec-panel{
+grid-template-columns:1fr 1fr;
+}
+
+.sidebar{
+width:180px;
+}
+
+.container{
+margin-left:200px;
+}
+
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DYNAMIS™ Recovery Outcome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    nav {
+      background: #111827;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #3b82f6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    .highlight {
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #3b82f6;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+    }
+
+    ul {
+      line-height: 1.8;
+      color: #cbd5e1;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div><strong>DYNAMIS™</strong></div>
+  <div>
+    <a href="dashboard.html">Overview</a>
+    <a href="monthly-upload.html">Upload</a>
+    <a href="cfo.html">CFO Mode</a>
+    <a href="risk.html">Risk</a>
+    <a href="outcome.html">Outcome</a>
+    <a href="report.html">Report</a>
+    <a href="#" id="logout">Logout</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <h1>Optimisation Outcome</h1>
+  <div class="subtitle">Projected financial recovery and next-step roadmap.</div>
+
+  <div class="card">
+    <div>Projected 12-Month Recoverable Margin</div>
+    <div class="highlight" id="recoverableAmount">—</div>
+  </div>
+
+  <div class="card">
+    <h3>90-Day Optimisation Sprint Plan</h3>
+    <ul>
+      <li>Compute rightsizing and idle resource remediation</li>
+      <li>Backup retention and storage lifecycle optimisation</li>
+      <li>Reserved instance and commitment modelling</li>
+      <li>FinOps governance framework implementation</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Expected Business Impact</h3>
+    <ul>
+      <li>Immediate cost visibility and optimisation control</li>
+      <li>Improved budget predictability</li>
+      <li>Recovered margin available for innovation funding</li>
+      <li>Reduced financial leakage across cloud estate</li>
+    </ul>
+
+    <button class="btn">Initiate 30-Day Validation Sprint</button>
+  </div>
+
+</div>
+
+<script type="module">
+  import { supabase } from "./supabase.js";
+  import { getExecutiveSummary } from "./dataservice.js";
+
+  const { data } = await supabase.auth.getUser();
+  if (!data?.user) {
+    window.location.href = "index.html";
+  }
+
+  document.getElementById("logout").addEventListener("click", async () => {
+    await supabase.auth.signOut();
+    window.location.href = "index.html";
+  });
+
+  const summary = await getExecutiveSummary();
+  if (!summary) return;
+
+  document.getElementById("recoverableAmount").innerText =
+    "R " + Math.round(summary.estimatedRecoverable).toLocaleString();
+</script>
+
+</body>
+</html>

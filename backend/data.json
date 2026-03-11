@@ -1,0 +1,21 @@
+{
+  "clients": [
+    {
+      "id": 1772983234315,
+      "name": "standard bank"
+    },
+    {
+      "id": 1773088292040,
+      "name": "standard bank"
+    },
+    {
+      "id": 1773088305222,
+      "name": "ABSA"
+    },
+    {
+      "id": 1773088315515,
+      "name": "Nedbank"
+    }
+  ],
+  "reports": []
+}

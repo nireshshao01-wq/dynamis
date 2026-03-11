@@ -1,0 +1,5 @@
+UsageDate,ServiceName,PreTaxCost
+05-02-26,Compute,13000000
+12-02-26,Storage,5800000
+18-02-26,Backup,2500000
+25-02-26,Network,2100000

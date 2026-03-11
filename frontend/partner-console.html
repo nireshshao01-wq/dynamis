@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>DYNAMIS Partner Console</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+<div id="header-placeholder"></div>
+<script src="/js/header-loader.js"></script>
+
+<div class="container">
+
+<h1>BlueCloud Partner Console</h1>
+
+<p>Select a client to open their DYNAMIS dashboard.</p>
+
+<div id="clientList" class="client-grid"></div>
+
+</div>
+
+<script>
+
+/* SUPABASE */
+
+const supabaseUrl = "YOUR_SUPABASE_URL"
+const supabaseKey = "YOUR_SUPABASE_ANON_KEY"
+
+const supabase = supabase.createClient(supabaseUrl, supabaseKey)
+
+
+async function loadClients(){
+
+const { data, error } = await supabase
+.from("clients")
+.select("*")
+.order("name")
+
+if(error){
+
+console.error(error)
+return
+
+}
+
+const container = document.getElementById("clientList")
+
+container.innerHTML = ""
+
+data.forEach(client => {
+
+const card = document.createElement("div")
+
+card.className = "card"
+
+card.innerHTML = `
+<h3>${client.name}</h3>
+<button onclick="openClient('${client.id}')">
+Open Dashboard
+</button>
+`
+
+container.appendChild(card)
+
+})
+
+}
+
+
+function openClient(clientId){
+
+localStorage.setItem("partner_client", clientId)
+
+window.location.href = "/executive-dashboard.html"
+
+}
+
+
+window.onload = loadClients
+
+</script>
+
+</body>
+</html>

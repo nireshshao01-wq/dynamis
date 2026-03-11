@@ -1,0 +1,76 @@
+(function(){
+
+  function getToken(){
+    return localStorage.getItem("dynamis_token");
+  }
+
+  function logout(){
+    localStorage.removeItem("dynamis_token");
+    window.location.href = "login.html";
+  }
+
+  function enforceLogin(){
+    if(!getToken()){
+      window.location.href = "login.html";
+    }
+  }
+
+  enforceLogin();
+
+  const path = window.location.pathname.split("/").pop();
+
+  document.body.insertAdjacentHTML("afterbegin", `
+
+    <!-- SIDEBAR -->
+    <div class="ch-sidebar">
+      <div class="ch-nav-title">DYNAMIS</div>
+
+      <div class="ch-nav">
+        <a href="index.html" class="${path==='index.html'?'active':''}">
+          Executive Overview
+        </a>
+
+        <a href="baseline.html" class="${path==='baseline.html'?'active':''}">
+          Baseline
+        </a>
+
+        <a href="validation-report.html" class="${path==='validation-report.html'?'active':''}">
+          Validation
+        </a>
+
+        <a href="invoice.html" class="${path==='invoice.html'?'active':''}">
+          Billing
+        </a>
+      </div>
+
+      <div class="ch-sidebar-footer">
+        <div class="ch-mini">
+          DYNAMIS™ Margin Recovery Engine<br>
+          Hybrid SaaS Mode
+        </div>
+      </div>
+    </div>
+
+    <!-- TOPBAR -->
+    <div class="ch-topbar">
+      <div class="ch-topbar-left">
+        <div class="ch-app">BlueCloud DYNAMIS™</div>
+        <div class="ch-client">Secure Advisory Platform</div>
+      </div>
+
+      <div class="ch-topbar-right">
+
+        <div class="ch-control">
+          <span>Environment</span>
+          <span class="ch-pill ch-pill-blue">Local API</span>
+        </div>
+
+        <button class="ch-btn" onclick="logout()">
+          Logout
+        </button>
+
+      </div>
+    </div>
+  `);
+
+})();

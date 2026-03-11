@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DYNAMIS Access</title>
+  <link rel="stylesheet" href="cloudhealth.css">
+  <style>
+    body {
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      background:#0f172a;
+    }
+    .login-box {
+      background:white;
+      padding:40px;
+      width:350px;
+      border-radius:8px;
+      text-align:center;
+    }
+    input {
+      width:100%;
+      padding:10px;
+      margin-top:10px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+<script src="header-loader.js"></script>
+
+<div class="login-box">
+  <h2>DYNAMIS</h2>
+  <p>Enter access password</p>
+
+  <input type="password" id="password" placeholder="Password">
+  <button class="ch-btn" style="margin-top:15px;" onclick="login()">Login</button>
+
+  <div id="error" style="color:red; margin-top:10px;"></div>
+</div>
+
+<script>
+
+function getSettings(){
+  return JSON.parse(localStorage.getItem("dynamis_access_settings") || "{}");
+}
+
+function login(){
+
+  const entered = document.getElementById("password").value;
+  const settings = getSettings();
+
+  const internalPass = settings.internalPassword || "internal123";
+  const clientPass = settings.clientPassword || "client123";
+
+  if(entered === internalPass){
+    localStorage.setItem("dynamis_user_role","internal");
+    window.location.href = "index.html";
+  }
+  else if(entered === clientPass){
+    localStorage.setItem("dynamis_user_role","client");
+    window.location.href = "index.html";
+  }
+  else{
+    document.getElementById("error").textContent = "Invalid password.";
+  }
+}
+
+</script>
+
+</body>
+</html>

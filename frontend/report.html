@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>DYNAMIS™ Executive Report</title>
+
+<link rel="stylesheet" href="/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background:#0f172a;
+color:#e2e8f0;
+}
+
+.container{
+max-width:1100px;
+margin:60px auto;
+padding:0 20px;
+}
+
+h1{
+margin-bottom:5px;
+}
+
+.subtitle{
+color:#94a3b8;
+margin-bottom:40px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:12px;
+margin-bottom:25px;
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+.card h3{
+margin-bottom:20px;
+color:#94a3b8;
+text-transform:uppercase;
+font-size:13px;
+letter-spacing:1px;
+}
+
+.metric{
+margin-bottom:15px;
+font-size:18px;
+}
+
+.highlight{
+font-weight:700;
+font-size:22px;
+}
+
+.impact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin-top:10px;
+}
+
+.impact-card{
+background:#020617;
+padding:20px;
+border-radius:10px;
+}
+
+.impact-title{
+font-size:14px;
+color:#94a3b8;
+margin-bottom:6px;
+}
+
+.impact-value{
+font-size:28px;
+font-weight:bold;
+color:#22c55e;
+}
+
+.btn{
+padding:12px 18px;
+background:#3b82f6;
+border:none;
+border-radius:6px;
+color:white;
+font-weight:600;
+cursor:pointer;
+margin-right:10px;
+}
+
+.btn:hover{
+background:#2563eb;
+}
+
+@media print{
+
+#header-placeholder,
+.btn{
+display:none;
+}
+
+body{
+background:white;
+color:black;
+}
+
+.card{
+box-shadow:none;
+background:white;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SHARED SIDEBAR -->
+<div id="header-placeholder"></div>
+<script src="/js/header-loader.js"></script>
+
+
+<div class="container">
+
+<h1>Executive Margin Recovery Report</h1>
+
+<div class="subtitle">
+Financial optimisation assessment summary.
+</div>
+
+<button class="btn" onclick="window.print()">
+Print / Save PDF
+</button>
+
+
+<!-- FINANCIAL OVERVIEW -->
+
+<div class="card">
+
+<h3>Financial Overview</h3>
+
+<div class="metric">
+Total Recorded Spend:
+<span class="highlight" id="totalSpend">—</span>
+</div>
+
+<div class="metric">
+Estimated Recoverable (12%):
+<span class="highlight" id="recoverable">—</span>
+</div>
+
+<div class="metric">
+Months Analysed:
+<span class="highlight" id="monthsLoaded">—</span>
+</div>
+
+</div>
+
+
+<!-- FINANCIAL IMPACT SUMMARY -->
+
+<div class="card">
+
+<h3>Financial Impact Projection</h3>
+
+<div class="impact-grid">
+
+<div class="impact-card">
+<div class="impact-title">Annual Recoverable Margin</div>
+<div class="impact-value" id="annualRecoverable">—</div>
+</div>
+
+<div class="impact-card">
+<div class="impact-title">3-Year Optimisation Value</div>
+<div class="impact-value" id="threeYearValue">—</div>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- EXECUTIVE COMMENTARY -->
+
+<div class="card">
+
+<h3>Executive Commentary</h3>
+
+<div id="executiveNarrative"></div>
+
+</div>
+
+</div>
+
+
+<script type="module">
+
+import { supabase } from "/js/supabase.js"
+import { getExecutiveSummary } from "/js/dataservice.js"
+
+
+// SESSION GUARD
+
+const { data } = await supabase.auth.getUser()
+
+if(!data?.user){
+window.location.href="login.html"
+}
+
+
+// LOAD EXECUTIVE SUMMARY
+
+const summary = await getExecutiveSummary()
+
+if(!summary) return
+
+
+document.getElementById("totalSpend").innerText =
+"R " + summary.totalSpend.toLocaleString()
+
+document.getElementById("recoverable").innerText =
+"R " + summary.estimatedRecoverable.toLocaleString()
+
+document.getElementById("monthsLoaded").innerText =
+summary.monthsLoaded
+
+document.getElementById("executiveNarrative").innerText =
+summary.narrative
+
+
+// IMPACT CALCULATIONS
+
+const annual = summary.estimatedRecoverable * 12
+const threeYear = annual * 3
+
+document.getElementById("annualRecoverable").innerText =
+"R " + annual.toLocaleString()
+
+document.getElementById("threeYearValue").innerText =
+"R " + threeYear.toLocaleString()
+
+</script>
+
+</body>
+</html>

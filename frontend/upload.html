@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>DYNAMIS Cloud Billing Upload</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div id="header-placeholder"></div>
+<script src="/js/header-loader.js"></script>
+
+<div class="container">
+
+<h1>DYNAMIS Cloud Billing Upload</h1>
+
+<div class="card" style="max-width:600px">
+
+<p>Select a client and upload AWS, Azure or GCP billing CSV.</p>
+
+<form id="uploadForm">
+
+<label>Client</label>
+
+<br>
+
+<select id="clientSelect" name="client_id">
+<option>Loading clients...</option>
+</select>
+
+<br>
+
+<label>Billing CSV</label>
+
+<br>
+
+<input type="file" name="file" required>
+
+<br><br>
+
+<button type="submit">Upload & Analyse</button>
+
+</form>
+
+<br>
+
+<div id="result"></div>
+
+</div>
+
+</div>
+
+<script>
+
+/* SUPABASE CONNECTION */
+
+const supabaseUrl = "YOUR_SUPABASE_URL"
+const supabaseKey = "YOUR_SUPABASE_ANON_KEY"
+
+const supabase = supabase.createClient(supabaseUrl, supabaseKey)
+
+
+/* LOAD CLIENTS */
+
+async function loadClients(){
+
+const { data, error } = await supabase
+.from("clients")
+.select("*")
+.order("name")
+
+if(error){
+console.error("Client load error",error)
+return
+}
+
+const select = document.getElementById("clientSelect")
+
+select.innerHTML=""
+
+data.forEach(client =>{
+
+const option=document.createElement("option")
+
+option.value=client.id
+option.textContent=client.name
+
+select.appendChild(option)
+
+})
+
+}
+
+
+/* UPLOAD FORM */
+
+document.getElementById("uploadForm").addEventListener("submit", async (e)=>{
+
+e.preventDefault()
+
+const formData = new FormData(e.target)
+
+document.getElementById("result").innerHTML =
+"Processing billing file..."
+
+try{
+
+const res = await fetch("/api/upload",{
+method:"POST",
+body:formData
+})
+
+const data = await res.json()
+
+console.log("UPLOAD RESULT:",data)
+
+document.getElementById("result").innerHTML = `
+<h3>Analysis Complete</h3>
+
+<b>Total Cloud Spend:</b> R ${Number(data.totalCost || 0).toLocaleString()} <br>
+<b>Projected Savings:</b> R ${Number(data.potentialSavings || 0).toLocaleString()} <br>
+<b>Risk Score:</b> ${data.riskScore || 0}
+
+<br><br>
+
+Loading Executive Dashboard...
+`
+
+setTimeout(()=>{
+
+window.location.href="/executive-dashboard.html"
+
+},2000)
+
+}catch(err){
+
+console.error(err)
+
+document.getElementById("result").innerHTML =
+"Upload failed. Please try again."
+
+}
+
+})
+
+
+/* INITIALISE PAGE */
+
+window.addEventListener("load", loadClients)
+
+</script>
+
+</body>
+
+</html>

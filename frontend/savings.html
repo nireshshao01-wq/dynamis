@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Savings Register | DYNAMIS</title>
+
+<link rel="stylesheet" href="/css/cloudhealth.css">
+
+</head>
+
+<body>
+
+<!-- SHARED SIDEBAR HEADER -->
+
+<div id="header-placeholder"></div>
+<script src="/js/header-loader.js"></script>
+
+<script src="/js/config.js"></script>
+<script src="/js/header-cloudhealth.js"></script>
+<script src="/js/access-control.js"></script>
+
+
+<div class="page-title">
+
+<div>
+<h2>Savings Register</h2>
+
+<div class="hint">
+Log and validate optimisation actions (Service-Level Attribution)
+</div>
+
+</div>
+
+</div>
+
+
+<div class="cards">
+
+<!-- ADD ACTION -->
+
+<div class="card" style="grid-column: span 2;">
+
+<strong>Add Optimisation Action</strong>
+
+<br><br>
+
+<label>Service</label><br>
+
+<input id="svc" placeholder="e.g. Azure Compute">
+
+<br><br>
+
+<label>Description</label><br>
+
+<input id="desc" placeholder="e.g. Right-size VM cluster">
+
+<br><br>
+
+<label>Owner</label><br>
+
+<input id="owner" placeholder="e.g. Cloud Ops">
+
+<br><br>
+
+<label>Expected Monthly Saving (R)</label><br>
+
+<input id="saving" type="number" placeholder="e.g. 450000">
+
+<br><br>
+
+<button class="ch-btn" onclick="addAction()">Add Action</button>
+
+<div id="addStatus" class="small" style="margin-top:10px;"></div>
+
+</div>
+
+
+<!-- SUMMARY -->
+
+<div class="card">
+
+<strong>Summary</strong>
+
+<br><br>
+
+<div id="summary"></div>
+
+</div>
+
+</div>
+
+
+<div class="chart" style="max-width:1200px;">
+
+<strong>Registered Actions</strong>
+
+<table class="table" style="margin-top:10px;">
+
+<thead>
+
+<tr>
+<th>Service</th>
+<th>Description</th>
+<th>Owner</th>
+<th class="num">Expected Saving</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+</thead>
+
+<tbody id="actionsBody">
+
+<tr>
+<td colspan="6" style="color:var(--muted);">
+No actions logged
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<script>
+
+function loadActions(){
+return JSON.parse(localStorage.getItem("dynamis_savings_register") || "[]");
+}
+
+function saveActions(actions){
+localStorage.setItem("dynamis_savings_register", JSON.stringify(actions));
+}
+
+
+function addAction(){
+
+const service = document.getElementById("svc").value.trim();
+const desc = document.getElementById("desc").value.trim();
+const owner = document.getElementById("owner").value.trim();
+const saving = Number(document.getElementById("saving").value);
+
+if(!service || !desc || !owner || !saving){
+
+document.getElementById("addStatus").textContent = "Complete all fields.";
+return;
+
+}
+
+const actions = loadActions();
+
+actions.push({
+
+id: crypto.randomUUID(),
+
+service,
+desc,
+owner,
+
+expectedMonthlySaving: saving,
+
+status: "Planned",
+
+createdAt: new Date().toISOString()
+
+});
+
+saveActions(actions);
+
+document.getElementById("svc").value = "";
+document.getElementById("desc").value = "";
+document.getElementById("owner").value = "";
+document.getElementById("saving").value = "";
+
+document.getElementById("addStatus").textContent = "Action added.";
+
+render();
+
+}
+
+
+function changeStatus(id){
+
+const actions = loadActions();
+
+const action = actions.find(a=>a.id===id);
+
+if(action.status === "Planned") action.status = "Implemented";
+else if(action.status === "Implemented") action.status = "Validated";
+else action.status = "Planned";
+
+saveActions(actions);
+
+render();
+
+}
+
+
+function removeAction(id){
+
+if(!confirm("Delete action?")) return;
+
+const actions = loadActions().filter(a=>a.id!==id);
+
+saveActions(actions);
+
+render();
+
+}
+
+
+function render(){
+
+const actions = loadActions();
+
+const body = document.getElementById("actionsBody");
+
+body.innerHTML = "";
+
+if(!actions.length){
+
+body.innerHTML = `
+<tr>
+<td colspan="6" style="color:var(--muted);">
+No actions logged
+</td>
+</tr>
+`;
+
+}
+
+let totalExpected = 0;
+let totalValidated = 0;
+
+actions.forEach(a=>{
+
+totalExpected += a.expectedMonthlySaving;
+
+if(a.status === "Validated"){
+totalValidated += a.expectedMonthlySaving;
+}
+
+const tr = document.createElement("tr");
+
+tr.innerHTML = `
+
+<td>${a.service}</td>
+
+<td>${a.desc}</td>
+
+<td>${a.owner}</td>
+
+<td class="num">
+R ${a.expectedMonthlySaving.toLocaleString("en-ZA")}
+</td>
+
+<td>
+<button class="ch-btn" style="background:#334155;" onclick="changeStatus('${a.id}')">
+${a.status}
+</button>
+</td>
+
+<td>
+<button class="ch-btn" style="background:#991b1b;" onclick="removeAction('${a.id}')">
+Delete
+</button>
+</td>
+
+`;
+
+body.appendChild(tr);
+
+});
+
+
+document.getElementById("summary").innerHTML = `
+
+<div>
+<strong>Total Expected Monthly Saving:</strong>
+R ${totalExpected.toLocaleString("en-ZA")}
+</div>
+
+<div>
+<strong>Total Validated Monthly Saving:</strong>
+R ${totalValidated.toLocaleString("en-ZA")}
+</div>
+
+`;
+
+}
+
+document.addEventListener("DOMContentLoaded", render);
+
+</script>
+
+</body>
+
+</html>

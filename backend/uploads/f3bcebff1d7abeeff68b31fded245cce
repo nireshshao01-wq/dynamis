@@ -1,0 +1,7 @@
+client,cloud,service,region,resource_id,instance_type,usage_hours,cost
+retail,AWS,EC2,us-east-1,vm-101,m5.large,720,2200
+retail,AWS,EC2,us-east-1,vm-102,m5.xlarge,720,3200
+retail,AWS,S3,us-east-1,storage-101,standard,0,850
+retail,AWS,RDS,us-east-1,db-101,t3.large,720,1500
+retail,AWS,EC2,us-east-1,vm-103,t3.medium,400,700
+retail,AWS,S3,us-east-1,storage-102,standard,0,600

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>DYNAMIS CFO Impact Dashboard</title>
+
+<link rel="stylesheet" href="cloudhealth.css">
+
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<div class="page-container">
+
+<h1>DYNAMIS™ Financial Impact Dashboard</h1>
+
+<p>Cloud Margin Recovery Intelligence</p>
+
+
+<div class="kpi-row">
+
+<div class="kpi-card">
+<h3>Annual Cloud Spend</h3>
+<div id="annualSpend">R 0</div>
+</div>
+
+<div class="kpi-card">
+<h3>Recoverable Margin</h3>
+<div id="recoverableMargin">R 0</div>
+</div>
+
+<div class="kpi-card">
+<h3>3-Year Savings Projection</h3>
+<div id="threeYearSavings">R 0</div>
+</div>
+
+<div class="kpi-card">
+<h3>Risk Score</h3>
+<div id="riskScore">0</div>
+</div>
+
+</div>
+
+
+<div class="chart-panel">
+
+<h2>Savings Breakdown</h2>
+
+<canvas id="savingsChart"></canvas>
+
+</div>
+
+
+<div class="chart-panel">
+
+<h2>Optimization Findings</h2>
+
+<div id="findingsList"></div>
+
+</div>
+
+
+</div>
+
+
+<script src="header-loader.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+
+async function loadCFOData(){
+
+const res = await fetch("/api/last-report")
+
+const data = await res.json()
+
+
+document.getElementById("annualSpend").innerText =
+"R " + data.totalCost.toLocaleString()
+
+document.getElementById("recoverableMargin").innerText =
+"R " + data.savings.toLocaleString()
+
+document.getElementById("threeYearSavings").innerText =
+"R " + (data.savings * 3).toLocaleString()
+
+document.getElementById("riskScore").innerText =
+data.riskScore
+
+
+
+let findingsHTML=""
+
+data.findings.forEach(f=>{
+
+findingsHTML += `
+<div class="finding">
+${f.type} → ${f.resource} → Saving R ${f.saving.toFixed(0)}
+</div>
+`
+
+})
+
+document.getElementById("findingsList").innerHTML = findingsHTML
+
+
+
+const ctx = document.getElementById("savingsChart")
+
+new Chart(ctx,{
+type:"pie",
+data:{
+labels:[
+"Compute Optimization",
+"Storage Optimization",
+"Idle Resources"
+],
+datasets:[{
+data:[
+data.savings*0.5,
+data.savings*0.3,
+data.savings*0.2
+]
+}]
+}
+})
+
+}
+
+loadCFOData()
+
+</script>
+
+</body>
+
+</html>

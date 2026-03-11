@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DYNAMIS Login</title>
+
+<style>
+  body {
+    background: #0f172a;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-box {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 10px;
+    width: 320px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  #errorBox {
+    color: #f87171;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+  <h2>DYNAMIS Login</h2>
+
+  <form id="loginForm">
+    <input id="email" type="email" placeholder="Email" required />
+    <input id="password" type="password" placeholder="Password" required />
+    <button id="loginBtn" type="submit">Secure Sign In</button>
+    <div id="errorBox"></div>
+  </form>
+</div>
+
+<script type="module">
+
+import { supabase } from "./supabase.js";
+
+document.addEventListener("DOMContentLoaded", async () => {
+
+  // 🔹 If already logged in → go to dashboard
+  const { data } = await supabase.auth.getUser();
+  if (data?.user) {
+    window.location.href = "dashboard.html";
+    return;
+  }
+
+  const form = document.getElementById("loginForm");
+  const errorBox = document.getElementById("errorBox");
+  const button = document.getElementById("loginBtn");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    errorBox.innerText = "";
+    button.innerText = "Authenticating...";
+    button.disabled = true;
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password
+    });
+
+    if (error) {
+      errorBox.innerText = error.message;
+      button.innerText = "Secure Sign In";
+      button.disabled = false;
+      return;
+    }
+
+    // 🔹 Successful login
+    window.location.href = "dashboard.html";
+  });
+
+});
+
+</script>
+
+</body>
+</html>

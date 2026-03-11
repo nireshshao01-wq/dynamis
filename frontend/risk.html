@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>DYNAMIS™ Risk Analysis</title>
+
+<link rel="stylesheet" href="/css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background:#0f172a;
+color:#e2e8f0;
+}
+
+.container{
+max-width:1000px;
+margin:60px auto;
+padding:0 20px;
+}
+
+h1{
+margin-bottom:5px;
+}
+
+.subtitle{
+color:#94a3b8;
+margin-bottom:40px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+margin-bottom:25px;
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+.risk-score{
+font-size:40px;
+font-weight:700;
+margin-top:10px;
+}
+
+.risk-low{color:#22c55e;}
+.risk-medium{color:#f59e0b;}
+.risk-high{color:#ef4444;}
+
+.metric{
+margin-bottom:15px;
+font-size:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SHARED SIDEBAR -->
+<div id="header-placeholder"></div>
+<script src="/js/header-loader.js"></script>
+
+<div class="container">
+
+<h1>Optimisation Risk Analysis</h1>
+
+<div class="subtitle">
+Margin exposure and cost volatility indicators.
+</div>
+
+<div class="card">
+
+<div>Margin Risk Score</div>
+
+<div id="riskScore" class="risk-score">—</div>
+
+</div>
+
+<div class="card">
+
+<div class="metric" id="volatilityMetric"></div>
+
+<div class="metric" id="recoveryMetric"></div>
+
+</div>
+
+</div>
+
+
+<script type="module">
+
+import { supabase } from "/js/supabase.js"
+import { getMonthlySeries } from "/js/dataservice.js"
+
+
+// SESSION GUARD
+
+const { data } = await supabase.auth.getUser()
+
+if(!data?.user){
+window.location.href="login.html"
+}
+
+
+// LOAD DATA
+
+const series = await getMonthlySeries()
+
+if(!series || series.length===0) return
+
+
+const values = series.map(r=>r.total_cost)
+
+const totalSpend = values.reduce((a,b)=>a+b,0)
+
+const avg = totalSpend / values.length
+
+
+// VOLATILITY CALCULATION
+
+const variance =
+values.reduce((sum,val)=>sum+Math.pow(val-avg,2),0)/values.length
+
+const volatility = Math.sqrt(variance)
+
+
+let riskScore = 40
+
+if(volatility > avg * 0.25) riskScore = 80
+else if(volatility > avg * 0.15) riskScore = 65
+else riskScore = 45
+
+
+const riskElement = document.getElementById("riskScore")
+
+riskElement.innerText = riskScore
+
+
+if(riskScore >= 75)
+riskElement.classList.add("risk-high")
+
+else if(riskScore >= 60)
+riskElement.classList.add("risk-medium")
+
+else
+riskElement.classList.add("risk-low")
+
+
+// METRICS
+
+document.getElementById("volatilityMetric").innerText =
+"Spend Volatility Index: " + Math.round(volatility).toLocaleString()
+
+document.getElementById("recoveryMetric").innerText =
+"Estimated Margin Recovery Potential: R " +
+Math.round(totalSpend * 0.12).toLocaleString()
+
+</script>
+
+</body>
+</html>

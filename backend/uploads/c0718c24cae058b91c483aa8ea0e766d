@@ -1,0 +1,1501 @@
+UsageDate,SubscriptionName,ResourceGroup,MeterCategory,ServiceName,Region,Quantity,Cost,Currency
+2024-10-24,Retail-Prod,rg-analytics,Serverless,Azure Functions,France Central,70.84,48.95,ZAR
+2024-04-21,Retail-Prod,rg-platform,Storage,Storage,Germany West Central,114.96,535.52,ZAR
+2024-06-18,Dev-Subscription,rg-dev,Containers,Azure Kubernetes Service,West Europe,117.13,6.44,ZAR
+2024-10-21,Retail-Prod,rg-dev,Compute,Virtual Machines,West Europe,16.9,627.12,ZAR
+2024-02-14,Dev-Subscription,rg-platform,Networking,Bandwidth,Germany West Central,114.9,644.99,ZAR
+2024-05-08,Finance-Prod,rg-finance,Serverless,Azure Functions,West Europe,107.47,27.8,ZAR
+2024-06-09,Dev-Subscription,rg-dev,Compute,Virtual Machines,North Europe,82.78,188.2,ZAR
+2024-02-10,Dev-Subscription,rg-platform,Serverless,Azure Functions,Germany West Central,21.39,759.56,ZAR
+2024-05-14,Finance-Prod,rg-finance,Compute,App Service,UK South,95.62,176.27,ZAR
+2024-04-08,Dev-Subscription,rg-prod,Compute,App Service,UK South,115.13,237.78,ZAR
+2024-10-05,Dev-Subscription,rg-finance,Compute,Virtual Machines,France Central,102.75,256.92,ZAR
+2024-04-05,Retail-Prod,rg-analytics,Compute,App Service,North Europe,94.91,182.76,ZAR
+2024-05-02,Retail-Prod,rg-platform,Database,Azure SQL Database,Germany West Central,37.49,884.73,ZAR
+2024-04-21,Retail-Prod,rg-finance,Serverless,Azure Functions,West Europe,117.17,666.68,ZAR
+2024-01-31,Finance-Prod,rg-platform,Compute,Virtual Machines,UK South,69.15,44.96,ZAR
+2024-08-03,Dev-Subscription,rg-platform,Storage,Storage,West Europe,36.9,859.86,ZAR
+2024-05-18,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,North Europe,65.27,440.88,ZAR
+2024-05-16,Retail-Prod,rg-prod,Database,Azure SQL Database,North Europe,11.22,450.91,ZAR
+2024-02-17,Data-Platform,rg-finance,Containers,Azure Kubernetes Service,North Europe,88.6,859.86,ZAR
+2024-10-12,Data-Platform,rg-analytics,Networking,Bandwidth,UK South,40.34,60.08,ZAR
+2024-03-27,Data-Platform,rg-analytics,Containers,Azure Kubernetes Service,Germany West Central,57.93,845.25,ZAR
+2024-07-23,Dev-Subscription,rg-dev,Database,Azure SQL Database,France Central,55.17,616.16,ZAR
+2024-04-29,Data-Platform,rg-platform,Serverless,Azure Functions,North Europe,65.73,461.99,ZAR
+2024-01-04,Retail-Prod,rg-dev,Database,Azure SQL Database,Germany West Central,64.15,51.41,ZAR
+2024-03-11,Dev-Subscription,rg-prod,Database,Azure SQL Database,UK South,60.34,280.14,ZAR
+2024-09-20,Finance-Prod,rg-prod,Storage,Storage,UK South,17.36,729.05,ZAR
+2024-09-13,Finance-Prod,rg-platform,Networking,Load Balancer,Germany West Central,50.68,537.11,ZAR
+2024-07-07,Dev-Subscription,rg-platform,Storage,Storage,UK South,46.42,886.34,ZAR
+2024-10-22,Finance-Prod,rg-platform,Compute,Virtual Machines,France Central,79.04,648.97,ZAR
+2024-10-22,Data-Platform,rg-platform,Storage,Storage,West Europe,73.04,452.76,ZAR
+2024-08-27,Data-Platform,rg-analytics,Compute,Virtual Machines,North Europe,114.83,853.27,ZAR
+2024-06-04,Finance-Prod,rg-dev,Compute,App Service,UK South,91.86,203.05,ZAR
+2024-05-15,Data-Platform,rg-platform,Storage,Storage,West Europe,11.28,610.06,ZAR
+2024-10-14,Retail-Prod,rg-finance,Serverless,Azure Functions,Germany West Central,96.01,856.11,ZAR
+2024-05-10,Finance-Prod,rg-platform,Compute,App Service,North Europe,74.65,193.37,ZAR
+2024-02-02,Retail-Prod,rg-prod,Containers,Azure Kubernetes Service,North Europe,113.01,252.15,ZAR
+2024-08-24,Finance-Prod,rg-prod,Containers,Azure Kubernetes Service,UK South,78.68,826.75,ZAR
+2024-06-09,Finance-Prod,rg-finance,Compute,App Service,UK South,4.13,253.29,ZAR
+2024-05-26,Data-Platform,rg-platform,Networking,Load Balancer,Germany West Central,73.96,317.9,ZAR
+2024-02-13,Finance-Prod,rg-dev,Storage,Storage,France Central,55.61,459.14,ZAR
+2024-04-02,Dev-Subscription,rg-analytics,Containers,Azure Kubernetes Service,Germany West Central,4.78,674.01,ZAR
+2024-10-07,Data-Platform,rg-dev,Networking,Load Balancer,France Central,74.46,105.66,ZAR
+2024-02-08,Finance-Prod,rg-finance,Compute,App Service,France Central,104.14,367.28,ZAR
+2024-10-26,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,France Central,76.45,117.76,ZAR
+2024-01-28,Retail-Prod,rg-analytics,Serverless,Azure Functions,North Europe,9.28,791.46,ZAR
+2024-04-14,Dev-Subscription,rg-platform,Networking,Load Balancer,UK South,51.05,200.63,ZAR
+2024-05-21,Dev-Subscription,rg-finance,Database,Azure SQL Database,France Central,10.13,603.51,ZAR
+2024-05-01,Dev-Subscription,rg-finance,Networking,Load Balancer,France Central,50.18,218.26,ZAR
+2024-06-27,Retail-Prod,rg-analytics,Compute,App Service,UK South,111.25,89.58,ZAR
+2024-06-13,Finance-Prod,rg-platform,Compute,App Service,West Europe,106.29,824.7,ZAR
+2024-05-18,Retail-Prod,rg-platform,Networking,Bandwidth,Germany West Central,87.11,59.0,ZAR
+2024-02-16,Finance-Prod,rg-platform,Networking,Load Balancer,North Europe,116.03,16.54,ZAR
+2024-09-04,Data-Platform,rg-dev,Serverless,Azure Functions,West Europe,86.09,111.37,ZAR
+2024-05-16,Data-Platform,rg-dev,Compute,App Service,West Europe,115.16,509.65,ZAR
+2024-03-03,Data-Platform,rg-analytics,Containers,Azure Kubernetes Service,UK South,107.93,298.15,ZAR
+2024-07-13,Data-Platform,rg-prod,Compute,Virtual Machines,Germany West Central,115.4,234.02,ZAR
+2024-08-09,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,France Central,105.16,313.6,ZAR
+2024-10-06,Finance-Prod,rg-platform,Storage,Storage,France Central,23.23,543.98,ZAR
+2024-06-15,Dev-Subscription,rg-analytics,Serverless,Azure Functions,Germany West Central,3.43,232.26,ZAR
+2024-05-29,Finance-Prod,rg-finance,Database,Azure SQL Database,Germany West Central,71.2,47.34,ZAR
+2024-03-19,Finance-Prod,rg-prod,Compute,App Service,West Europe,34.36,366.77,ZAR
+2024-10-14,Retail-Prod,rg-analytics,Compute,Virtual Machines,France Central,11.81,141.44,ZAR
+2024-08-04,Retail-Prod,rg-dev,Serverless,Azure Functions,North Europe,16.14,681.55,ZAR
+2024-06-07,Data-Platform,rg-platform,Networking,Bandwidth,Germany West Central,111.97,326.27,ZAR
+2024-04-08,Data-Platform,rg-platform,Compute,Virtual Machines,North Europe,24.74,27.79,ZAR
+2024-03-17,Dev-Subscription,rg-analytics,Storage,Storage,Germany West Central,67.25,285.8,ZAR
+2024-09-11,Retail-Prod,rg-dev,Networking,Load Balancer,Germany West Central,71.38,305.44,ZAR
+2024-04-30,Data-Platform,rg-dev,Compute,Virtual Machines,North Europe,92.51,598.21,ZAR
+2024-02-16,Dev-Subscription,rg-prod,Serverless,Azure Functions,North Europe,47.27,228.67,ZAR
+2024-09-14,Finance-Prod,rg-analytics,Networking,Bandwidth,France Central,97.72,55.84,ZAR
+2024-04-07,Data-Platform,rg-prod,Networking,Bandwidth,UK South,70.67,378.31,ZAR
+2024-02-08,Finance-Prod,rg-dev,Storage,Storage,UK South,16.84,470.4,ZAR
+2024-07-05,Dev-Subscription,rg-finance,Serverless,Azure Functions,North Europe,119.58,171.84,ZAR
+2024-03-07,Dev-Subscription,rg-finance,Networking,Bandwidth,West Europe,109.4,766.42,ZAR
+2024-04-29,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,France Central,33.32,358.03,ZAR
+2024-10-06,Data-Platform,rg-analytics,Serverless,Azure Functions,UK South,47.36,746.4,ZAR
+2024-10-03,Retail-Prod,rg-finance,Compute,App Service,Germany West Central,65.66,357.53,ZAR
+2024-07-14,Retail-Prod,rg-prod,Storage,Storage,France Central,29.0,481.5,ZAR
+2024-01-31,Dev-Subscription,rg-finance,Networking,Bandwidth,UK South,93.72,418.59,ZAR
+2024-01-09,Finance-Prod,rg-prod,Containers,Azure Kubernetes Service,Germany West Central,87.97,370.86,ZAR
+2024-08-20,Retail-Prod,rg-finance,Networking,Load Balancer,Germany West Central,118.75,290.79,ZAR
+2024-07-23,Finance-Prod,rg-analytics,Serverless,Azure Functions,West Europe,89.94,789.34,ZAR
+2024-10-12,Dev-Subscription,rg-prod,Networking,Load Balancer,Germany West Central,10.62,521.05,ZAR
+2024-02-05,Dev-Subscription,rg-analytics,Serverless,Azure Functions,UK South,112.76,287.83,ZAR
+2024-07-21,Data-Platform,rg-analytics,Serverless,Azure Functions,Germany West Central,10.02,680.41,ZAR
+2024-10-08,Retail-Prod,rg-finance,Database,Azure SQL Database,Germany West Central,93.62,240.73,ZAR
+2024-09-16,Finance-Prod,rg-finance,Containers,Azure Kubernetes Service,West Europe,82.93,688.0,ZAR
+2024-07-16,Finance-Prod,rg-dev,Compute,Virtual Machines,France Central,70.05,438.47,ZAR
+2024-10-11,Data-Platform,rg-dev,Compute,Virtual Machines,West Europe,53.0,263.45,ZAR
+2024-05-18,Retail-Prod,rg-platform,Compute,Virtual Machines,UK South,116.14,449.5,ZAR
+2024-04-14,Finance-Prod,rg-prod,Database,Azure SQL Database,Germany West Central,78.87,183.6,ZAR
+2024-06-29,Finance-Prod,rg-platform,Database,Azure SQL Database,West Europe,17.48,833.97,ZAR
+2024-03-10,Data-Platform,rg-analytics,Compute,Virtual Machines,Germany West Central,119.04,450.55,ZAR
+2024-04-30,Data-Platform,rg-finance,Storage,Storage,West Europe,68.4,706.03,ZAR
+2024-01-02,Finance-Prod,rg-finance,Storage,Storage,Germany West Central,57.06,175.11,ZAR
+2024-03-19,Retail-Prod,rg-prod,Serverless,Azure Functions,France Central,99.31,418.79,ZAR
+2024-07-21,Data-Platform,rg-finance,Database,Azure SQL Database,France Central,20.68,594.26,ZAR
+2024-08-11,Finance-Prod,rg-finance,Networking,Load Balancer,France Central,118.99,171.15,ZAR
+2024-01-10,Finance-Prod,rg-analytics,Networking,Bandwidth,Germany West Central,116.42,278.16,ZAR
+2024-03-16,Data-Platform,rg-analytics,Storage,Storage,Germany West Central,74.36,648.99,ZAR
+2024-01-29,Data-Platform,rg-analytics,Containers,Azure Kubernetes Service,West Europe,83.97,45.89,ZAR
+2024-04-22,Dev-Subscription,rg-platform,Networking,Bandwidth,UK South,78.14,363.74,ZAR
+2024-03-08,Finance-Prod,rg-prod,Storage,Storage,West Europe,100.02,709.4,ZAR
+2024-02-29,Finance-Prod,rg-analytics,Serverless,Azure Functions,France Central,78.02,643.35,ZAR
+2024-03-27,Retail-Prod,rg-analytics,Compute,App Service,UK South,11.81,593.65,ZAR
+2024-07-27,Dev-Subscription,rg-dev,Compute,App Service,Germany West Central,36.98,604.36,ZAR
+2024-10-24,Retail-Prod,rg-prod,Storage,Storage,West Europe,83.67,386.83,ZAR
+2024-08-16,Dev-Subscription,rg-prod,Compute,Virtual Machines,Germany West Central,39.06,834.04,ZAR
+2024-03-16,Retail-Prod,rg-platform,Compute,App Service,UK South,40.96,146.46,ZAR
+2024-10-18,Data-Platform,rg-dev,Networking,Load Balancer,West Europe,24.04,553.49,ZAR
+2024-04-07,Data-Platform,rg-finance,Compute,Virtual Machines,West Europe,1.22,389.03,ZAR
+2024-06-12,Retail-Prod,rg-platform,Networking,Load Balancer,North Europe,11.01,462.49,ZAR
+2024-03-16,Dev-Subscription,rg-platform,Database,Azure SQL Database,Germany West Central,21.6,19.51,ZAR
+2024-06-12,Dev-Subscription,rg-finance,Serverless,Azure Functions,North Europe,24.75,849.72,ZAR
+2024-08-10,Dev-Subscription,rg-dev,Networking,Bandwidth,France Central,45.5,30.25,ZAR
+2024-09-26,Data-Platform,rg-prod,Containers,Azure Kubernetes Service,Germany West Central,89.95,663.93,ZAR
+2024-02-06,Finance-Prod,rg-analytics,Database,Azure SQL Database,UK South,113.82,561.05,ZAR
+2024-04-28,Finance-Prod,rg-analytics,Networking,Load Balancer,North Europe,37.81,675.21,ZAR
+2024-08-24,Dev-Subscription,rg-finance,Networking,Load Balancer,France Central,80.82,348.37,ZAR
+2024-09-01,Dev-Subscription,rg-dev,Compute,App Service,France Central,52.88,803.57,ZAR
+2024-05-11,Retail-Prod,rg-platform,Serverless,Azure Functions,North Europe,87.95,169.91,ZAR
+2024-06-28,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,UK South,5.84,105.59,ZAR
+2024-09-09,Retail-Prod,rg-finance,Networking,Bandwidth,North Europe,47.18,279.93,ZAR
+2024-10-05,Finance-Prod,rg-platform,Compute,App Service,West Europe,64.57,589.73,ZAR
+2024-01-06,Finance-Prod,rg-platform,Networking,Load Balancer,West Europe,4.32,600.37,ZAR
+2024-04-13,Retail-Prod,rg-platform,Serverless,Azure Functions,Germany West Central,31.65,12.05,ZAR
+2024-02-11,Data-Platform,rg-dev,Storage,Storage,UK South,96.65,827.65,ZAR
+2024-07-22,Dev-Subscription,rg-analytics,Storage,Storage,North Europe,56.73,395.54,ZAR
+2024-01-08,Retail-Prod,rg-dev,Compute,Virtual Machines,West Europe,51.21,316.06,ZAR
+2024-09-29,Finance-Prod,rg-dev,Storage,Storage,Germany West Central,15.15,237.59,ZAR
+2024-10-04,Finance-Prod,rg-finance,Database,Azure SQL Database,Germany West Central,52.91,635.16,ZAR
+2024-02-14,Finance-Prod,rg-platform,Storage,Storage,France Central,40.94,464.97,ZAR
+2024-06-18,Data-Platform,rg-platform,Compute,App Service,UK South,106.93,888.93,ZAR
+2024-04-24,Data-Platform,rg-analytics,Networking,Bandwidth,North Europe,16.98,21.46,ZAR
+2024-04-13,Finance-Prod,rg-finance,Serverless,Azure Functions,North Europe,87.41,606.91,ZAR
+2024-01-05,Retail-Prod,rg-prod,Storage,Storage,North Europe,69.5,470.61,ZAR
+2024-01-14,Finance-Prod,rg-prod,Serverless,Azure Functions,North Europe,103.87,423.46,ZAR
+2024-02-07,Data-Platform,rg-prod,Compute,Virtual Machines,UK South,24.44,452.96,ZAR
+2024-08-30,Dev-Subscription,rg-platform,Serverless,Azure Functions,Germany West Central,65.87,611.97,ZAR
+2024-09-01,Data-Platform,rg-prod,Networking,Bandwidth,UK South,76.09,744.26,ZAR
+2024-08-12,Data-Platform,rg-prod,Storage,Storage,UK South,72.47,410.57,ZAR
+2024-03-24,Dev-Subscription,rg-finance,Containers,Azure Kubernetes Service,West Europe,68.98,148.43,ZAR
+2024-05-02,Retail-Prod,rg-dev,Compute,App Service,North Europe,55.23,384.98,ZAR
+2024-04-20,Finance-Prod,rg-dev,Compute,Virtual Machines,UK South,104.14,835.65,ZAR
+2024-04-06,Finance-Prod,rg-prod,Database,Azure SQL Database,France Central,12.76,788.02,ZAR
+2024-08-30,Dev-Subscription,rg-prod,Containers,Azure Kubernetes Service,France Central,10.49,173.66,ZAR
+2024-02-20,Data-Platform,rg-finance,Database,Azure SQL Database,UK South,19.05,602.66,ZAR
+2024-04-28,Data-Platform,rg-platform,Serverless,Azure Functions,North Europe,114.12,84.76,ZAR
+2024-07-27,Dev-Subscription,rg-platform,Serverless,Azure Functions,West Europe,79.31,810.2,ZAR
+2024-05-28,Data-Platform,rg-dev,Compute,App Service,UK South,68.95,286.85,ZAR
+2024-01-07,Data-Platform,rg-analytics,Containers,Azure Kubernetes Service,Germany West Central,57.56,210.35,ZAR
+2024-10-10,Dev-Subscription,rg-finance,Compute,Virtual Machines,UK South,62.54,283.83,ZAR
+2024-04-09,Dev-Subscription,rg-analytics,Database,Azure SQL Database,West Europe,64.87,710.02,ZAR
+2024-01-02,Data-Platform,rg-finance,Containers,Azure Kubernetes Service,North Europe,18.9,352.44,ZAR
+2024-08-18,Finance-Prod,rg-platform,Serverless,Azure Functions,West Europe,76.28,430.82,ZAR
+2024-03-19,Retail-Prod,rg-platform,Compute,Virtual Machines,West Europe,113.7,746.9,ZAR
+2024-03-21,Data-Platform,rg-prod,Serverless,Azure Functions,Germany West Central,28.24,528.31,ZAR
+2024-09-12,Dev-Subscription,rg-platform,Networking,Bandwidth,UK South,2.13,92.13,ZAR
+2024-07-30,Dev-Subscription,rg-platform,Serverless,Azure Functions,North Europe,83.9,550.95,ZAR
+2024-05-17,Retail-Prod,rg-dev,Containers,Azure Kubernetes Service,Germany West Central,61.62,394.62,ZAR
+2024-07-02,Data-Platform,rg-dev,Containers,Azure Kubernetes Service,Germany West Central,33.19,466.3,ZAR
+2024-10-19,Finance-Prod,rg-platform,Compute,App Service,West Europe,96.14,587.48,ZAR
+2024-09-21,Data-Platform,rg-dev,Storage,Storage,Germany West Central,57.84,432.02,ZAR
+2024-03-17,Retail-Prod,rg-finance,Containers,Azure Kubernetes Service,North Europe,19.61,654.88,ZAR
+2024-01-04,Finance-Prod,rg-prod,Networking,Load Balancer,Germany West Central,106.42,153.03,ZAR
+2024-01-09,Dev-Subscription,rg-platform,Networking,Bandwidth,UK South,9.38,776.04,ZAR
+2024-07-16,Dev-Subscription,rg-analytics,Compute,App Service,Germany West Central,7.87,442.45,ZAR
+2024-08-04,Retail-Prod,rg-dev,Serverless,Azure Functions,North Europe,70.28,870.95,ZAR
+2024-09-14,Retail-Prod,rg-dev,Networking,Load Balancer,France Central,85.46,801.36,ZAR
+2024-04-05,Dev-Subscription,rg-dev,Serverless,Azure Functions,Germany West Central,43.66,605.66,ZAR
+2024-03-09,Dev-Subscription,rg-analytics,Compute,Virtual Machines,West Europe,57.45,31.02,ZAR
+2024-03-20,Dev-Subscription,rg-finance,Containers,Azure Kubernetes Service,North Europe,20.94,91.96,ZAR
+2024-02-01,Finance-Prod,rg-prod,Networking,Bandwidth,UK South,1.35,692.59,ZAR
+2024-04-26,Retail-Prod,rg-analytics,Compute,App Service,France Central,107.16,57.62,ZAR
+2024-03-15,Retail-Prod,rg-platform,Serverless,Azure Functions,France Central,66.14,180.46,ZAR
+2024-08-08,Data-Platform,rg-finance,Compute,App Service,Germany West Central,30.11,887.59,ZAR
+2024-03-31,Retail-Prod,rg-dev,Storage,Storage,France Central,98.68,850.98,ZAR
+2024-05-16,Retail-Prod,rg-analytics,Compute,Virtual Machines,UK South,11.79,401.92,ZAR
+2024-01-04,Finance-Prod,rg-finance,Networking,Bandwidth,West Europe,96.5,260.42,ZAR
+2024-07-20,Dev-Subscription,rg-platform,Networking,Bandwidth,UK South,94.07,882.07,ZAR
+2024-07-27,Retail-Prod,rg-finance,Compute,App Service,France Central,116.01,827.36,ZAR
+2024-08-18,Data-Platform,rg-finance,Database,Azure SQL Database,Germany West Central,114.58,288.72,ZAR
+2024-04-27,Retail-Prod,rg-finance,Storage,Storage,North Europe,48.3,616.48,ZAR
+2024-05-03,Data-Platform,rg-prod,Compute,Virtual Machines,France Central,109.78,495.82,ZAR
+2024-02-22,Retail-Prod,rg-analytics,Containers,Azure Kubernetes Service,West Europe,6.1,404.86,ZAR
+2024-09-21,Dev-Subscription,rg-platform,Database,Azure SQL Database,UK South,52.8,52.91,ZAR
+2024-08-09,Finance-Prod,rg-analytics,Storage,Storage,Germany West Central,56.12,338.74,ZAR
+2024-09-04,Dev-Subscription,rg-platform,Database,Azure SQL Database,Germany West Central,66.5,190.81,ZAR
+2024-02-09,Dev-Subscription,rg-analytics,Containers,Azure Kubernetes Service,North Europe,47.93,529.34,ZAR
+2024-10-23,Retail-Prod,rg-prod,Compute,App Service,West Europe,47.15,755.57,ZAR
+2024-10-04,Finance-Prod,rg-prod,Database,Azure SQL Database,West Europe,4.42,563.42,ZAR
+2024-08-21,Retail-Prod,rg-dev,Networking,Load Balancer,France Central,40.18,371.02,ZAR
+2024-10-18,Data-Platform,rg-prod,Storage,Storage,Germany West Central,18.22,690.61,ZAR
+2024-07-29,Finance-Prod,rg-finance,Compute,Virtual Machines,North Europe,76.73,5.39,ZAR
+2024-05-20,Dev-Subscription,rg-dev,Database,Azure SQL Database,UK South,10.48,880.84,ZAR
+2024-09-19,Data-Platform,rg-platform,Networking,Load Balancer,UK South,65.53,814.21,ZAR
+2024-10-24,Finance-Prod,rg-analytics,Serverless,Azure Functions,West Europe,9.34,717.12,ZAR
+2024-01-04,Dev-Subscription,rg-analytics,Compute,App Service,France Central,73.32,286.11,ZAR
+2024-09-07,Dev-Subscription,rg-dev,Database,Azure SQL Database,North Europe,52.15,78.24,ZAR
+2024-02-09,Dev-Subscription,rg-analytics,Containers,Azure Kubernetes Service,UK South,45.98,575.46,ZAR
+2024-07-17,Data-Platform,rg-prod,Networking,Bandwidth,France Central,70.72,632.68,ZAR
+2024-05-15,Retail-Prod,rg-finance,Storage,Storage,North Europe,12.49,533.82,ZAR
+2024-08-08,Data-Platform,rg-analytics,Networking,Bandwidth,UK South,97.0,761.38,ZAR
+2024-01-09,Retail-Prod,rg-dev,Networking,Bandwidth,UK South,12.78,288.79,ZAR
+2024-05-22,Finance-Prod,rg-analytics,Database,Azure SQL Database,North Europe,26.66,218.11,ZAR
+2024-05-28,Retail-Prod,rg-prod,Storage,Storage,France Central,115.79,509.45,ZAR
+2024-02-07,Retail-Prod,rg-analytics,Database,Azure SQL Database,UK South,76.02,21.41,ZAR
+2024-07-10,Finance-Prod,rg-dev,Networking,Load Balancer,France Central,9.92,172.61,ZAR
+2024-03-31,Retail-Prod,rg-analytics,Containers,Azure Kubernetes Service,France Central,68.97,664.39,ZAR
+2024-07-26,Data-Platform,rg-prod,Serverless,Azure Functions,UK South,1.57,660.68,ZAR
+2024-09-08,Finance-Prod,rg-analytics,Serverless,Azure Functions,Germany West Central,36.43,646.84,ZAR
+2024-04-02,Data-Platform,rg-dev,Networking,Bandwidth,UK South,57.54,723.65,ZAR
+2024-09-07,Retail-Prod,rg-prod,Storage,Storage,France Central,117.77,668.2,ZAR
+2024-03-20,Retail-Prod,rg-platform,Storage,Storage,North Europe,93.76,113.01,ZAR
+2024-04-08,Data-Platform,rg-prod,Storage,Storage,Germany West Central,83.89,218.16,ZAR
+2024-04-19,Dev-Subscription,rg-dev,Database,Azure SQL Database,Germany West Central,29.64,120.6,ZAR
+2024-10-17,Finance-Prod,rg-dev,Serverless,Azure Functions,Germany West Central,5.98,833.05,ZAR
+2024-08-10,Data-Platform,rg-prod,Storage,Storage,UK South,54.19,298.37,ZAR
+2024-08-29,Data-Platform,rg-platform,Networking,Load Balancer,North Europe,44.58,639.48,ZAR
+2024-06-17,Data-Platform,rg-finance,Serverless,Azure Functions,UK South,16.58,844.79,ZAR
+2024-04-12,Retail-Prod,rg-analytics,Compute,App Service,North Europe,88.25,763.99,ZAR
+2024-10-01,Retail-Prod,rg-finance,Compute,App Service,West Europe,98.3,298.61,ZAR
+2024-08-16,Data-Platform,rg-prod,Database,Azure SQL Database,Germany West Central,53.4,188.09,ZAR
+2024-09-24,Dev-Subscription,rg-prod,Database,Azure SQL Database,West Europe,31.61,828.25,ZAR
+2024-08-13,Data-Platform,rg-prod,Storage,Storage,Germany West Central,112.11,33.17,ZAR
+2024-04-20,Finance-Prod,rg-prod,Containers,Azure Kubernetes Service,North Europe,101.09,194.37,ZAR
+2024-05-08,Dev-Subscription,rg-dev,Serverless,Azure Functions,Germany West Central,81.88,751.47,ZAR
+2024-10-15,Finance-Prod,rg-finance,Networking,Bandwidth,West Europe,86.64,206.99,ZAR
+2024-04-04,Finance-Prod,rg-dev,Compute,App Service,UK South,109.9,743.31,ZAR
+2024-07-16,Finance-Prod,rg-finance,Database,Azure SQL Database,France Central,44.14,882.75,ZAR
+2024-08-13,Retail-Prod,rg-prod,Storage,Storage,North Europe,107.58,880.86,ZAR
+2024-01-12,Dev-Subscription,rg-prod,Serverless,Azure Functions,North Europe,15.73,882.98,ZAR
+2024-09-10,Data-Platform,rg-prod,Compute,Virtual Machines,UK South,16.92,436.11,ZAR
+2024-10-12,Retail-Prod,rg-dev,Compute,Virtual Machines,UK South,77.59,223.29,ZAR
+2024-02-15,Retail-Prod,rg-prod,Serverless,Azure Functions,UK South,39.85,232.19,ZAR
+2024-10-03,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,UK South,4.08,535.51,ZAR
+2024-06-12,Data-Platform,rg-finance,Database,Azure SQL Database,West Europe,5.08,133.24,ZAR
+2024-02-10,Retail-Prod,rg-analytics,Networking,Bandwidth,West Europe,91.05,528.05,ZAR
+2024-01-03,Data-Platform,rg-dev,Networking,Load Balancer,North Europe,12.66,64.99,ZAR
+2024-04-20,Dev-Subscription,rg-prod,Containers,Azure Kubernetes Service,Germany West Central,15.6,501.26,ZAR
+2024-07-07,Retail-Prod,rg-platform,Compute,Virtual Machines,Germany West Central,6.9,6.03,ZAR
+2024-08-12,Dev-Subscription,rg-platform,Storage,Storage,Germany West Central,12.39,104.99,ZAR
+2024-10-20,Dev-Subscription,rg-platform,Compute,App Service,North Europe,2.23,838.84,ZAR
+2024-02-12,Retail-Prod,rg-prod,Networking,Bandwidth,North Europe,74.24,48.14,ZAR
+2024-06-05,Retail-Prod,rg-finance,Storage,Storage,West Europe,29.03,214.45,ZAR
+2024-01-04,Dev-Subscription,rg-finance,Database,Azure SQL Database,France Central,81.79,223.46,ZAR
+2024-04-28,Data-Platform,rg-analytics,Serverless,Azure Functions,Germany West Central,27.39,879.86,ZAR
+2024-06-30,Finance-Prod,rg-analytics,Networking,Load Balancer,Germany West Central,67.55,89.04,ZAR
+2024-09-06,Data-Platform,rg-finance,Database,Azure SQL Database,West Europe,77.73,39.62,ZAR
+2024-07-26,Dev-Subscription,rg-analytics,Compute,Virtual Machines,France Central,57.5,688.22,ZAR
+2024-05-21,Data-Platform,rg-dev,Containers,Azure Kubernetes Service,West Europe,42.4,430.45,ZAR
+2024-09-27,Retail-Prod,rg-finance,Database,Azure SQL Database,West Europe,98.1,807.21,ZAR
+2024-08-30,Dev-Subscription,rg-finance,Networking,Bandwidth,North Europe,77.11,615.97,ZAR
+2024-04-27,Finance-Prod,rg-dev,Containers,Azure Kubernetes Service,UK South,113.27,257.35,ZAR
+2024-03-22,Retail-Prod,rg-analytics,Compute,App Service,West Europe,6.02,442.86,ZAR
+2024-04-04,Data-Platform,rg-platform,Compute,App Service,France Central,37.55,69.59,ZAR
+2024-02-07,Data-Platform,rg-platform,Storage,Storage,Germany West Central,90.12,659.42,ZAR
+2024-06-14,Finance-Prod,rg-platform,Networking,Load Balancer,West Europe,9.8,181.05,ZAR
+2024-03-17,Finance-Prod,rg-prod,Compute,App Service,West Europe,101.34,94.19,ZAR
+2024-06-19,Data-Platform,rg-analytics,Serverless,Azure Functions,UK South,43.54,212.52,ZAR
+2024-06-15,Dev-Subscription,rg-platform,Networking,Load Balancer,France Central,90.52,537.27,ZAR
+2024-02-25,Finance-Prod,rg-prod,Compute,Virtual Machines,UK South,78.01,56.38,ZAR
+2024-08-08,Data-Platform,rg-prod,Networking,Load Balancer,France Central,8.76,618.79,ZAR
+2024-07-11,Data-Platform,rg-analytics,Containers,Azure Kubernetes Service,France Central,28.63,212.73,ZAR
+2024-03-16,Retail-Prod,rg-dev,Networking,Load Balancer,North Europe,88.8,184.44,ZAR
+2024-09-27,Retail-Prod,rg-prod,Networking,Load Balancer,North Europe,39.47,610.97,ZAR
+2024-10-12,Finance-Prod,rg-dev,Storage,Storage,West Europe,86.59,514.28,ZAR
+2024-02-28,Retail-Prod,rg-finance,Compute,Virtual Machines,North Europe,82.35,111.56,ZAR
+2024-07-26,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,Germany West Central,98.77,572.88,ZAR
+2024-10-04,Data-Platform,rg-analytics,Serverless,Azure Functions,France Central,98.24,706.01,ZAR
+2024-06-29,Retail-Prod,rg-finance,Database,Azure SQL Database,Germany West Central,35.88,533.67,ZAR
+2024-02-08,Data-Platform,rg-platform,Containers,Azure Kubernetes Service,Germany West Central,12.16,218.22,ZAR
+2024-09-30,Retail-Prod,rg-dev,Networking,Bandwidth,France Central,113.92,247.86,ZAR
+2024-05-22,Data-Platform,rg-prod,Containers,Azure Kubernetes Service,West Europe,22.6,832.51,ZAR
+2024-08-30,Retail-Prod,rg-platform,Storage,Storage,West Europe,65.32,50.77,ZAR
+2024-02-23,Dev-Subscription,rg-dev,Networking,Bandwidth,UK South,114.25,212.05,ZAR
+2024-01-02,Data-Platform,rg-prod,Database,Azure SQL Database,West Europe,84.54,11.54,ZAR
+2024-02-14,Finance-Prod,rg-finance,Compute,App Service,UK South,52.17,879.65,ZAR
+2024-10-13,Dev-Subscription,rg-prod,Networking,Bandwidth,France Central,15.39,20.68,ZAR
+2024-04-08,Finance-Prod,rg-finance,Storage,Storage,Germany West Central,80.38,875.08,ZAR
+2024-07-16,Dev-Subscription,rg-platform,Networking,Bandwidth,France Central,115.58,150.35,ZAR
+2024-07-24,Data-Platform,rg-platform,Compute,App Service,West Europe,79.55,428.92,ZAR
+2024-04-03,Data-Platform,rg-platform,Networking,Load Balancer,North Europe,18.09,778.64,ZAR
+2024-04-29,Finance-Prod,rg-dev,Compute,App Service,West Europe,109.83,41.94,ZAR
+2024-01-12,Finance-Prod,rg-analytics,Serverless,Azure Functions,Germany West Central,101.11,527.9,ZAR
+2024-05-28,Retail-Prod,rg-finance,Containers,Azure Kubernetes Service,UK South,64.8,816.68,ZAR
+2024-06-30,Retail-Prod,rg-prod,Serverless,Azure Functions,Germany West Central,46.25,559.4,ZAR
+2024-09-21,Retail-Prod,rg-prod,Storage,Storage,Germany West Central,52.89,217.33,ZAR
+2024-03-17,Retail-Prod,rg-dev,Networking,Load Balancer,Germany West Central,70.78,425.87,ZAR
+2024-08-31,Data-Platform,rg-prod,Serverless,Azure Functions,North Europe,54.13,548.58,ZAR
+2024-06-12,Finance-Prod,rg-analytics,Storage,Storage,France Central,57.91,231.49,ZAR
+2024-02-22,Dev-Subscription,rg-prod,Networking,Load Balancer,North Europe,39.15,832.75,ZAR
+2024-04-16,Data-Platform,rg-prod,Compute,Virtual Machines,North Europe,19.27,832.27,ZAR
+2024-08-20,Finance-Prod,rg-prod,Networking,Bandwidth,France Central,10.57,451.42,ZAR
+2024-08-15,Dev-Subscription,rg-dev,Serverless,Azure Functions,Germany West Central,100.28,715.83,ZAR
+2024-05-05,Retail-Prod,rg-finance,Networking,Bandwidth,Germany West Central,14.48,703.7,ZAR
+2024-07-22,Data-Platform,rg-prod,Database,Azure SQL Database,UK South,96.85,560.48,ZAR
+2024-06-28,Data-Platform,rg-dev,Containers,Azure Kubernetes Service,UK South,99.95,777.22,ZAR
+2024-01-04,Retail-Prod,rg-dev,Database,Azure SQL Database,UK South,28.18,778.02,ZAR
+2024-06-16,Finance-Prod,rg-finance,Serverless,Azure Functions,North Europe,33.41,74.09,ZAR
+2024-10-24,Finance-Prod,rg-prod,Networking,Load Balancer,UK South,32.44,382.3,ZAR
+2024-10-19,Data-Platform,rg-platform,Compute,Virtual Machines,UK South,36.07,353.36,ZAR
+2024-03-21,Finance-Prod,rg-dev,Networking,Bandwidth,Germany West Central,26.12,155.5,ZAR
+2024-02-02,Dev-Subscription,rg-prod,Database,Azure SQL Database,Germany West Central,68.88,564.77,ZAR
+2024-03-14,Dev-Subscription,rg-platform,Containers,Azure Kubernetes Service,North Europe,71.46,260.89,ZAR
+2024-04-05,Finance-Prod,rg-finance,Networking,Bandwidth,North Europe,67.46,177.73,ZAR
+2024-05-26,Retail-Prod,rg-finance,Networking,Bandwidth,North Europe,64.98,196.15,ZAR
+2024-08-15,Finance-Prod,rg-prod,Storage,Storage,West Europe,97.08,601.68,ZAR
+2024-01-24,Data-Platform,rg-analytics,Database,Azure SQL Database,France Central,81.51,407.17,ZAR
+2024-10-24,Finance-Prod,rg-finance,Database,Azure SQL Database,West Europe,84.89,278.73,ZAR
+2024-04-19,Retail-Prod,rg-finance,Containers,Azure Kubernetes Service,Germany West Central,65.63,725.68,ZAR
+2024-06-15,Retail-Prod,rg-analytics,Storage,Storage,North Europe,28.33,779.41,ZAR
+2024-06-24,Finance-Prod,rg-dev,Serverless,Azure Functions,France Central,89.02,245.19,ZAR
+2024-02-25,Data-Platform,rg-finance,Networking,Load Balancer,UK South,49.5,39.15,ZAR
+2024-03-12,Retail-Prod,rg-dev,Compute,Virtual Machines,Germany West Central,14.37,607.82,ZAR
+2024-03-10,Dev-Subscription,rg-finance,Storage,Storage,North Europe,27.34,196.69,ZAR
+2024-07-25,Data-Platform,rg-analytics,Storage,Storage,West Europe,55.59,294.42,ZAR
+2024-05-07,Dev-Subscription,rg-dev,Networking,Bandwidth,Germany West Central,11.64,437.76,ZAR
+2024-08-05,Dev-Subscription,rg-analytics,Compute,App Service,France Central,83.81,302.92,ZAR
+2024-08-19,Data-Platform,rg-finance,Storage,Storage,West Europe,74.58,30.63,ZAR
+2024-04-24,Finance-Prod,rg-finance,Database,Azure SQL Database,UK South,10.06,241.77,ZAR
+2024-08-30,Dev-Subscription,rg-finance,Serverless,Azure Functions,North Europe,113.07,178.53,ZAR
+2024-10-24,Data-Platform,rg-dev,Containers,Azure Kubernetes Service,UK South,21.85,7.35,ZAR
+2024-02-23,Finance-Prod,rg-analytics,Database,Azure SQL Database,Germany West Central,68.76,441.82,ZAR
+2024-08-21,Data-Platform,rg-prod,Compute,App Service,Germany West Central,114.75,790.41,ZAR
+2024-02-26,Data-Platform,rg-analytics,Networking,Bandwidth,France Central,100.83,218.56,ZAR
+2024-07-04,Dev-Subscription,rg-dev,Networking,Bandwidth,UK South,85.41,378.95,ZAR
+2024-04-18,Data-Platform,rg-prod,Networking,Load Balancer,West Europe,15.69,132.54,ZAR
+2024-07-13,Finance-Prod,rg-dev,Storage,Storage,Germany West Central,1.87,246.52,ZAR
+2024-03-15,Dev-Subscription,rg-finance,Networking,Bandwidth,North Europe,70.14,825.02,ZAR
+2024-04-23,Finance-Prod,rg-analytics,Serverless,Azure Functions,UK South,105.42,381.48,ZAR
+2024-05-12,Finance-Prod,rg-analytics,Compute,App Service,France Central,25.77,407.47,ZAR
+2024-07-07,Retail-Prod,rg-prod,Database,Azure SQL Database,France Central,116.14,145.8,ZAR
+2024-06-20,Finance-Prod,rg-prod,Containers,Azure Kubernetes Service,France Central,35.8,813.87,ZAR
+2024-09-04,Retail-Prod,rg-dev,Networking,Bandwidth,France Central,16.92,823.58,ZAR
+2024-09-01,Finance-Prod,rg-prod,Networking,Bandwidth,UK South,60.71,252.79,ZAR
+2024-10-07,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,France Central,56.62,353.46,ZAR
+2024-03-20,Finance-Prod,rg-dev,Networking,Bandwidth,France Central,107.64,439.67,ZAR
+2024-07-30,Dev-Subscription,rg-dev,Database,Azure SQL Database,West Europe,66.21,830.31,ZAR
+2024-05-05,Retail-Prod,rg-analytics,Compute,Virtual Machines,North Europe,119.38,424.8,ZAR
+2024-06-05,Dev-Subscription,rg-analytics,Serverless,Azure Functions,Germany West Central,102.61,103.1,ZAR
+2024-06-17,Finance-Prod,rg-prod,Networking,Bandwidth,UK South,88.4,62.11,ZAR
+2024-08-19,Data-Platform,rg-analytics,Database,Azure SQL Database,North Europe,25.98,358.11,ZAR
+2024-03-16,Finance-Prod,rg-finance,Database,Azure SQL Database,North Europe,25.49,710.58,ZAR
+2024-10-19,Retail-Prod,rg-dev,Database,Azure SQL Database,North Europe,61.24,60.72,ZAR
+2024-02-05,Retail-Prod,rg-dev,Compute,App Service,West Europe,84.16,757.06,ZAR
+2024-04-04,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,Germany West Central,53.58,551.14,ZAR
+2024-09-01,Finance-Prod,rg-dev,Containers,Azure Kubernetes Service,North Europe,87.17,557.25,ZAR
+2024-03-10,Retail-Prod,rg-analytics,Serverless,Azure Functions,France Central,14.94,178.18,ZAR
+2024-07-08,Dev-Subscription,rg-finance,Compute,App Service,West Europe,112.87,98.42,ZAR
+2024-01-20,Finance-Prod,rg-prod,Compute,Virtual Machines,UK South,72.07,872.83,ZAR
+2024-05-25,Finance-Prod,rg-prod,Networking,Bandwidth,France Central,116.14,251.77,ZAR
+2024-08-30,Dev-Subscription,rg-finance,Networking,Load Balancer,France Central,113.76,43.74,ZAR
+2024-06-17,Data-Platform,rg-finance,Storage,Storage,UK South,97.94,114.65,ZAR
+2024-01-18,Retail-Prod,rg-dev,Compute,App Service,UK South,14.24,593.17,ZAR
+2024-08-05,Data-Platform,rg-dev,Storage,Storage,West Europe,11.46,35.8,ZAR
+2024-08-26,Data-Platform,rg-prod,Compute,App Service,West Europe,109.11,172.59,ZAR
+2024-09-19,Retail-Prod,rg-finance,Serverless,Azure Functions,North Europe,19.48,737.37,ZAR
+2024-02-27,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,France Central,84.42,404.55,ZAR
+2024-03-01,Dev-Subscription,rg-prod,Containers,Azure Kubernetes Service,North Europe,102.77,222.86,ZAR
+2024-06-24,Dev-Subscription,rg-prod,Networking,Bandwidth,North Europe,63.94,842.22,ZAR
+2024-09-16,Data-Platform,rg-analytics,Compute,App Service,North Europe,21.92,820.47,ZAR
+2024-07-10,Finance-Prod,rg-analytics,Database,Azure SQL Database,North Europe,34.12,873.82,ZAR
+2024-04-23,Finance-Prod,rg-analytics,Serverless,Azure Functions,West Europe,8.82,236.89,ZAR
+2024-03-11,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,Germany West Central,28.23,550.07,ZAR
+2024-04-16,Dev-Subscription,rg-analytics,Compute,App Service,UK South,82.48,723.97,ZAR
+2024-10-16,Data-Platform,rg-platform,Database,Azure SQL Database,UK South,108.25,577.69,ZAR
+2024-02-01,Dev-Subscription,rg-platform,Networking,Bandwidth,North Europe,72.01,442.85,ZAR
+2024-06-09,Retail-Prod,rg-prod,Compute,Virtual Machines,Germany West Central,49.49,563.81,ZAR
+2024-07-23,Data-Platform,rg-platform,Networking,Bandwidth,West Europe,37.93,60.01,ZAR
+2024-06-27,Finance-Prod,rg-finance,Compute,Virtual Machines,West Europe,47.27,290.85,ZAR
+2024-06-25,Retail-Prod,rg-analytics,Networking,Load Balancer,North Europe,11.14,830.52,ZAR
+2024-04-13,Retail-Prod,rg-analytics,Serverless,Azure Functions,France Central,83.27,331.93,ZAR
+2024-04-04,Finance-Prod,rg-platform,Containers,Azure Kubernetes Service,UK South,115.95,468.57,ZAR
+2024-10-10,Retail-Prod,rg-prod,Compute,Virtual Machines,Germany West Central,81.37,872.54,ZAR
+2024-04-03,Data-Platform,rg-analytics,Compute,App Service,France Central,7.66,660.96,ZAR
+2024-08-07,Finance-Prod,rg-platform,Serverless,Azure Functions,UK South,104.04,498.66,ZAR
+2024-07-26,Dev-Subscription,rg-finance,Storage,Storage,UK South,85.82,418.1,ZAR
+2024-10-19,Dev-Subscription,rg-finance,Storage,Storage,West Europe,48.4,817.7,ZAR
+2024-01-03,Dev-Subscription,rg-finance,Storage,Storage,West Europe,11.31,462.6,ZAR
+2024-04-28,Dev-Subscription,rg-dev,Serverless,Azure Functions,North Europe,8.62,218.45,ZAR
+2024-10-18,Retail-Prod,rg-dev,Serverless,Azure Functions,North Europe,87.05,732.7,ZAR
+2024-09-07,Dev-Subscription,rg-finance,Networking,Load Balancer,UK South,100.61,344.78,ZAR
+2024-02-22,Data-Platform,rg-platform,Compute,Virtual Machines,France Central,85.04,413.91,ZAR
+2024-08-13,Dev-Subscription,rg-platform,Database,Azure SQL Database,West Europe,14.62,491.04,ZAR
+2024-04-30,Finance-Prod,rg-prod,Compute,Virtual Machines,North Europe,43.97,273.43,ZAR
+2024-10-11,Data-Platform,rg-finance,Networking,Bandwidth,Germany West Central,104.16,638.23,ZAR
+2024-01-26,Finance-Prod,rg-analytics,Storage,Storage,West Europe,12.37,22.76,ZAR
+2024-08-08,Retail-Prod,rg-analytics,Serverless,Azure Functions,North Europe,103.13,207.72,ZAR
+2024-10-18,Dev-Subscription,rg-prod,Compute,Virtual Machines,North Europe,87.64,509.05,ZAR
+2024-08-18,Dev-Subscription,rg-platform,Containers,Azure Kubernetes Service,UK South,71.41,742.96,ZAR
+2024-06-07,Data-Platform,rg-analytics,Storage,Storage,Germany West Central,82.28,98.34,ZAR
+2024-01-24,Dev-Subscription,rg-prod,Compute,Virtual Machines,Germany West Central,94.8,40.08,ZAR
+2024-01-17,Finance-Prod,rg-analytics,Compute,Virtual Machines,North Europe,75.51,871.5,ZAR
+2024-06-02,Finance-Prod,rg-prod,Networking,Bandwidth,France Central,96.04,633.43,ZAR
+2024-09-26,Data-Platform,rg-prod,Containers,Azure Kubernetes Service,Germany West Central,4.13,845.26,ZAR
+2024-10-04,Retail-Prod,rg-analytics,Compute,App Service,UK South,51.43,519.02,ZAR
+2024-04-21,Dev-Subscription,rg-finance,Serverless,Azure Functions,UK South,46.56,815.36,ZAR
+2024-01-20,Data-Platform,rg-dev,Networking,Bandwidth,UK South,70.07,506.02,ZAR
+2024-05-27,Data-Platform,rg-prod,Storage,Storage,France Central,107.23,798.5,ZAR
+2024-10-11,Dev-Subscription,rg-dev,Database,Azure SQL Database,North Europe,4.48,293.5,ZAR
+2024-07-05,Dev-Subscription,rg-prod,Compute,Virtual Machines,Germany West Central,87.99,282.36,ZAR
+2024-10-09,Finance-Prod,rg-dev,Storage,Storage,UK South,50.61,129.14,ZAR
+2024-07-05,Data-Platform,rg-dev,Serverless,Azure Functions,France Central,43.47,768.57,ZAR
+2024-09-15,Retail-Prod,rg-platform,Database,Azure SQL Database,North Europe,95.9,784.4,ZAR
+2024-04-11,Data-Platform,rg-finance,Compute,Virtual Machines,Germany West Central,23.23,94.73,ZAR
+2024-07-11,Data-Platform,rg-dev,Containers,Azure Kubernetes Service,France Central,62.79,68.14,ZAR
+2024-04-01,Finance-Prod,rg-prod,Networking,Bandwidth,France Central,23.3,36.67,ZAR
+2024-04-11,Dev-Subscription,rg-platform,Compute,Virtual Machines,France Central,5.44,134.13,ZAR
+2024-06-08,Retail-Prod,rg-dev,Networking,Load Balancer,North Europe,17.75,862.93,ZAR
+2024-01-17,Retail-Prod,rg-finance,Serverless,Azure Functions,North Europe,62.1,427.26,ZAR
+2024-03-02,Retail-Prod,rg-analytics,Compute,Virtual Machines,North Europe,62.41,707.06,ZAR
+2024-10-11,Retail-Prod,rg-prod,Networking,Load Balancer,Germany West Central,100.56,345.17,ZAR
+2024-06-16,Dev-Subscription,rg-prod,Serverless,Azure Functions,France Central,52.13,525.63,ZAR
+2024-07-15,Finance-Prod,rg-analytics,Database,Azure SQL Database,France Central,88.57,137.59,ZAR
+2024-04-29,Dev-Subscription,rg-dev,Compute,App Service,UK South,48.38,542.19,ZAR
+2024-02-02,Data-Platform,rg-prod,Database,Azure SQL Database,North Europe,34.36,170.07,ZAR
+2024-04-24,Finance-Prod,rg-dev,Networking,Load Balancer,Germany West Central,110.03,339.52,ZAR
+2024-05-03,Finance-Prod,rg-prod,Database,Azure SQL Database,UK South,41.42,273.54,ZAR
+2024-05-07,Dev-Subscription,rg-prod,Compute,Virtual Machines,North Europe,116.65,331.58,ZAR
+2024-02-07,Data-Platform,rg-analytics,Compute,App Service,North Europe,84.16,87.92,ZAR
+2024-07-07,Data-Platform,rg-platform,Compute,App Service,France Central,72.62,114.01,ZAR
+2024-06-13,Data-Platform,rg-dev,Compute,App Service,West Europe,38.42,475.32,ZAR
+2024-08-16,Dev-Subscription,rg-finance,Serverless,Azure Functions,Germany West Central,119.55,891.65,ZAR
+2024-01-07,Finance-Prod,rg-analytics,Compute,Virtual Machines,Germany West Central,9.12,839.56,ZAR
+2024-10-19,Dev-Subscription,rg-finance,Serverless,Azure Functions,North Europe,12.31,749.8,ZAR
+2024-01-23,Finance-Prod,rg-prod,Compute,Virtual Machines,France Central,39.46,145.37,ZAR
+2024-04-13,Data-Platform,rg-platform,Compute,App Service,UK South,76.7,272.71,ZAR
+2024-01-18,Dev-Subscription,rg-prod,Database,Azure SQL Database,West Europe,88.48,341.39,ZAR
+2024-05-08,Retail-Prod,rg-analytics,Compute,App Service,UK South,43.15,9.92,ZAR
+2024-03-28,Retail-Prod,rg-finance,Compute,App Service,Germany West Central,85.9,748.02,ZAR
+2024-09-03,Data-Platform,rg-analytics,Compute,Virtual Machines,West Europe,61.55,15.73,ZAR
+2024-10-07,Dev-Subscription,rg-prod,Compute,App Service,Germany West Central,41.28,230.57,ZAR
+2024-02-13,Retail-Prod,rg-platform,Compute,App Service,France Central,80.99,531.26,ZAR
+2024-10-07,Retail-Prod,rg-platform,Storage,Storage,Germany West Central,67.36,378.16,ZAR
+2024-02-14,Data-Platform,rg-analytics,Serverless,Azure Functions,West Europe,4.05,837.76,ZAR
+2024-03-20,Dev-Subscription,rg-prod,Compute,Virtual Machines,UK South,88.08,290.33,ZAR
+2024-09-19,Data-Platform,rg-finance,Containers,Azure Kubernetes Service,France Central,29.39,842.05,ZAR
+2024-08-16,Retail-Prod,rg-dev,Networking,Load Balancer,Germany West Central,89.87,793.43,ZAR
+2024-02-09,Dev-Subscription,rg-analytics,Compute,Virtual Machines,UK South,114.15,248.97,ZAR
+2024-09-09,Data-Platform,rg-dev,Networking,Load Balancer,Germany West Central,118.06,692.93,ZAR
+2024-09-09,Retail-Prod,rg-platform,Serverless,Azure Functions,North Europe,49.45,189.14,ZAR
+2024-09-08,Retail-Prod,rg-analytics,Compute,Virtual Machines,France Central,63.96,181.8,ZAR
+2024-06-15,Retail-Prod,rg-dev,Networking,Bandwidth,France Central,81.17,770.1,ZAR
+2024-01-29,Dev-Subscription,rg-finance,Networking,Bandwidth,UK South,103.27,568.31,ZAR
+2024-03-27,Finance-Prod,rg-prod,Storage,Storage,France Central,25.52,317.76,ZAR
+2024-10-17,Data-Platform,rg-platform,Compute,Virtual Machines,West Europe,2.64,344.56,ZAR
+2024-10-13,Data-Platform,rg-analytics,Database,Azure SQL Database,Germany West Central,3.85,71.48,ZAR
+2024-04-15,Finance-Prod,rg-prod,Compute,App Service,Germany West Central,96.28,851.83,ZAR
+2024-03-18,Retail-Prod,rg-platform,Compute,App Service,West Europe,96.81,343.49,ZAR
+2024-09-17,Dev-Subscription,rg-platform,Compute,App Service,France Central,43.23,471.01,ZAR
+2024-01-06,Retail-Prod,rg-prod,Networking,Load Balancer,France Central,81.59,760.3,ZAR
+2024-07-31,Retail-Prod,rg-platform,Serverless,Azure Functions,North Europe,106.94,729.84,ZAR
+2024-08-02,Finance-Prod,rg-platform,Storage,Storage,West Europe,90.18,435.26,ZAR
+2024-07-15,Dev-Subscription,rg-analytics,Compute,Virtual Machines,Germany West Central,48.95,713.83,ZAR
+2024-03-21,Data-Platform,rg-prod,Serverless,Azure Functions,North Europe,24.87,267.12,ZAR
+2024-09-15,Retail-Prod,rg-platform,Storage,Storage,North Europe,51.14,646.04,ZAR
+2024-03-29,Finance-Prod,rg-prod,Serverless,Azure Functions,Germany West Central,16.27,534.27,ZAR
+2024-07-31,Finance-Prod,rg-finance,Networking,Bandwidth,West Europe,93.07,103.5,ZAR
+2024-05-25,Dev-Subscription,rg-dev,Storage,Storage,West Europe,61.55,199.28,ZAR
+2024-09-19,Dev-Subscription,rg-analytics,Compute,App Service,UK South,101.43,852.91,ZAR
+2024-08-28,Dev-Subscription,rg-platform,Compute,App Service,North Europe,73.23,30.24,ZAR
+2024-07-16,Dev-Subscription,rg-dev,Containers,Azure Kubernetes Service,North Europe,32.21,645.78,ZAR
+2024-03-07,Data-Platform,rg-prod,Storage,Storage,West Europe,76.71,825.35,ZAR
+2024-10-22,Dev-Subscription,rg-finance,Database,Azure SQL Database,West Europe,73.05,393.36,ZAR
+2024-08-20,Dev-Subscription,rg-prod,Networking,Load Balancer,UK South,75.5,794.5,ZAR
+2024-07-01,Finance-Prod,rg-dev,Containers,Azure Kubernetes Service,France Central,85.82,633.79,ZAR
+2024-04-12,Data-Platform,rg-prod,Networking,Load Balancer,France Central,99.83,807.19,ZAR
+2024-10-04,Dev-Subscription,rg-dev,Database,Azure SQL Database,Germany West Central,73.77,622.36,ZAR
+2024-10-06,Finance-Prod,rg-platform,Networking,Load Balancer,Germany West Central,105.34,92.61,ZAR
+2024-09-05,Retail-Prod,rg-dev,Networking,Bandwidth,UK South,28.61,723.77,ZAR
+2024-08-16,Finance-Prod,rg-platform,Networking,Bandwidth,UK South,35.01,678.12,ZAR
+2024-07-16,Finance-Prod,rg-finance,Serverless,Azure Functions,North Europe,57.67,351.04,ZAR
+2024-05-30,Finance-Prod,rg-dev,Compute,Virtual Machines,North Europe,13.34,110.66,ZAR
+2024-01-30,Finance-Prod,rg-finance,Compute,Virtual Machines,Germany West Central,46.89,61.91,ZAR
+2024-04-20,Dev-Subscription,rg-finance,Serverless,Azure Functions,West Europe,2.73,801.73,ZAR
+2024-10-05,Finance-Prod,rg-prod,Containers,Azure Kubernetes Service,North Europe,14.27,209.82,ZAR
+2024-09-30,Finance-Prod,rg-dev,Compute,Virtual Machines,UK South,49.14,91.58,ZAR
+2024-08-02,Retail-Prod,rg-finance,Networking,Load Balancer,North Europe,79.25,115.48,ZAR
+2024-01-06,Data-Platform,rg-prod,Compute,Virtual Machines,Germany West Central,100.56,417.83,ZAR
+2024-08-30,Dev-Subscription,rg-dev,Database,Azure SQL Database,West Europe,36.36,448.38,ZAR
+2024-08-10,Dev-Subscription,rg-platform,Compute,App Service,North Europe,3.39,505.1,ZAR
+2024-07-09,Finance-Prod,rg-dev,Networking,Bandwidth,North Europe,13.73,645.07,ZAR
+2024-08-20,Dev-Subscription,rg-finance,Compute,App Service,France Central,59.39,606.76,ZAR
+2024-09-18,Dev-Subscription,rg-platform,Database,Azure SQL Database,Germany West Central,60.64,60.47,ZAR
+2024-10-23,Data-Platform,rg-dev,Database,Azure SQL Database,North Europe,58.41,583.38,ZAR
+2024-08-04,Retail-Prod,rg-platform,Storage,Storage,UK South,92.71,683.12,ZAR
+2024-09-22,Finance-Prod,rg-dev,Database,Azure SQL Database,West Europe,109.96,37.72,ZAR
+2024-08-21,Finance-Prod,rg-platform,Containers,Azure Kubernetes Service,Germany West Central,119.62,91.53,ZAR
+2024-07-19,Dev-Subscription,rg-analytics,Compute,Virtual Machines,West Europe,34.41,70.11,ZAR
+2024-06-13,Finance-Prod,rg-platform,Storage,Storage,West Europe,68.35,730.9,ZAR
+2024-04-28,Retail-Prod,rg-platform,Networking,Bandwidth,West Europe,2.84,810.52,ZAR
+2024-07-16,Dev-Subscription,rg-platform,Compute,App Service,France Central,36.11,523.2,ZAR
+2024-03-27,Dev-Subscription,rg-prod,Networking,Load Balancer,North Europe,84.66,763.95,ZAR
+2024-05-04,Retail-Prod,rg-prod,Database,Azure SQL Database,West Europe,101.9,186.67,ZAR
+2024-02-07,Dev-Subscription,rg-dev,Networking,Load Balancer,UK South,114.74,843.68,ZAR
+2024-05-03,Dev-Subscription,rg-prod,Containers,Azure Kubernetes Service,West Europe,109.98,270.99,ZAR
+2024-10-21,Finance-Prod,rg-finance,Networking,Load Balancer,Germany West Central,72.51,759.28,ZAR
+2024-04-04,Data-Platform,rg-finance,Storage,Storage,France Central,60.27,602.84,ZAR
+2024-09-27,Retail-Prod,rg-dev,Compute,Virtual Machines,West Europe,22.59,492.03,ZAR
+2024-03-20,Data-Platform,rg-finance,Containers,Azure Kubernetes Service,France Central,101.3,159.47,ZAR
+2024-10-20,Data-Platform,rg-finance,Compute,App Service,North Europe,7.69,522.34,ZAR
+2024-05-06,Dev-Subscription,rg-analytics,Networking,Load Balancer,West Europe,103.02,155.45,ZAR
+2024-03-30,Retail-Prod,rg-dev,Compute,Virtual Machines,Germany West Central,111.0,662.34,ZAR
+2024-01-02,Finance-Prod,rg-finance,Serverless,Azure Functions,Germany West Central,68.23,860.65,ZAR
+2024-09-21,Data-Platform,rg-platform,Serverless,Azure Functions,UK South,74.1,586.45,ZAR
+2024-03-08,Finance-Prod,rg-prod,Compute,Virtual Machines,France Central,57.37,139.77,ZAR
+2024-03-13,Retail-Prod,rg-prod,Networking,Bandwidth,West Europe,42.79,593.35,ZAR
+2024-05-05,Finance-Prod,rg-analytics,Serverless,Azure Functions,France Central,38.17,27.76,ZAR
+2024-01-02,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,France Central,66.43,242.61,ZAR
+2024-07-23,Data-Platform,rg-platform,Networking,Load Balancer,UK South,52.51,648.08,ZAR
+2024-03-09,Data-Platform,rg-analytics,Networking,Load Balancer,Germany West Central,57.98,15.05,ZAR
+2024-06-28,Dev-Subscription,rg-platform,Networking,Load Balancer,West Europe,28.18,301.7,ZAR
+2024-01-10,Data-Platform,rg-dev,Database,Azure SQL Database,France Central,105.18,773.05,ZAR
+2024-01-08,Retail-Prod,rg-finance,Database,Azure SQL Database,France Central,40.56,776.67,ZAR
+2024-04-03,Finance-Prod,rg-analytics,Networking,Bandwidth,North Europe,58.7,220.73,ZAR
+2024-05-06,Data-Platform,rg-prod,Storage,Storage,West Europe,70.15,765.23,ZAR
+2024-07-06,Data-Platform,rg-analytics,Storage,Storage,West Europe,17.37,565.94,ZAR
+2024-02-19,Dev-Subscription,rg-platform,Storage,Storage,France Central,109.21,780.26,ZAR
+2024-08-26,Finance-Prod,rg-finance,Storage,Storage,North Europe,75.79,474.52,ZAR
+2024-03-08,Finance-Prod,rg-finance,Networking,Bandwidth,North Europe,106.14,403.85,ZAR
+2024-08-08,Finance-Prod,rg-analytics,Compute,Virtual Machines,France Central,92.66,852.17,ZAR
+2024-10-05,Retail-Prod,rg-platform,Database,Azure SQL Database,UK South,78.42,266.3,ZAR
+2024-08-26,Data-Platform,rg-prod,Containers,Azure Kubernetes Service,West Europe,18.38,282.69,ZAR
+2024-01-02,Data-Platform,rg-analytics,Compute,Virtual Machines,Germany West Central,21.91,323.25,ZAR
+2024-03-04,Finance-Prod,rg-dev,Compute,Virtual Machines,North Europe,93.21,462.24,ZAR
+2024-06-29,Dev-Subscription,rg-platform,Compute,Virtual Machines,North Europe,52.57,399.46,ZAR
+2024-08-02,Data-Platform,rg-dev,Compute,App Service,UK South,41.48,792.45,ZAR
+2024-09-03,Dev-Subscription,rg-finance,Compute,Virtual Machines,UK South,62.24,329.13,ZAR
+2024-07-02,Retail-Prod,rg-finance,Containers,Azure Kubernetes Service,West Europe,90.11,150.53,ZAR
+2024-05-18,Data-Platform,rg-prod,Compute,App Service,North Europe,42.61,361.76,ZAR
+2024-02-26,Finance-Prod,rg-analytics,Database,Azure SQL Database,Germany West Central,60.45,344.73,ZAR
+2024-07-20,Retail-Prod,rg-prod,Compute,App Service,France Central,25.57,350.85,ZAR
+2024-08-20,Data-Platform,rg-prod,Networking,Bandwidth,UK South,45.53,418.65,ZAR
+2024-03-09,Dev-Subscription,rg-dev,Database,Azure SQL Database,UK South,88.79,171.58,ZAR
+2024-09-17,Retail-Prod,rg-dev,Networking,Load Balancer,UK South,61.68,762.9,ZAR
+2024-01-02,Data-Platform,rg-platform,Networking,Bandwidth,Germany West Central,116.37,646.78,ZAR
+2024-04-21,Data-Platform,rg-platform,Compute,Virtual Machines,North Europe,105.45,586.51,ZAR
+2024-05-04,Dev-Subscription,rg-prod,Compute,Virtual Machines,North Europe,74.41,406.67,ZAR
+2024-07-16,Finance-Prod,rg-finance,Storage,Storage,UK South,27.99,465.47,ZAR
+2024-06-30,Dev-Subscription,rg-dev,Serverless,Azure Functions,West Europe,1.09,22.33,ZAR
+2024-07-13,Finance-Prod,rg-prod,Containers,Azure Kubernetes Service,North Europe,61.46,278.97,ZAR
+2024-06-21,Retail-Prod,rg-platform,Compute,App Service,France Central,78.77,354.3,ZAR
+2024-02-22,Dev-Subscription,rg-analytics,Storage,Storage,France Central,11.56,395.31,ZAR
+2024-01-25,Retail-Prod,rg-prod,Storage,Storage,UK South,113.84,330.88,ZAR
+2024-10-25,Data-Platform,rg-finance,Database,Azure SQL Database,UK South,1.32,246.97,ZAR
+2024-09-10,Data-Platform,rg-finance,Containers,Azure Kubernetes Service,France Central,15.7,178.48,ZAR
+2024-05-21,Data-Platform,rg-dev,Serverless,Azure Functions,North Europe,47.7,654.45,ZAR
+2024-09-25,Data-Platform,rg-platform,Compute,App Service,France Central,66.58,717.78,ZAR
+2024-01-13,Data-Platform,rg-finance,Networking,Bandwidth,North Europe,65.43,140.3,ZAR
+2024-08-11,Retail-Prod,rg-finance,Compute,Virtual Machines,Germany West Central,8.59,712.18,ZAR
+2024-08-16,Retail-Prod,rg-dev,Networking,Bandwidth,West Europe,70.46,281.57,ZAR
+2024-10-10,Retail-Prod,rg-prod,Containers,Azure Kubernetes Service,Germany West Central,14.08,740.04,ZAR
+2024-10-15,Finance-Prod,rg-finance,Compute,App Service,North Europe,3.84,879.48,ZAR
+2024-02-18,Retail-Prod,rg-prod,Database,Azure SQL Database,France Central,104.07,554.33,ZAR
+2024-08-01,Dev-Subscription,rg-prod,Database,Azure SQL Database,France Central,53.53,273.15,ZAR
+2024-07-23,Data-Platform,rg-platform,Compute,App Service,Germany West Central,97.17,255.9,ZAR
+2024-09-04,Data-Platform,rg-prod,Networking,Bandwidth,North Europe,109.11,421.49,ZAR
+2024-05-08,Dev-Subscription,rg-prod,Database,Azure SQL Database,North Europe,19.99,837.55,ZAR
+2024-10-16,Data-Platform,rg-platform,Containers,Azure Kubernetes Service,France Central,86.14,659.62,ZAR
+2024-07-08,Dev-Subscription,rg-prod,Compute,Virtual Machines,UK South,36.6,135.28,ZAR
+2024-09-27,Data-Platform,rg-platform,Compute,App Service,France Central,17.67,328.55,ZAR
+2024-02-16,Data-Platform,rg-prod,Storage,Storage,France Central,90.53,495.75,ZAR
+2024-03-13,Dev-Subscription,rg-prod,Compute,Virtual Machines,UK South,84.9,385.19,ZAR
+2024-03-30,Retail-Prod,rg-analytics,Database,Azure SQL Database,UK South,66.45,703.53,ZAR
+2024-09-22,Dev-Subscription,rg-platform,Serverless,Azure Functions,UK South,63.71,85.66,ZAR
+2024-07-14,Dev-Subscription,rg-platform,Storage,Storage,UK South,101.0,815.02,ZAR
+2024-07-12,Finance-Prod,rg-platform,Compute,App Service,West Europe,43.24,847.19,ZAR
+2024-07-10,Data-Platform,rg-finance,Networking,Load Balancer,UK South,74.18,142.01,ZAR
+2024-03-21,Dev-Subscription,rg-analytics,Database,Azure SQL Database,West Europe,52.11,730.29,ZAR
+2024-07-13,Finance-Prod,rg-platform,Database,Azure SQL Database,UK South,76.18,92.65,ZAR
+2024-06-05,Retail-Prod,rg-platform,Compute,App Service,West Europe,19.5,203.41,ZAR
+2024-08-26,Dev-Subscription,rg-platform,Storage,Storage,North Europe,75.48,112.92,ZAR
+2024-09-24,Finance-Prod,rg-dev,Networking,Load Balancer,North Europe,115.52,877.22,ZAR
+2024-09-08,Finance-Prod,rg-finance,Containers,Azure Kubernetes Service,France Central,27.45,250.14,ZAR
+2024-03-31,Finance-Prod,rg-finance,Containers,Azure Kubernetes Service,Germany West Central,5.93,443.91,ZAR
+2024-08-03,Dev-Subscription,rg-analytics,Networking,Load Balancer,France Central,86.66,494.61,ZAR
+2024-05-22,Dev-Subscription,rg-prod,Compute,Virtual Machines,Germany West Central,6.08,112.69,ZAR
+2024-06-14,Retail-Prod,rg-finance,Containers,Azure Kubernetes Service,UK South,31.82,641.51,ZAR
+2024-10-01,Retail-Prod,rg-finance,Serverless,Azure Functions,Germany West Central,48.91,836.33,ZAR
+2024-04-23,Retail-Prod,rg-finance,Containers,Azure Kubernetes Service,France Central,4.91,642.19,ZAR
+2024-02-10,Dev-Subscription,rg-prod,Storage,Storage,UK South,72.31,855.72,ZAR
+2024-02-14,Data-Platform,rg-platform,Serverless,Azure Functions,Germany West Central,57.45,868.52,ZAR
+2024-01-13,Finance-Prod,rg-finance,Serverless,Azure Functions,UK South,98.09,327.12,ZAR
+2024-09-06,Retail-Prod,rg-prod,Storage,Storage,UK South,96.22,269.07,ZAR
+2024-09-28,Data-Platform,rg-dev,Networking,Bandwidth,Germany West Central,85.01,542.14,ZAR
+2024-09-23,Dev-Subscription,rg-dev,Networking,Bandwidth,UK South,84.74,478.06,ZAR
+2024-05-15,Finance-Prod,rg-platform,Compute,App Service,West Europe,79.11,348.72,ZAR
+2024-07-20,Finance-Prod,rg-finance,Networking,Load Balancer,France Central,107.65,255.47,ZAR
+2024-01-19,Retail-Prod,rg-finance,Networking,Load Balancer,West Europe,97.11,75.13,ZAR
+2024-03-17,Dev-Subscription,rg-dev,Containers,Azure Kubernetes Service,West Europe,83.43,515.88,ZAR
+2024-06-09,Finance-Prod,rg-analytics,Database,Azure SQL Database,UK South,86.74,309.35,ZAR
+2024-07-15,Dev-Subscription,rg-finance,Storage,Storage,West Europe,109.05,674.3,ZAR
+2024-07-19,Retail-Prod,rg-dev,Storage,Storage,North Europe,42.05,397.63,ZAR
+2024-04-15,Retail-Prod,rg-dev,Storage,Storage,UK South,1.49,419.58,ZAR
+2024-07-10,Finance-Prod,rg-platform,Storage,Storage,Germany West Central,49.99,430.48,ZAR
+2024-01-12,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,North Europe,31.11,487.94,ZAR
+2024-04-22,Data-Platform,rg-analytics,Compute,Virtual Machines,Germany West Central,21.0,261.94,ZAR
+2024-04-05,Retail-Prod,rg-platform,Database,Azure SQL Database,North Europe,50.38,566.24,ZAR
+2024-02-06,Dev-Subscription,rg-analytics,Storage,Storage,West Europe,4.44,676.29,ZAR
+2024-02-27,Finance-Prod,rg-finance,Compute,App Service,West Europe,63.27,891.79,ZAR
+2024-06-29,Retail-Prod,rg-dev,Compute,App Service,North Europe,107.2,103.52,ZAR
+2024-05-08,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,Germany West Central,71.75,118.11,ZAR
+2024-09-03,Retail-Prod,rg-platform,Compute,Virtual Machines,North Europe,93.19,722.79,ZAR
+2024-06-20,Finance-Prod,rg-finance,Storage,Storage,North Europe,85.0,290.29,ZAR
+2024-06-23,Dev-Subscription,rg-analytics,Storage,Storage,North Europe,35.5,412.68,ZAR
+2024-08-23,Retail-Prod,rg-finance,Database,Azure SQL Database,North Europe,87.78,473.72,ZAR
+2024-10-14,Data-Platform,rg-platform,Networking,Load Balancer,Germany West Central,76.52,143.03,ZAR
+2024-06-05,Dev-Subscription,rg-prod,Networking,Bandwidth,North Europe,110.45,382.68,ZAR
+2024-07-09,Finance-Prod,rg-platform,Networking,Load Balancer,North Europe,25.05,424.87,ZAR
+2024-05-19,Finance-Prod,rg-platform,Serverless,Azure Functions,Germany West Central,44.37,156.44,ZAR
+2024-01-12,Finance-Prod,rg-prod,Compute,Virtual Machines,UK South,100.19,568.24,ZAR
+2024-03-18,Retail-Prod,rg-dev,Compute,App Service,Germany West Central,35.62,536.15,ZAR
+2024-08-14,Dev-Subscription,rg-platform,Storage,Storage,France Central,81.81,127.17,ZAR
+2024-10-08,Data-Platform,rg-analytics,Serverless,Azure Functions,France Central,119.99,153.56,ZAR
+2024-08-18,Dev-Subscription,rg-dev,Networking,Load Balancer,North Europe,77.43,842.57,ZAR
+2024-04-05,Finance-Prod,rg-prod,Database,Azure SQL Database,North Europe,38.11,537.7,ZAR
+2024-07-25,Data-Platform,rg-analytics,Database,Azure SQL Database,UK South,24.22,192.39,ZAR
+2024-02-11,Retail-Prod,rg-platform,Networking,Bandwidth,North Europe,111.07,91.73,ZAR
+2024-08-17,Finance-Prod,rg-analytics,Networking,Bandwidth,West Europe,2.68,439.67,ZAR
+2024-05-29,Data-Platform,rg-platform,Compute,App Service,North Europe,7.23,14.88,ZAR
+2024-09-27,Finance-Prod,rg-prod,Database,Azure SQL Database,France Central,34.24,138.53,ZAR
+2024-06-25,Retail-Prod,rg-prod,Networking,Bandwidth,Germany West Central,60.64,385.29,ZAR
+2024-09-11,Data-Platform,rg-dev,Serverless,Azure Functions,France Central,85.21,865.72,ZAR
+2024-07-16,Retail-Prod,rg-dev,Compute,Virtual Machines,UK South,45.28,776.1,ZAR
+2024-05-10,Dev-Subscription,rg-dev,Containers,Azure Kubernetes Service,North Europe,58.66,701.33,ZAR
+2024-08-12,Dev-Subscription,rg-platform,Database,Azure SQL Database,Germany West Central,84.84,295.45,ZAR
+2024-05-25,Dev-Subscription,rg-platform,Storage,Storage,West Europe,113.08,27.08,ZAR
+2024-10-14,Dev-Subscription,rg-finance,Networking,Load Balancer,France Central,15.3,589.97,ZAR
+2024-07-01,Retail-Prod,rg-dev,Database,Azure SQL Database,UK South,41.13,831.3,ZAR
+2024-03-10,Finance-Prod,rg-platform,Compute,App Service,Germany West Central,97.51,89.45,ZAR
+2024-06-18,Retail-Prod,rg-analytics,Compute,Virtual Machines,North Europe,103.93,612.02,ZAR
+2024-08-11,Dev-Subscription,rg-finance,Containers,Azure Kubernetes Service,West Europe,8.86,664.88,ZAR
+2024-09-29,Dev-Subscription,rg-finance,Networking,Load Balancer,France Central,119.93,234.09,ZAR
+2024-01-05,Finance-Prod,rg-prod,Storage,Storage,West Europe,37.28,548.02,ZAR
+2024-07-03,Dev-Subscription,rg-prod,Compute,App Service,North Europe,92.42,518.78,ZAR
+2024-08-20,Retail-Prod,rg-dev,Serverless,Azure Functions,Germany West Central,107.48,808.5,ZAR
+2024-06-14,Data-Platform,rg-dev,Containers,Azure Kubernetes Service,France Central,94.0,213.84,ZAR
+2024-08-25,Dev-Subscription,rg-platform,Storage,Storage,Germany West Central,42.18,597.72,ZAR
+2024-10-08,Data-Platform,rg-analytics,Containers,Azure Kubernetes Service,Germany West Central,56.26,159.3,ZAR
+2024-10-15,Finance-Prod,rg-analytics,Database,Azure SQL Database,Germany West Central,6.58,160.71,ZAR
+2024-01-17,Dev-Subscription,rg-dev,Serverless,Azure Functions,UK South,70.93,461.32,ZAR
+2024-01-24,Data-Platform,rg-prod,Serverless,Azure Functions,Germany West Central,15.03,61.15,ZAR
+2024-07-15,Data-Platform,rg-prod,Networking,Bandwidth,UK South,97.87,247.06,ZAR
+2024-06-09,Finance-Prod,rg-analytics,Compute,App Service,Germany West Central,59.01,457.73,ZAR
+2024-09-24,Finance-Prod,rg-dev,Compute,App Service,Germany West Central,88.81,812.52,ZAR
+2024-05-03,Finance-Prod,rg-prod,Networking,Load Balancer,North Europe,83.44,47.99,ZAR
+2024-02-08,Dev-Subscription,rg-finance,Containers,Azure Kubernetes Service,North Europe,27.94,680.96,ZAR
+2024-01-15,Data-Platform,rg-dev,Storage,Storage,Germany West Central,85.97,294.12,ZAR
+2024-09-17,Retail-Prod,rg-platform,Storage,Storage,UK South,100.73,227.35,ZAR
+2024-05-09,Data-Platform,rg-analytics,Database,Azure SQL Database,North Europe,72.31,804.23,ZAR
+2024-04-23,Finance-Prod,rg-dev,Compute,Virtual Machines,North Europe,80.63,194.93,ZAR
+2024-07-05,Dev-Subscription,rg-prod,Networking,Bandwidth,France Central,103.71,281.25,ZAR
+2024-04-17,Retail-Prod,rg-prod,Compute,Virtual Machines,North Europe,104.82,358.98,ZAR
+2024-03-14,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,North Europe,44.18,543.8,ZAR
+2024-05-01,Retail-Prod,rg-prod,Compute,Virtual Machines,North Europe,108.93,535.32,ZAR
+2024-09-05,Finance-Prod,rg-prod,Storage,Storage,UK South,81.6,9.87,ZAR
+2024-10-03,Data-Platform,rg-prod,Serverless,Azure Functions,France Central,98.32,604.99,ZAR
+2024-09-20,Finance-Prod,rg-finance,Database,Azure SQL Database,Germany West Central,47.49,547.55,ZAR
+2024-01-31,Retail-Prod,rg-finance,Database,Azure SQL Database,West Europe,85.31,68.58,ZAR
+2024-03-30,Finance-Prod,rg-prod,Compute,App Service,UK South,107.68,268.65,ZAR
+2024-03-28,Dev-Subscription,rg-dev,Compute,App Service,Germany West Central,55.6,475.31,ZAR
+2024-08-23,Retail-Prod,rg-analytics,Compute,App Service,France Central,58.43,801.62,ZAR
+2024-01-01,Retail-Prod,rg-analytics,Compute,App Service,France Central,17.56,877.81,ZAR
+2024-01-04,Finance-Prod,rg-prod,Networking,Load Balancer,UK South,48.12,863.94,ZAR
+2024-01-28,Retail-Prod,rg-platform,Database,Azure SQL Database,UK South,76.8,537.93,ZAR
+2024-01-31,Data-Platform,rg-dev,Database,Azure SQL Database,France Central,97.44,414.84,ZAR
+2024-07-21,Dev-Subscription,rg-analytics,Storage,Storage,Germany West Central,112.01,700.5,ZAR
+2024-08-24,Retail-Prod,rg-analytics,Database,Azure SQL Database,West Europe,107.39,333.85,ZAR
+2024-02-18,Finance-Prod,rg-prod,Serverless,Azure Functions,North Europe,82.97,461.24,ZAR
+2024-07-06,Finance-Prod,rg-prod,Containers,Azure Kubernetes Service,West Europe,43.91,376.48,ZAR
+2024-07-26,Finance-Prod,rg-finance,Compute,App Service,Germany West Central,107.78,104.22,ZAR
+2024-04-03,Finance-Prod,rg-dev,Networking,Bandwidth,West Europe,49.52,422.28,ZAR
+2024-09-08,Data-Platform,rg-dev,Networking,Bandwidth,UK South,80.9,776.16,ZAR
+2024-10-06,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,West Europe,114.25,588.93,ZAR
+2024-02-05,Dev-Subscription,rg-platform,Networking,Load Balancer,France Central,73.27,863.24,ZAR
+2024-01-24,Finance-Prod,rg-finance,Serverless,Azure Functions,UK South,21.94,339.5,ZAR
+2024-04-25,Data-Platform,rg-analytics,Compute,Virtual Machines,North Europe,12.51,849.3,ZAR
+2024-03-01,Retail-Prod,rg-dev,Containers,Azure Kubernetes Service,West Europe,16.81,317.92,ZAR
+2024-03-24,Retail-Prod,rg-analytics,Compute,App Service,North Europe,103.7,267.35,ZAR
+2024-09-02,Retail-Prod,rg-prod,Networking,Load Balancer,Germany West Central,24.16,637.59,ZAR
+2024-04-27,Finance-Prod,rg-prod,Networking,Load Balancer,West Europe,96.64,785.74,ZAR
+2024-10-26,Retail-Prod,rg-analytics,Containers,Azure Kubernetes Service,UK South,97.94,245.39,ZAR
+2024-10-10,Dev-Subscription,rg-prod,Networking,Load Balancer,France Central,45.14,810.11,ZAR
+2024-01-12,Finance-Prod,rg-platform,Networking,Bandwidth,France Central,22.55,59.43,ZAR
+2024-01-09,Finance-Prod,rg-prod,Networking,Load Balancer,North Europe,65.38,594.6,ZAR
+2024-07-24,Dev-Subscription,rg-analytics,Compute,App Service,Germany West Central,22.69,53.64,ZAR
+2024-03-08,Finance-Prod,rg-platform,Networking,Load Balancer,France Central,20.69,686.88,ZAR
+2024-05-17,Finance-Prod,rg-prod,Networking,Bandwidth,UK South,95.14,111.69,ZAR
+2024-04-04,Finance-Prod,rg-platform,Compute,Virtual Machines,North Europe,107.45,664.06,ZAR
+2024-05-11,Finance-Prod,rg-dev,Compute,App Service,West Europe,22.67,767.38,ZAR
+2024-07-29,Finance-Prod,rg-analytics,Networking,Load Balancer,North Europe,60.68,391.85,ZAR
+2024-02-19,Finance-Prod,rg-finance,Storage,Storage,Germany West Central,21.34,793.23,ZAR
+2024-01-19,Retail-Prod,rg-finance,Storage,Storage,France Central,58.43,170.24,ZAR
+2024-01-27,Finance-Prod,rg-prod,Compute,Virtual Machines,France Central,54.4,135.61,ZAR
+2024-09-30,Retail-Prod,rg-finance,Database,Azure SQL Database,West Europe,54.16,855.99,ZAR
+2024-09-17,Retail-Prod,rg-analytics,Storage,Storage,West Europe,117.59,756.71,ZAR
+2024-04-22,Retail-Prod,rg-finance,Compute,App Service,Germany West Central,11.31,655.11,ZAR
+2024-03-07,Retail-Prod,rg-analytics,Networking,Bandwidth,France Central,110.15,717.27,ZAR
+2024-09-03,Finance-Prod,rg-analytics,Serverless,Azure Functions,France Central,98.96,781.94,ZAR
+2024-04-29,Retail-Prod,rg-dev,Networking,Load Balancer,West Europe,33.71,837.11,ZAR
+2024-02-14,Dev-Subscription,rg-dev,Networking,Load Balancer,Germany West Central,114.06,571.06,ZAR
+2024-01-11,Retail-Prod,rg-analytics,Database,Azure SQL Database,North Europe,101.32,238.55,ZAR
+2024-04-01,Data-Platform,rg-analytics,Networking,Load Balancer,West Europe,58.03,508.91,ZAR
+2024-09-18,Finance-Prod,rg-finance,Networking,Load Balancer,France Central,9.58,10.22,ZAR
+2024-01-23,Finance-Prod,rg-platform,Networking,Bandwidth,West Europe,44.57,104.18,ZAR
+2024-01-01,Data-Platform,rg-platform,Compute,App Service,UK South,16.16,552.53,ZAR
+2024-08-25,Data-Platform,rg-prod,Database,Azure SQL Database,UK South,64.38,417.17,ZAR
+2024-07-24,Retail-Prod,rg-prod,Networking,Load Balancer,West Europe,16.43,581.52,ZAR
+2024-09-04,Retail-Prod,rg-finance,Networking,Bandwidth,North Europe,83.4,28.29,ZAR
+2024-10-21,Dev-Subscription,rg-analytics,Compute,App Service,West Europe,61.43,242.24,ZAR
+2024-01-03,Retail-Prod,rg-prod,Database,Azure SQL Database,UK South,36.41,307.04,ZAR
+2024-01-01,Retail-Prod,rg-dev,Compute,App Service,West Europe,32.93,234.88,ZAR
+2024-06-19,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,UK South,13.49,125.06,ZAR
+2024-05-05,Dev-Subscription,rg-prod,Compute,Virtual Machines,North Europe,77.3,12.5,ZAR
+2024-03-14,Dev-Subscription,rg-prod,Containers,Azure Kubernetes Service,France Central,19.63,672.08,ZAR
+2024-02-29,Dev-Subscription,rg-prod,Networking,Load Balancer,France Central,101.8,861.28,ZAR
+2024-09-17,Retail-Prod,rg-analytics,Serverless,Azure Functions,West Europe,12.6,522.45,ZAR
+2024-03-17,Finance-Prod,rg-platform,Compute,Virtual Machines,West Europe,15.51,278.75,ZAR
+2024-09-08,Finance-Prod,rg-prod,Compute,App Service,Germany West Central,67.9,670.41,ZAR
+2024-07-01,Data-Platform,rg-finance,Compute,Virtual Machines,UK South,96.96,167.55,ZAR
+2024-10-17,Finance-Prod,rg-finance,Database,Azure SQL Database,West Europe,97.96,593.14,ZAR
+2024-04-24,Finance-Prod,rg-platform,Compute,Virtual Machines,UK South,73.9,276.02,ZAR
+2024-06-17,Data-Platform,rg-prod,Networking,Bandwidth,North Europe,10.62,6.64,ZAR
+2024-02-07,Dev-Subscription,rg-analytics,Networking,Bandwidth,UK South,42.36,632.78,ZAR
+2024-09-22,Dev-Subscription,rg-prod,Compute,App Service,West Europe,38.01,233.65,ZAR
+2024-06-22,Data-Platform,rg-finance,Containers,Azure Kubernetes Service,France Central,24.67,57.4,ZAR
+2024-02-19,Dev-Subscription,rg-prod,Database,Azure SQL Database,France Central,104.97,725.63,ZAR
+2024-09-24,Data-Platform,rg-platform,Containers,Azure Kubernetes Service,North Europe,78.72,490.83,ZAR
+2024-01-21,Data-Platform,rg-analytics,Compute,Virtual Machines,France Central,58.52,865.09,ZAR
+2024-06-18,Retail-Prod,rg-platform,Compute,App Service,North Europe,87.99,499.52,ZAR
+2024-09-12,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,UK South,43.36,341.33,ZAR
+2024-03-22,Retail-Prod,rg-dev,Serverless,Azure Functions,France Central,80.26,453.69,ZAR
+2024-04-13,Retail-Prod,rg-analytics,Containers,Azure Kubernetes Service,UK South,113.22,59.25,ZAR
+2024-07-30,Dev-Subscription,rg-prod,Networking,Bandwidth,Germany West Central,56.19,825.63,ZAR
+2024-06-08,Data-Platform,rg-dev,Networking,Load Balancer,UK South,19.53,436.59,ZAR
+2024-08-25,Finance-Prod,rg-analytics,Database,Azure SQL Database,West Europe,67.3,615.66,ZAR
+2024-02-16,Dev-Subscription,rg-analytics,Database,Azure SQL Database,West Europe,54.91,868.25,ZAR
+2024-07-27,Data-Platform,rg-finance,Serverless,Azure Functions,North Europe,22.33,32.59,ZAR
+2024-05-30,Dev-Subscription,rg-analytics,Compute,App Service,France Central,60.21,768.27,ZAR
+2024-05-14,Retail-Prod,rg-analytics,Database,Azure SQL Database,West Europe,24.26,329.76,ZAR
+2024-04-15,Data-Platform,rg-prod,Storage,Storage,UK South,85.03,485.17,ZAR
+2024-08-12,Finance-Prod,rg-analytics,Networking,Load Balancer,UK South,53.66,494.22,ZAR
+2024-02-02,Data-Platform,rg-finance,Database,Azure SQL Database,UK South,31.47,231.25,ZAR
+2024-06-25,Finance-Prod,rg-finance,Networking,Load Balancer,UK South,60.14,864.66,ZAR
+2024-01-04,Finance-Prod,rg-platform,Networking,Bandwidth,North Europe,55.13,328.96,ZAR
+2024-05-11,Retail-Prod,rg-platform,Compute,Virtual Machines,Germany West Central,113.45,413.54,ZAR
+2024-05-15,Data-Platform,rg-analytics,Networking,Load Balancer,France Central,117.26,721.11,ZAR
+2024-09-01,Dev-Subscription,rg-platform,Storage,Storage,North Europe,6.98,549.02,ZAR
+2024-02-29,Dev-Subscription,rg-analytics,Containers,Azure Kubernetes Service,North Europe,35.87,273.79,ZAR
+2024-10-12,Data-Platform,rg-analytics,Networking,Load Balancer,West Europe,80.27,850.01,ZAR
+2024-09-21,Retail-Prod,rg-platform,Networking,Load Balancer,France Central,50.56,466.37,ZAR
+2024-07-08,Data-Platform,rg-prod,Containers,Azure Kubernetes Service,France Central,10.98,897.12,ZAR
+2024-02-26,Data-Platform,rg-platform,Storage,Storage,North Europe,53.87,717.1,ZAR
+2024-08-28,Data-Platform,rg-dev,Storage,Storage,West Europe,21.55,323.75,ZAR
+2024-02-27,Retail-Prod,rg-dev,Networking,Bandwidth,France Central,87.21,70.5,ZAR
+2024-02-27,Dev-Subscription,rg-dev,Compute,App Service,Germany West Central,88.41,289.37,ZAR
+2024-03-17,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,West Europe,71.14,807.59,ZAR
+2024-02-10,Dev-Subscription,rg-finance,Compute,Virtual Machines,North Europe,109.54,116.3,ZAR
+2024-06-07,Finance-Prod,rg-dev,Compute,Virtual Machines,Germany West Central,93.1,722.02,ZAR
+2024-06-12,Dev-Subscription,rg-prod,Storage,Storage,France Central,47.68,636.29,ZAR
+2024-08-30,Data-Platform,rg-analytics,Serverless,Azure Functions,Germany West Central,24.68,92.69,ZAR
+2024-02-05,Dev-Subscription,rg-platform,Compute,App Service,UK South,3.97,103.37,ZAR
+2024-09-21,Retail-Prod,rg-dev,Compute,App Service,West Europe,23.82,475.38,ZAR
+2024-03-25,Retail-Prod,rg-analytics,Serverless,Azure Functions,France Central,17.67,820.81,ZAR
+2024-04-15,Retail-Prod,rg-analytics,Compute,Virtual Machines,West Europe,53.64,46.52,ZAR
+2024-06-18,Retail-Prod,rg-prod,Networking,Load Balancer,North Europe,36.73,660.96,ZAR
+2024-09-27,Data-Platform,rg-finance,Compute,App Service,West Europe,28.31,105.08,ZAR
+2024-09-07,Retail-Prod,rg-finance,Serverless,Azure Functions,UK South,72.38,507.97,ZAR
+2024-03-17,Data-Platform,rg-platform,Storage,Storage,West Europe,4.81,508.67,ZAR
+2024-03-31,Finance-Prod,rg-prod,Networking,Load Balancer,West Europe,50.71,434.91,ZAR
+2024-09-03,Dev-Subscription,rg-platform,Containers,Azure Kubernetes Service,France Central,118.03,671.37,ZAR
+2024-04-19,Dev-Subscription,rg-prod,Compute,Virtual Machines,France Central,3.07,756.24,ZAR
+2024-04-04,Data-Platform,rg-dev,Compute,Virtual Machines,West Europe,73.62,186.37,ZAR
+2024-03-09,Retail-Prod,rg-finance,Networking,Bandwidth,UK South,26.64,297.78,ZAR
+2024-09-16,Dev-Subscription,rg-dev,Compute,Virtual Machines,UK South,6.27,17.6,ZAR
+2024-06-19,Retail-Prod,rg-finance,Database,Azure SQL Database,France Central,29.72,660.3,ZAR
+2024-04-02,Retail-Prod,rg-finance,Networking,Bandwidth,France Central,30.18,878.66,ZAR
+2024-04-24,Retail-Prod,rg-dev,Serverless,Azure Functions,North Europe,75.59,87.31,ZAR
+2024-05-14,Dev-Subscription,rg-finance,Serverless,Azure Functions,UK South,24.53,461.13,ZAR
+2024-02-25,Dev-Subscription,rg-dev,Containers,Azure Kubernetes Service,North Europe,43.7,588.83,ZAR
+2024-03-16,Retail-Prod,rg-finance,Storage,Storage,West Europe,80.54,695.55,ZAR
+2024-03-17,Retail-Prod,rg-analytics,Networking,Load Balancer,UK South,23.1,195.01,ZAR
+2024-01-17,Data-Platform,rg-prod,Storage,Storage,UK South,101.75,247.14,ZAR
+2024-03-01,Finance-Prod,rg-analytics,Networking,Bandwidth,West Europe,59.75,285.19,ZAR
+2024-09-25,Retail-Prod,rg-dev,Compute,App Service,France Central,73.09,393.67,ZAR
+2024-05-18,Data-Platform,rg-platform,Compute,Virtual Machines,West Europe,43.66,873.28,ZAR
+2024-09-27,Finance-Prod,rg-platform,Compute,Virtual Machines,France Central,38.77,658.86,ZAR
+2024-06-18,Retail-Prod,rg-dev,Networking,Bandwidth,France Central,39.21,610.12,ZAR
+2024-10-23,Data-Platform,rg-analytics,Storage,Storage,West Europe,11.69,793.19,ZAR
+2024-06-22,Dev-Subscription,rg-dev,Database,Azure SQL Database,France Central,32.36,59.5,ZAR
+2024-09-29,Dev-Subscription,rg-dev,Database,Azure SQL Database,UK South,39.28,413.0,ZAR
+2024-08-12,Dev-Subscription,rg-platform,Serverless,Azure Functions,France Central,75.64,613.83,ZAR
+2024-02-11,Data-Platform,rg-platform,Compute,Virtual Machines,UK South,29.24,13.61,ZAR
+2024-03-31,Dev-Subscription,rg-finance,Compute,Virtual Machines,Germany West Central,93.69,114.74,ZAR
+2024-05-14,Dev-Subscription,rg-prod,Storage,Storage,West Europe,44.19,76.7,ZAR
+2024-02-14,Retail-Prod,rg-dev,Compute,App Service,France Central,16.36,675.25,ZAR
+2024-08-02,Data-Platform,rg-dev,Containers,Azure Kubernetes Service,North Europe,82.11,441.2,ZAR
+2024-02-12,Retail-Prod,rg-prod,Serverless,Azure Functions,West Europe,64.97,441.91,ZAR
+2024-10-10,Retail-Prod,rg-prod,Database,Azure SQL Database,West Europe,2.87,657.68,ZAR
+2024-04-07,Dev-Subscription,rg-finance,Containers,Azure Kubernetes Service,UK South,96.99,870.91,ZAR
+2024-06-26,Retail-Prod,rg-platform,Serverless,Azure Functions,France Central,61.94,117.99,ZAR
+2024-08-03,Finance-Prod,rg-platform,Networking,Load Balancer,UK South,62.15,840.68,ZAR
+2024-06-17,Data-Platform,rg-dev,Networking,Load Balancer,West Europe,2.1,250.62,ZAR
+2024-10-12,Dev-Subscription,rg-finance,Database,Azure SQL Database,UK South,89.19,62.21,ZAR
+2024-06-25,Dev-Subscription,rg-prod,Networking,Load Balancer,France Central,98.27,314.04,ZAR
+2024-03-13,Finance-Prod,rg-analytics,Networking,Bandwidth,Germany West Central,51.81,701.54,ZAR
+2024-03-29,Data-Platform,rg-platform,Storage,Storage,Germany West Central,18.6,379.43,ZAR
+2024-08-20,Finance-Prod,rg-dev,Database,Azure SQL Database,North Europe,38.94,119.17,ZAR
+2024-07-14,Data-Platform,rg-prod,Compute,Virtual Machines,UK South,94.71,472.8,ZAR
+2024-04-04,Finance-Prod,rg-analytics,Networking,Bandwidth,Germany West Central,116.72,313.12,ZAR
+2024-09-09,Retail-Prod,rg-prod,Containers,Azure Kubernetes Service,France Central,36.58,163.9,ZAR
+2024-09-27,Data-Platform,rg-prod,Compute,App Service,UK South,69.55,583.08,ZAR
+2024-04-11,Retail-Prod,rg-dev,Networking,Bandwidth,Germany West Central,72.11,475.72,ZAR
+2024-05-13,Data-Platform,rg-prod,Containers,Azure Kubernetes Service,North Europe,19.79,533.08,ZAR
+2024-09-08,Dev-Subscription,rg-finance,Serverless,Azure Functions,North Europe,118.8,354.25,ZAR
+2024-05-04,Retail-Prod,rg-platform,Networking,Load Balancer,France Central,8.09,534.86,ZAR
+2024-08-08,Data-Platform,rg-dev,Database,Azure SQL Database,Germany West Central,90.29,685.83,ZAR
+2024-07-28,Finance-Prod,rg-dev,Networking,Bandwidth,Germany West Central,22.92,533.71,ZAR
+2024-04-08,Data-Platform,rg-analytics,Compute,App Service,UK South,43.64,353.71,ZAR
+2024-05-05,Dev-Subscription,rg-prod,Networking,Bandwidth,West Europe,37.97,717.79,ZAR
+2024-10-08,Dev-Subscription,rg-platform,Containers,Azure Kubernetes Service,France Central,34.61,24.14,ZAR
+2024-09-10,Dev-Subscription,rg-finance,Containers,Azure Kubernetes Service,Germany West Central,119.44,795.58,ZAR
+2024-08-07,Finance-Prod,rg-dev,Serverless,Azure Functions,West Europe,76.65,78.27,ZAR
+2024-08-02,Retail-Prod,rg-analytics,Containers,Azure Kubernetes Service,West Europe,40.14,353.1,ZAR
+2024-09-12,Dev-Subscription,rg-dev,Containers,Azure Kubernetes Service,North Europe,105.42,408.38,ZAR
+2024-03-09,Dev-Subscription,rg-analytics,Containers,Azure Kubernetes Service,France Central,13.98,890.91,ZAR
+2024-10-07,Retail-Prod,rg-prod,Database,Azure SQL Database,France Central,76.14,302.89,ZAR
+2024-02-07,Dev-Subscription,rg-platform,Database,Azure SQL Database,West Europe,8.51,667.81,ZAR
+2024-07-06,Retail-Prod,rg-prod,Compute,Virtual Machines,North Europe,88.16,481.98,ZAR
+2024-03-25,Finance-Prod,rg-platform,Serverless,Azure Functions,Germany West Central,86.89,782.37,ZAR
+2024-08-15,Retail-Prod,rg-prod,Networking,Bandwidth,Germany West Central,21.39,145.91,ZAR
+2024-02-08,Data-Platform,rg-platform,Networking,Load Balancer,North Europe,64.2,158.51,ZAR
+2024-02-07,Dev-Subscription,rg-finance,Networking,Bandwidth,France Central,38.41,351.91,ZAR
+2024-01-22,Finance-Prod,rg-dev,Networking,Bandwidth,West Europe,21.19,604.93,ZAR
+2024-05-08,Dev-Subscription,rg-finance,Database,Azure SQL Database,France Central,99.07,687.93,ZAR
+2024-01-05,Dev-Subscription,rg-analytics,Compute,Virtual Machines,UK South,62.3,733.13,ZAR
+2024-08-24,Data-Platform,rg-analytics,Networking,Load Balancer,North Europe,109.24,701.75,ZAR
+2024-05-24,Finance-Prod,rg-analytics,Compute,Virtual Machines,Germany West Central,6.88,534.19,ZAR
+2024-08-18,Finance-Prod,rg-finance,Networking,Bandwidth,North Europe,30.14,540.98,ZAR
+2024-03-24,Retail-Prod,rg-platform,Storage,Storage,West Europe,88.18,541.64,ZAR
+2024-09-01,Finance-Prod,rg-analytics,Database,Azure SQL Database,North Europe,52.95,802.46,ZAR
+2024-10-13,Data-Platform,rg-dev,Serverless,Azure Functions,UK South,37.19,93.37,ZAR
+2024-03-21,Dev-Subscription,rg-dev,Storage,Storage,France Central,17.13,51.94,ZAR
+2024-10-08,Finance-Prod,rg-analytics,Serverless,Azure Functions,France Central,93.4,174.72,ZAR
+2024-07-06,Dev-Subscription,rg-dev,Networking,Bandwidth,Germany West Central,89.84,331.85,ZAR
+2024-05-24,Dev-Subscription,rg-prod,Networking,Bandwidth,France Central,15.4,311.83,ZAR
+2024-04-14,Finance-Prod,rg-analytics,Compute,App Service,UK South,54.91,352.99,ZAR
+2024-10-01,Retail-Prod,rg-analytics,Containers,Azure Kubernetes Service,UK South,35.18,286.6,ZAR
+2024-10-07,Retail-Prod,rg-dev,Networking,Bandwidth,North Europe,6.75,61.71,ZAR
+2024-07-09,Retail-Prod,rg-analytics,Compute,Virtual Machines,UK South,53.84,334.23,ZAR
+2024-04-07,Data-Platform,rg-analytics,Compute,App Service,France Central,113.18,522.2,ZAR
+2024-08-28,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,West Europe,82.0,335.2,ZAR
+2024-08-11,Finance-Prod,rg-dev,Database,Azure SQL Database,Germany West Central,101.87,64.35,ZAR
+2024-05-20,Data-Platform,rg-analytics,Compute,App Service,Germany West Central,115.23,672.86,ZAR
+2024-03-19,Finance-Prod,rg-finance,Compute,App Service,West Europe,58.71,835.98,ZAR
+2024-03-09,Dev-Subscription,rg-prod,Storage,Storage,UK South,114.09,716.86,ZAR
+2024-07-28,Retail-Prod,rg-platform,Storage,Storage,North Europe,94.04,858.43,ZAR
+2024-08-16,Finance-Prod,rg-finance,Database,Azure SQL Database,France Central,104.25,139.98,ZAR
+2024-03-24,Finance-Prod,rg-platform,Serverless,Azure Functions,UK South,30.06,742.0,ZAR
+2024-02-27,Retail-Prod,rg-finance,Containers,Azure Kubernetes Service,West Europe,36.41,623.22,ZAR
+2024-09-05,Data-Platform,rg-prod,Compute,Virtual Machines,France Central,11.62,637.28,ZAR
+2024-05-22,Retail-Prod,rg-prod,Storage,Storage,Germany West Central,110.1,420.1,ZAR
+2024-03-06,Data-Platform,rg-platform,Compute,Virtual Machines,UK South,49.64,647.85,ZAR
+2024-10-04,Finance-Prod,rg-prod,Compute,App Service,UK South,51.25,46.54,ZAR
+2024-02-01,Dev-Subscription,rg-platform,Compute,App Service,Germany West Central,53.6,191.6,ZAR
+2024-08-01,Finance-Prod,rg-finance,Networking,Bandwidth,West Europe,22.41,689.09,ZAR
+2024-07-08,Dev-Subscription,rg-prod,Containers,Azure Kubernetes Service,West Europe,7.77,278.19,ZAR
+2024-05-02,Finance-Prod,rg-finance,Serverless,Azure Functions,North Europe,55.17,717.1,ZAR
+2024-06-10,Dev-Subscription,rg-dev,Storage,Storage,UK South,13.8,223.67,ZAR
+2024-05-07,Data-Platform,rg-analytics,Database,Azure SQL Database,France Central,53.44,103.62,ZAR
+2024-09-17,Finance-Prod,rg-analytics,Serverless,Azure Functions,North Europe,72.71,215.88,ZAR
+2024-10-19,Data-Platform,rg-analytics,Networking,Bandwidth,West Europe,81.32,463.55,ZAR
+2024-07-14,Retail-Prod,rg-prod,Networking,Load Balancer,France Central,47.35,613.38,ZAR
+2024-03-14,Finance-Prod,rg-platform,Networking,Load Balancer,West Europe,4.99,292.23,ZAR
+2024-05-04,Data-Platform,rg-finance,Storage,Storage,North Europe,23.26,673.3,ZAR
+2024-03-27,Dev-Subscription,rg-finance,Networking,Bandwidth,West Europe,28.85,441.62,ZAR
+2024-02-12,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,West Europe,38.06,735.53,ZAR
+2024-03-27,Data-Platform,rg-finance,Networking,Load Balancer,UK South,13.69,571.48,ZAR
+2024-09-09,Data-Platform,rg-dev,Networking,Load Balancer,West Europe,95.54,27.14,ZAR
+2024-07-01,Data-Platform,rg-prod,Database,Azure SQL Database,UK South,24.08,352.25,ZAR
+2024-10-11,Retail-Prod,rg-dev,Compute,Virtual Machines,UK South,90.29,427.81,ZAR
+2024-06-10,Retail-Prod,rg-dev,Serverless,Azure Functions,Germany West Central,91.95,502.32,ZAR
+2024-10-16,Finance-Prod,rg-platform,Networking,Load Balancer,France Central,81.89,734.3,ZAR
+2024-01-28,Data-Platform,rg-finance,Storage,Storage,UK South,41.79,180.1,ZAR
+2024-07-01,Finance-Prod,rg-finance,Compute,Virtual Machines,North Europe,114.35,540.72,ZAR
+2024-10-03,Data-Platform,rg-finance,Serverless,Azure Functions,North Europe,87.05,341.45,ZAR
+2024-09-22,Retail-Prod,rg-analytics,Serverless,Azure Functions,Germany West Central,114.57,453.15,ZAR
+2024-04-29,Retail-Prod,rg-analytics,Database,Azure SQL Database,West Europe,65.98,190.21,ZAR
+2024-07-01,Dev-Subscription,rg-platform,Compute,Virtual Machines,UK South,37.07,80.24,ZAR
+2024-05-13,Finance-Prod,rg-platform,Storage,Storage,West Europe,3.65,746.05,ZAR
+2024-07-21,Finance-Prod,rg-prod,Database,Azure SQL Database,France Central,85.03,93.55,ZAR
+2024-05-04,Data-Platform,rg-analytics,Containers,Azure Kubernetes Service,France Central,91.36,345.84,ZAR
+2024-01-24,Finance-Prod,rg-prod,Database,Azure SQL Database,West Europe,61.55,803.56,ZAR
+2024-01-27,Dev-Subscription,rg-dev,Containers,Azure Kubernetes Service,North Europe,23.99,438.35,ZAR
+2024-06-14,Finance-Prod,rg-finance,Networking,Load Balancer,North Europe,75.95,259.16,ZAR
+2024-04-19,Data-Platform,rg-analytics,Networking,Load Balancer,UK South,110.15,161.62,ZAR
+2024-08-27,Retail-Prod,rg-analytics,Containers,Azure Kubernetes Service,North Europe,52.78,657.71,ZAR
+2024-10-16,Finance-Prod,rg-analytics,Networking,Bandwidth,France Central,10.04,432.33,ZAR
+2024-02-25,Data-Platform,rg-dev,Serverless,Azure Functions,West Europe,29.52,224.57,ZAR
+2024-10-14,Finance-Prod,rg-platform,Serverless,Azure Functions,UK South,98.2,696.21,ZAR
+2024-01-29,Dev-Subscription,rg-prod,Networking,Load Balancer,North Europe,53.02,740.53,ZAR
+2024-03-29,Data-Platform,rg-finance,Containers,Azure Kubernetes Service,Germany West Central,99.54,438.87,ZAR
+2024-07-09,Dev-Subscription,rg-prod,Storage,Storage,France Central,45.02,809.49,ZAR
+2024-01-14,Finance-Prod,rg-platform,Networking,Load Balancer,France Central,65.41,586.54,ZAR
+2024-10-20,Dev-Subscription,rg-dev,Serverless,Azure Functions,North Europe,58.93,830.93,ZAR
+2024-05-16,Data-Platform,rg-analytics,Database,Azure SQL Database,UK South,8.51,159.58,ZAR
+2024-09-22,Retail-Prod,rg-dev,Serverless,Azure Functions,Germany West Central,21.11,481.91,ZAR
+2024-04-29,Data-Platform,rg-prod,Containers,Azure Kubernetes Service,UK South,43.73,106.51,ZAR
+2024-04-24,Dev-Subscription,rg-finance,Networking,Load Balancer,West Europe,94.56,652.54,ZAR
+2024-01-03,Dev-Subscription,rg-platform,Database,Azure SQL Database,UK South,58.71,725.76,ZAR
+2024-06-08,Dev-Subscription,rg-prod,Storage,Storage,West Europe,118.15,177.36,ZAR
+2024-10-22,Retail-Prod,rg-analytics,Networking,Load Balancer,UK South,73.99,87.43,ZAR
+2024-02-21,Dev-Subscription,rg-dev,Networking,Bandwidth,Germany West Central,104.12,149.79,ZAR
+2024-04-15,Retail-Prod,rg-dev,Storage,Storage,UK South,13.12,391.41,ZAR
+2024-01-28,Dev-Subscription,rg-analytics,Networking,Load Balancer,West Europe,23.16,48.02,ZAR
+2024-04-16,Data-Platform,rg-finance,Containers,Azure Kubernetes Service,North Europe,71.41,718.55,ZAR
+2024-02-19,Data-Platform,rg-finance,Networking,Bandwidth,UK South,64.15,86.8,ZAR
+2024-02-23,Finance-Prod,rg-platform,Compute,Virtual Machines,UK South,87.59,410.95,ZAR
+2024-09-08,Retail-Prod,rg-analytics,Networking,Load Balancer,Germany West Central,5.47,501.12,ZAR
+2024-10-03,Finance-Prod,rg-platform,Networking,Bandwidth,Germany West Central,63.22,429.6,ZAR
+2024-03-20,Finance-Prod,rg-finance,Containers,Azure Kubernetes Service,France Central,98.78,506.11,ZAR
+2024-05-11,Dev-Subscription,rg-platform,Compute,Virtual Machines,North Europe,105.84,562.56,ZAR
+2024-04-03,Dev-Subscription,rg-platform,Containers,Azure Kubernetes Service,North Europe,92.06,642.55,ZAR
+2024-06-22,Finance-Prod,rg-finance,Database,Azure SQL Database,France Central,56.17,165.24,ZAR
+2024-10-16,Finance-Prod,rg-analytics,Networking,Bandwidth,Germany West Central,5.65,552.27,ZAR
+2024-02-24,Finance-Prod,rg-dev,Database,Azure SQL Database,North Europe,74.96,178.82,ZAR
+2024-04-20,Finance-Prod,rg-dev,Networking,Load Balancer,UK South,12.56,743.13,ZAR
+2024-03-20,Dev-Subscription,rg-analytics,Database,Azure SQL Database,UK South,97.99,335.86,ZAR
+2024-07-23,Data-Platform,rg-finance,Compute,Virtual Machines,UK South,38.41,402.07,ZAR
+2024-07-01,Finance-Prod,rg-platform,Networking,Load Balancer,West Europe,27.77,161.1,ZAR
+2024-07-13,Finance-Prod,rg-finance,Storage,Storage,Germany West Central,92.59,844.49,ZAR
+2024-02-03,Finance-Prod,rg-finance,Serverless,Azure Functions,West Europe,92.68,303.4,ZAR
+2024-06-19,Data-Platform,rg-prod,Networking,Bandwidth,Germany West Central,87.53,544.03,ZAR
+2024-03-10,Data-Platform,rg-analytics,Database,Azure SQL Database,UK South,23.79,854.18,ZAR
+2024-02-21,Dev-Subscription,rg-finance,Compute,Virtual Machines,UK South,44.28,763.12,ZAR
+2024-08-21,Dev-Subscription,rg-analytics,Storage,Storage,West Europe,119.32,74.77,ZAR
+2024-02-07,Dev-Subscription,rg-dev,Containers,Azure Kubernetes Service,North Europe,65.21,358.3,ZAR
+2024-01-11,Data-Platform,rg-dev,Compute,App Service,North Europe,57.44,797.15,ZAR
+2024-06-16,Dev-Subscription,rg-platform,Networking,Load Balancer,North Europe,56.4,281.62,ZAR
+2024-05-03,Finance-Prod,rg-finance,Serverless,Azure Functions,North Europe,69.96,223.89,ZAR
+2024-07-15,Finance-Prod,rg-analytics,Storage,Storage,Germany West Central,111.17,354.27,ZAR
+2024-09-07,Data-Platform,rg-analytics,Serverless,Azure Functions,North Europe,5.88,547.86,ZAR
+2024-06-04,Retail-Prod,rg-dev,Networking,Bandwidth,UK South,53.7,130.17,ZAR
+2024-09-03,Finance-Prod,rg-platform,Database,Azure SQL Database,UK South,46.19,846.52,ZAR
+2024-05-26,Data-Platform,rg-prod,Database,Azure SQL Database,France Central,110.83,435.41,ZAR
+2024-07-15,Finance-Prod,rg-finance,Database,Azure SQL Database,West Europe,83.94,281.43,ZAR
+2024-04-06,Retail-Prod,rg-finance,Compute,App Service,UK South,14.09,883.7,ZAR
+2024-05-29,Finance-Prod,rg-prod,Compute,Virtual Machines,France Central,103.11,800.75,ZAR
+2024-10-13,Retail-Prod,rg-prod,Containers,Azure Kubernetes Service,UK South,34.97,493.32,ZAR
+2024-06-08,Retail-Prod,rg-dev,Compute,Virtual Machines,West Europe,76.32,459.74,ZAR
+2024-06-14,Dev-Subscription,rg-analytics,Networking,Bandwidth,West Europe,104.72,130.64,ZAR
+2024-08-19,Data-Platform,rg-platform,Compute,App Service,UK South,81.19,99.76,ZAR
+2024-03-31,Data-Platform,rg-finance,Compute,App Service,West Europe,27.97,635.89,ZAR
+2024-08-25,Retail-Prod,rg-analytics,Containers,Azure Kubernetes Service,West Europe,10.61,838.22,ZAR
+2024-05-18,Retail-Prod,rg-prod,Compute,Virtual Machines,France Central,47.63,296.05,ZAR
+2024-03-09,Retail-Prod,rg-dev,Storage,Storage,Germany West Central,6.06,413.72,ZAR
+2024-05-28,Dev-Subscription,rg-analytics,Containers,Azure Kubernetes Service,North Europe,15.25,76.5,ZAR
+2024-01-29,Retail-Prod,rg-analytics,Containers,Azure Kubernetes Service,UK South,78.68,898.03,ZAR
+2024-02-12,Dev-Subscription,rg-prod,Serverless,Azure Functions,UK South,6.36,65.47,ZAR
+2024-09-23,Dev-Subscription,rg-dev,Compute,App Service,Germany West Central,91.76,190.67,ZAR
+2024-10-09,Retail-Prod,rg-finance,Networking,Load Balancer,France Central,94.95,664.18,ZAR
+2024-07-14,Finance-Prod,rg-analytics,Compute,Virtual Machines,West Europe,115.19,815.23,ZAR
+2024-10-10,Finance-Prod,rg-analytics,Compute,App Service,Germany West Central,95.92,750.31,ZAR
+2024-02-26,Retail-Prod,rg-dev,Storage,Storage,France Central,30.65,747.98,ZAR
+2024-08-05,Dev-Subscription,rg-dev,Compute,App Service,UK South,69.29,264.32,ZAR
+2024-08-02,Retail-Prod,rg-finance,Compute,App Service,UK South,7.06,373.49,ZAR
+2024-02-02,Data-Platform,rg-analytics,Networking,Bandwidth,West Europe,54.81,290.48,ZAR
+2024-10-04,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,France Central,70.86,652.06,ZAR
+2024-03-07,Dev-Subscription,rg-platform,Database,Azure SQL Database,UK South,101.95,145.61,ZAR
+2024-01-08,Finance-Prod,rg-finance,Containers,Azure Kubernetes Service,UK South,38.39,476.41,ZAR
+2024-08-04,Finance-Prod,rg-platform,Compute,Virtual Machines,North Europe,13.14,623.61,ZAR
+2024-08-04,Data-Platform,rg-finance,Networking,Bandwidth,Germany West Central,52.43,528.16,ZAR
+2024-10-13,Data-Platform,rg-analytics,Networking,Bandwidth,North Europe,25.32,377.11,ZAR
+2024-05-23,Data-Platform,rg-platform,Database,Azure SQL Database,West Europe,90.81,736.79,ZAR
+2024-07-22,Data-Platform,rg-dev,Containers,Azure Kubernetes Service,France Central,21.2,847.73,ZAR
+2024-10-08,Dev-Subscription,rg-analytics,Compute,App Service,North Europe,42.18,369.52,ZAR
+2024-10-07,Finance-Prod,rg-dev,Compute,App Service,UK South,66.19,217.55,ZAR
+2024-04-12,Retail-Prod,rg-analytics,Serverless,Azure Functions,North Europe,101.64,28.25,ZAR
+2024-09-20,Dev-Subscription,rg-analytics,Compute,App Service,UK South,97.23,217.43,ZAR
+2024-04-29,Finance-Prod,rg-analytics,Compute,Virtual Machines,France Central,18.84,608.02,ZAR
+2024-02-22,Data-Platform,rg-prod,Serverless,Azure Functions,Germany West Central,61.2,504.43,ZAR
+2024-09-25,Retail-Prod,rg-prod,Database,Azure SQL Database,France Central,78.55,299.6,ZAR
+2024-05-08,Finance-Prod,rg-platform,Compute,App Service,UK South,64.72,370.33,ZAR
+2024-10-23,Retail-Prod,rg-finance,Database,Azure SQL Database,Germany West Central,64.73,495.03,ZAR
+2024-07-15,Retail-Prod,rg-prod,Storage,Storage,UK South,42.67,839.79,ZAR
+2024-04-09,Finance-Prod,rg-dev,Serverless,Azure Functions,North Europe,93.63,766.66,ZAR
+2024-02-02,Data-Platform,rg-dev,Database,Azure SQL Database,UK South,33.24,708.51,ZAR
+2024-05-23,Finance-Prod,rg-finance,Networking,Load Balancer,North Europe,113.03,418.31,ZAR
+2024-03-29,Data-Platform,rg-prod,Database,Azure SQL Database,West Europe,118.62,684.84,ZAR
+2024-02-29,Finance-Prod,rg-platform,Networking,Bandwidth,France Central,111.18,313.76,ZAR
+2024-10-19,Dev-Subscription,rg-analytics,Networking,Load Balancer,France Central,55.3,121.79,ZAR
+2024-08-28,Retail-Prod,rg-platform,Networking,Load Balancer,France Central,116.55,80.68,ZAR
+2024-03-10,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,West Europe,4.04,705.79,ZAR
+2024-08-18,Data-Platform,rg-dev,Containers,Azure Kubernetes Service,Germany West Central,79.43,351.39,ZAR
+2024-07-08,Finance-Prod,rg-finance,Compute,Virtual Machines,France Central,4.78,64.49,ZAR
+2024-03-03,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,North Europe,43.35,484.75,ZAR
+2024-10-25,Retail-Prod,rg-platform,Storage,Storage,UK South,78.79,860.75,ZAR
+2024-08-23,Dev-Subscription,rg-finance,Compute,Virtual Machines,West Europe,81.94,164.67,ZAR
+2024-01-02,Data-Platform,rg-prod,Compute,Virtual Machines,West Europe,109.42,332.62,ZAR
+2024-01-23,Dev-Subscription,rg-analytics,Storage,Storage,Germany West Central,85.94,70.77,ZAR
+2024-09-11,Finance-Prod,rg-finance,Database,Azure SQL Database,UK South,72.58,828.9,ZAR
+2024-05-24,Retail-Prod,rg-finance,Compute,Virtual Machines,West Europe,6.41,549.08,ZAR
+2024-03-06,Dev-Subscription,rg-finance,Containers,Azure Kubernetes Service,France Central,65.78,434.29,ZAR
+2024-06-15,Finance-Prod,rg-prod,Serverless,Azure Functions,North Europe,111.6,360.37,ZAR
+2024-06-19,Data-Platform,rg-prod,Database,Azure SQL Database,UK South,89.87,618.94,ZAR
+2024-05-02,Finance-Prod,rg-platform,Networking,Bandwidth,Germany West Central,76.6,118.22,ZAR
+2024-04-07,Data-Platform,rg-dev,Networking,Bandwidth,France Central,106.43,541.47,ZAR
+2024-07-02,Data-Platform,rg-prod,Compute,Virtual Machines,France Central,24.91,34.99,ZAR
+2024-07-05,Retail-Prod,rg-finance,Compute,Virtual Machines,Germany West Central,115.15,316.21,ZAR
+2024-10-15,Finance-Prod,rg-prod,Compute,Virtual Machines,West Europe,91.74,317.77,ZAR
+2024-01-22,Retail-Prod,rg-finance,Serverless,Azure Functions,West Europe,15.17,624.8,ZAR
+2024-03-26,Data-Platform,rg-platform,Compute,App Service,Germany West Central,6.35,819.61,ZAR
+2024-05-18,Retail-Prod,rg-finance,Storage,Storage,West Europe,110.97,246.1,ZAR
+2024-01-14,Retail-Prod,rg-dev,Containers,Azure Kubernetes Service,France Central,77.52,178.5,ZAR
+2024-04-12,Finance-Prod,rg-analytics,Storage,Storage,West Europe,111.75,251.92,ZAR
+2024-07-19,Data-Platform,rg-analytics,Containers,Azure Kubernetes Service,West Europe,69.12,407.24,ZAR
+2024-08-04,Retail-Prod,rg-finance,Networking,Load Balancer,Germany West Central,49.66,468.93,ZAR
+2024-03-08,Data-Platform,rg-analytics,Networking,Load Balancer,UK South,3.5,162.01,ZAR
+2024-07-12,Finance-Prod,rg-platform,Containers,Azure Kubernetes Service,Germany West Central,22.31,759.45,ZAR
+2024-03-18,Finance-Prod,rg-dev,Compute,App Service,North Europe,90.76,474.47,ZAR
+2024-10-17,Data-Platform,rg-analytics,Storage,Storage,UK South,46.65,111.47,ZAR
+2024-02-15,Finance-Prod,rg-analytics,Database,Azure SQL Database,North Europe,4.82,427.07,ZAR
+2024-01-15,Finance-Prod,rg-platform,Database,Azure SQL Database,France Central,41.34,457.35,ZAR
+2024-07-17,Dev-Subscription,rg-prod,Compute,App Service,Germany West Central,114.82,743.5,ZAR
+2024-02-27,Finance-Prod,rg-finance,Database,Azure SQL Database,Germany West Central,53.41,112.73,ZAR
+2024-10-05,Data-Platform,rg-dev,Networking,Load Balancer,France Central,94.39,75.99,ZAR
+2024-05-07,Data-Platform,rg-finance,Database,Azure SQL Database,Germany West Central,64.44,668.54,ZAR
+2024-06-18,Dev-Subscription,rg-prod,Networking,Load Balancer,Germany West Central,31.37,360.17,ZAR
+2024-04-29,Data-Platform,rg-analytics,Storage,Storage,West Europe,77.93,141.61,ZAR
+2024-08-21,Retail-Prod,rg-analytics,Serverless,Azure Functions,France Central,83.56,305.67,ZAR
+2024-02-19,Data-Platform,rg-platform,Compute,Virtual Machines,Germany West Central,7.39,513.23,ZAR
+2024-06-18,Finance-Prod,rg-platform,Database,Azure SQL Database,Germany West Central,102.25,167.28,ZAR
+2024-04-07,Retail-Prod,rg-dev,Containers,Azure Kubernetes Service,West Europe,112.48,421.42,ZAR
+2024-07-26,Retail-Prod,rg-finance,Compute,Virtual Machines,France Central,58.71,710.7,ZAR
+2024-02-24,Retail-Prod,rg-finance,Networking,Bandwidth,Germany West Central,76.17,640.78,ZAR
+2024-02-24,Retail-Prod,rg-finance,Storage,Storage,North Europe,101.65,797.49,ZAR
+2024-08-11,Retail-Prod,rg-prod,Networking,Bandwidth,North Europe,118.63,498.98,ZAR
+2024-08-03,Dev-Subscription,rg-platform,Compute,App Service,France Central,112.75,115.75,ZAR
+2024-03-28,Data-Platform,rg-platform,Networking,Bandwidth,Germany West Central,64.51,378.97,ZAR
+2024-06-16,Retail-Prod,rg-dev,Containers,Azure Kubernetes Service,Germany West Central,48.38,553.47,ZAR
+2024-08-19,Retail-Prod,rg-dev,Compute,App Service,France Central,118.18,828.57,ZAR
+2024-04-10,Dev-Subscription,rg-finance,Compute,Virtual Machines,UK South,31.55,841.35,ZAR
+2024-05-18,Dev-Subscription,rg-finance,Networking,Load Balancer,West Europe,15.14,402.33,ZAR
+2024-04-19,Dev-Subscription,rg-finance,Compute,Virtual Machines,West Europe,62.9,856.57,ZAR
+2024-02-12,Finance-Prod,rg-finance,Networking,Load Balancer,Germany West Central,102.84,677.46,ZAR
+2024-03-22,Dev-Subscription,rg-analytics,Compute,App Service,Germany West Central,79.01,752.62,ZAR
+2024-01-09,Data-Platform,rg-platform,Networking,Bandwidth,Germany West Central,3.45,287.6,ZAR
+2024-05-01,Data-Platform,rg-prod,Networking,Load Balancer,UK South,25.76,726.8,ZAR
+2024-08-03,Finance-Prod,rg-finance,Serverless,Azure Functions,North Europe,113.54,353.15,ZAR
+2024-02-06,Finance-Prod,rg-analytics,Storage,Storage,France Central,94.44,211.81,ZAR
+2024-03-31,Data-Platform,rg-analytics,Database,Azure SQL Database,UK South,54.06,283.78,ZAR
+2024-08-13,Dev-Subscription,rg-platform,Compute,Virtual Machines,West Europe,82.22,828.42,ZAR
+2024-07-01,Data-Platform,rg-finance,Serverless,Azure Functions,West Europe,58.14,676.35,ZAR
+2024-08-12,Dev-Subscription,rg-dev,Storage,Storage,West Europe,59.66,445.83,ZAR
+2024-07-14,Dev-Subscription,rg-analytics,Compute,App Service,France Central,75.37,335.28,ZAR
+2024-03-11,Dev-Subscription,rg-finance,Compute,Virtual Machines,Germany West Central,82.64,419.2,ZAR
+2024-02-21,Retail-Prod,rg-prod,Database,Azure SQL Database,North Europe,19.88,216.99,ZAR
+2024-09-12,Dev-Subscription,rg-platform,Database,Azure SQL Database,North Europe,98.58,279.74,ZAR
+2024-06-08,Finance-Prod,rg-prod,Networking,Load Balancer,France Central,75.72,680.42,ZAR
+2024-08-14,Finance-Prod,rg-finance,Networking,Load Balancer,UK South,37.51,650.01,ZAR
+2024-04-30,Retail-Prod,rg-finance,Containers,Azure Kubernetes Service,North Europe,64.95,333.55,ZAR
+2024-07-04,Finance-Prod,rg-finance,Database,Azure SQL Database,North Europe,84.54,682.72,ZAR
+2024-06-04,Retail-Prod,rg-analytics,Containers,Azure Kubernetes Service,Germany West Central,38.43,535.81,ZAR
+2024-05-20,Finance-Prod,rg-platform,Compute,Virtual Machines,Germany West Central,86.67,562.51,ZAR
+2024-06-27,Dev-Subscription,rg-finance,Database,Azure SQL Database,West Europe,57.66,189.37,ZAR
+2024-08-02,Finance-Prod,rg-analytics,Networking,Load Balancer,France Central,67.07,128.26,ZAR
+2024-09-20,Retail-Prod,rg-analytics,Containers,Azure Kubernetes Service,UK South,113.18,737.81,ZAR
+2024-09-16,Retail-Prod,rg-prod,Networking,Load Balancer,France Central,51.95,563.91,ZAR
+2024-04-28,Retail-Prod,rg-platform,Compute,Virtual Machines,North Europe,24.54,467.68,ZAR
+2024-02-02,Finance-Prod,rg-dev,Serverless,Azure Functions,Germany West Central,79.69,505.8,ZAR
+2024-01-02,Data-Platform,rg-prod,Networking,Bandwidth,UK South,94.2,258.11,ZAR
+2024-06-11,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,Germany West Central,117.23,144.38,ZAR
+2024-02-16,Retail-Prod,rg-analytics,Containers,Azure Kubernetes Service,West Europe,20.21,481.45,ZAR
+2024-01-02,Retail-Prod,rg-platform,Database,Azure SQL Database,France Central,52.8,631.45,ZAR
+2024-09-07,Retail-Prod,rg-finance,Storage,Storage,France Central,36.83,295.65,ZAR
+2024-06-07,Retail-Prod,rg-platform,Networking,Bandwidth,UK South,20.81,236.75,ZAR
+2024-01-28,Data-Platform,rg-dev,Networking,Load Balancer,UK South,46.42,434.64,ZAR
+2024-07-15,Dev-Subscription,rg-finance,Database,Azure SQL Database,North Europe,30.81,110.15,ZAR
+2024-01-12,Data-Platform,rg-prod,Containers,Azure Kubernetes Service,West Europe,57.71,106.46,ZAR
+2024-04-03,Finance-Prod,rg-finance,Networking,Bandwidth,France Central,43.77,248.38,ZAR
+2024-08-20,Retail-Prod,rg-platform,Database,Azure SQL Database,UK South,8.32,259.92,ZAR
+2024-01-10,Dev-Subscription,rg-finance,Database,Azure SQL Database,France Central,71.14,878.43,ZAR
+2024-01-11,Data-Platform,rg-prod,Containers,Azure Kubernetes Service,Germany West Central,111.15,845.7,ZAR
+2024-07-13,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,UK South,65.85,179.8,ZAR
+2024-07-02,Data-Platform,rg-analytics,Database,Azure SQL Database,UK South,112.43,670.62,ZAR
+2024-09-29,Dev-Subscription,rg-finance,Serverless,Azure Functions,France Central,50.37,234.68,ZAR
+2024-07-26,Data-Platform,rg-finance,Networking,Load Balancer,UK South,55.06,540.15,ZAR
+2024-09-08,Finance-Prod,rg-dev,Networking,Bandwidth,UK South,107.48,560.06,ZAR
+2024-07-18,Data-Platform,rg-analytics,Database,Azure SQL Database,UK South,15.52,799.14,ZAR
+2024-07-08,Finance-Prod,rg-analytics,Compute,Virtual Machines,Germany West Central,14.79,494.04,ZAR
+2024-07-14,Dev-Subscription,rg-dev,Networking,Bandwidth,France Central,111.94,245.42,ZAR
+2024-06-04,Data-Platform,rg-dev,Containers,Azure Kubernetes Service,Germany West Central,41.41,257.58,ZAR
+2024-02-28,Dev-Subscription,rg-finance,Storage,Storage,UK South,107.81,680.2,ZAR
+2024-09-27,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,West Europe,93.46,784.04,ZAR
+2024-01-31,Dev-Subscription,rg-dev,Compute,Virtual Machines,North Europe,9.87,532.27,ZAR
+2024-08-27,Finance-Prod,rg-prod,Containers,Azure Kubernetes Service,West Europe,13.47,615.59,ZAR
+2024-10-01,Dev-Subscription,rg-prod,Storage,Storage,North Europe,85.69,404.08,ZAR
+2024-08-11,Dev-Subscription,rg-analytics,Storage,Storage,North Europe,80.76,137.49,ZAR
+2024-07-05,Data-Platform,rg-prod,Database,Azure SQL Database,UK South,53.72,620.45,ZAR
+2024-06-29,Dev-Subscription,rg-finance,Networking,Load Balancer,North Europe,1.91,28.64,ZAR
+2024-07-24,Dev-Subscription,rg-prod,Database,Azure SQL Database,France Central,43.27,322.65,ZAR
+2024-06-24,Data-Platform,rg-platform,Networking,Bandwidth,UK South,21.98,448.72,ZAR
+2024-08-08,Retail-Prod,rg-prod,Networking,Bandwidth,France Central,96.19,307.33,ZAR
+2024-02-02,Data-Platform,rg-platform,Networking,Load Balancer,North Europe,9.82,371.29,ZAR
+2024-01-23,Retail-Prod,rg-analytics,Compute,Virtual Machines,West Europe,53.99,43.26,ZAR
+2024-08-17,Data-Platform,rg-platform,Storage,Storage,UK South,113.68,793.86,ZAR
+2024-04-15,Dev-Subscription,rg-platform,Networking,Bandwidth,West Europe,84.62,482.3,ZAR
+2024-08-13,Dev-Subscription,rg-finance,Containers,Azure Kubernetes Service,West Europe,4.84,866.47,ZAR
+2024-10-22,Dev-Subscription,rg-analytics,Containers,Azure Kubernetes Service,West Europe,118.71,490.98,ZAR
+2024-09-03,Data-Platform,rg-platform,Serverless,Azure Functions,France Central,44.49,434.04,ZAR
+2024-09-09,Data-Platform,rg-analytics,Containers,Azure Kubernetes Service,West Europe,104.09,747.59,ZAR
+2024-05-08,Retail-Prod,rg-platform,Storage,Storage,North Europe,62.48,896.24,ZAR
+2024-03-12,Data-Platform,rg-dev,Serverless,Azure Functions,West Europe,42.32,875.35,ZAR
+2024-08-31,Data-Platform,rg-platform,Networking,Bandwidth,Germany West Central,116.31,540.54,ZAR
+2024-05-26,Finance-Prod,rg-analytics,Compute,Virtual Machines,Germany West Central,61.11,167.7,ZAR
+2024-08-24,Retail-Prod,rg-finance,Storage,Storage,UK South,22.47,29.38,ZAR
+2024-07-16,Dev-Subscription,rg-analytics,Containers,Azure Kubernetes Service,UK South,41.75,826.86,ZAR
+2024-06-29,Dev-Subscription,rg-platform,Networking,Load Balancer,North Europe,63.3,92.65,ZAR
+2024-03-28,Data-Platform,rg-finance,Compute,App Service,Germany West Central,60.08,313.37,ZAR
+2024-03-30,Retail-Prod,rg-platform,Networking,Load Balancer,France Central,45.09,842.48,ZAR
+2024-06-06,Data-Platform,rg-analytics,Networking,Bandwidth,Germany West Central,101.8,685.35,ZAR
+2024-08-04,Dev-Subscription,rg-dev,Containers,Azure Kubernetes Service,Germany West Central,80.46,24.22,ZAR
+2024-09-18,Data-Platform,rg-finance,Compute,Virtual Machines,UK South,19.43,409.55,ZAR
+2024-05-02,Data-Platform,rg-analytics,Networking,Bandwidth,Germany West Central,26.68,470.65,ZAR
+2024-02-19,Retail-Prod,rg-platform,Storage,Storage,North Europe,119.44,858.16,ZAR
+2024-01-13,Dev-Subscription,rg-dev,Database,Azure SQL Database,Germany West Central,56.39,318.2,ZAR
+2024-07-26,Dev-Subscription,rg-prod,Storage,Storage,Germany West Central,91.14,7.11,ZAR
+2024-03-22,Finance-Prod,rg-platform,Compute,App Service,Germany West Central,92.91,198.06,ZAR
+2024-03-28,Finance-Prod,rg-finance,Storage,Storage,West Europe,80.75,385.81,ZAR
+2024-06-25,Data-Platform,rg-platform,Compute,Virtual Machines,Germany West Central,62.45,175.41,ZAR
+2024-07-18,Finance-Prod,rg-prod,Storage,Storage,Germany West Central,38.05,230.91,ZAR
+2024-10-23,Dev-Subscription,rg-prod,Database,Azure SQL Database,North Europe,4.72,473.17,ZAR
+2024-05-30,Retail-Prod,rg-platform,Database,Azure SQL Database,Germany West Central,105.44,274.69,ZAR
+2024-06-14,Retail-Prod,rg-platform,Storage,Storage,North Europe,23.63,9.03,ZAR
+2024-07-09,Finance-Prod,rg-dev,Storage,Storage,West Europe,58.99,881.67,ZAR
+2024-08-05,Finance-Prod,rg-dev,Serverless,Azure Functions,France Central,75.5,653.65,ZAR
+2024-10-16,Data-Platform,rg-analytics,Networking,Bandwidth,France Central,2.26,488.51,ZAR
+2024-07-19,Data-Platform,rg-analytics,Networking,Bandwidth,France Central,35.74,342.96,ZAR
+2024-03-02,Dev-Subscription,rg-dev,Containers,Azure Kubernetes Service,West Europe,21.28,243.93,ZAR
+2024-05-20,Retail-Prod,rg-finance,Database,Azure SQL Database,UK South,33.67,440.22,ZAR
+2024-04-16,Finance-Prod,rg-finance,Storage,Storage,North Europe,102.98,460.32,ZAR
+2024-04-16,Data-Platform,rg-finance,Storage,Storage,North Europe,83.03,234.98,ZAR
+2024-03-15,Dev-Subscription,rg-dev,Serverless,Azure Functions,UK South,113.55,653.41,ZAR
+2024-03-11,Dev-Subscription,rg-prod,Compute,Virtual Machines,Germany West Central,91.94,806.5,ZAR
+2024-08-13,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,West Europe,118.57,897.57,ZAR
+2024-01-10,Data-Platform,rg-prod,Compute,App Service,North Europe,59.91,833.11,ZAR
+2024-08-25,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,Germany West Central,86.11,202.07,ZAR
+2024-07-02,Finance-Prod,rg-platform,Compute,Virtual Machines,Germany West Central,60.27,478.94,ZAR
+2024-09-09,Finance-Prod,rg-dev,Database,Azure SQL Database,UK South,80.67,390.49,ZAR
+2024-02-14,Retail-Prod,rg-platform,Storage,Storage,France Central,49.08,592.46,ZAR
+2024-04-13,Retail-Prod,rg-prod,Storage,Storage,North Europe,8.31,441.06,ZAR
+2024-06-27,Retail-Prod,rg-dev,Storage,Storage,North Europe,39.77,718.16,ZAR
+2024-08-12,Retail-Prod,rg-prod,Networking,Load Balancer,UK South,111.18,343.11,ZAR
+2024-08-03,Finance-Prod,rg-prod,Networking,Bandwidth,West Europe,39.73,778.17,ZAR
+2024-10-07,Data-Platform,rg-platform,Compute,App Service,Germany West Central,42.52,582.16,ZAR
+2024-06-25,Data-Platform,rg-dev,Compute,App Service,France Central,78.15,788.01,ZAR
+2024-04-21,Data-Platform,rg-analytics,Networking,Load Balancer,UK South,45.28,674.75,ZAR
+2024-04-16,Dev-Subscription,rg-dev,Networking,Bandwidth,Germany West Central,107.54,894.23,ZAR
+2024-03-24,Retail-Prod,rg-platform,Database,Azure SQL Database,UK South,12.51,8.91,ZAR
+2024-09-20,Dev-Subscription,rg-prod,Networking,Bandwidth,North Europe,86.05,297.36,ZAR
+2024-04-06,Retail-Prod,rg-finance,Storage,Storage,North Europe,34.03,309.09,ZAR
+2024-05-24,Dev-Subscription,rg-finance,Compute,App Service,West Europe,98.08,455.78,ZAR
+2024-06-15,Finance-Prod,rg-prod,Database,Azure SQL Database,UK South,102.9,271.66,ZAR
+2024-01-17,Finance-Prod,rg-dev,Storage,Storage,France Central,82.99,533.99,ZAR
+2024-08-13,Retail-Prod,rg-finance,Storage,Storage,France Central,32.95,682.62,ZAR
+2024-10-07,Dev-Subscription,rg-platform,Database,Azure SQL Database,Germany West Central,114.09,874.42,ZAR
+2024-05-30,Data-Platform,rg-dev,Storage,Storage,West Europe,33.44,665.85,ZAR
+2024-08-22,Dev-Subscription,rg-dev,Networking,Bandwidth,UK South,112.72,732.94,ZAR
+2024-05-17,Data-Platform,rg-platform,Networking,Bandwidth,Germany West Central,118.49,221.76,ZAR
+2024-06-13,Retail-Prod,rg-analytics,Networking,Bandwidth,Germany West Central,26.91,398.55,ZAR
+2024-02-08,Retail-Prod,rg-analytics,Compute,App Service,North Europe,2.81,514.45,ZAR
+2024-10-17,Dev-Subscription,rg-platform,Networking,Load Balancer,UK South,88.19,195.79,ZAR
+2024-04-10,Retail-Prod,rg-prod,Compute,App Service,UK South,84.97,779.48,ZAR
+2024-06-11,Finance-Prod,rg-analytics,Networking,Bandwidth,North Europe,108.82,235.59,ZAR
+2024-10-22,Finance-Prod,rg-finance,Storage,Storage,France Central,22.64,423.74,ZAR
+2024-07-07,Finance-Prod,rg-platform,Networking,Bandwidth,UK South,18.39,776.21,ZAR
+2024-10-10,Retail-Prod,rg-prod,Serverless,Azure Functions,UK South,47.07,634.7,ZAR
+2024-08-09,Finance-Prod,rg-finance,Serverless,Azure Functions,France Central,21.56,105.57,ZAR
+2024-03-07,Finance-Prod,rg-platform,Networking,Bandwidth,North Europe,80.35,266.92,ZAR
+2024-10-27,Dev-Subscription,rg-platform,Compute,Virtual Machines,UK South,49.84,517.09,ZAR
+2024-01-26,Retail-Prod,rg-prod,Networking,Load Balancer,Germany West Central,31.46,9.01,ZAR
+2024-01-16,Dev-Subscription,rg-dev,Networking,Load Balancer,France Central,74.28,751.44,ZAR
+2024-04-24,Retail-Prod,rg-finance,Containers,Azure Kubernetes Service,UK South,61.56,426.24,ZAR
+2024-03-29,Data-Platform,rg-prod,Containers,Azure Kubernetes Service,Germany West Central,99.11,455.84,ZAR
+2024-02-19,Retail-Prod,rg-prod,Networking,Load Balancer,West Europe,94.27,198.39,ZAR
+2024-01-07,Finance-Prod,rg-analytics,Serverless,Azure Functions,North Europe,94.58,551.95,ZAR
+2024-05-15,Finance-Prod,rg-finance,Storage,Storage,North Europe,45.51,409.73,ZAR
+2024-03-07,Retail-Prod,rg-analytics,Database,Azure SQL Database,UK South,11.85,219.6,ZAR
+2024-05-31,Retail-Prod,rg-finance,Storage,Storage,UK South,3.77,876.08,ZAR
+2024-08-16,Dev-Subscription,rg-platform,Serverless,Azure Functions,West Europe,77.38,784.5,ZAR
+2024-02-22,Data-Platform,rg-dev,Compute,Virtual Machines,West Europe,41.13,159.74,ZAR
+2024-01-31,Finance-Prod,rg-dev,Serverless,Azure Functions,UK South,13.87,459.8,ZAR
+2024-09-16,Retail-Prod,rg-platform,Compute,Virtual Machines,West Europe,54.51,25.79,ZAR
+2024-08-24,Dev-Subscription,rg-dev,Containers,Azure Kubernetes Service,France Central,92.67,826.98,ZAR
+2024-06-02,Data-Platform,rg-dev,Serverless,Azure Functions,France Central,15.07,184.04,ZAR
+2024-08-24,Data-Platform,rg-platform,Storage,Storage,UK South,76.62,611.0,ZAR
+2024-07-13,Finance-Prod,rg-prod,Networking,Bandwidth,Germany West Central,8.36,769.72,ZAR
+2024-06-19,Data-Platform,rg-platform,Networking,Load Balancer,West Europe,47.15,212.86,ZAR
+2024-02-18,Finance-Prod,rg-dev,Database,Azure SQL Database,Germany West Central,47.95,363.56,ZAR
+2024-09-13,Data-Platform,rg-platform,Compute,Virtual Machines,France Central,73.96,295.7,ZAR
+2024-09-18,Finance-Prod,rg-dev,Containers,Azure Kubernetes Service,North Europe,18.18,276.9,ZAR
+2024-07-04,Finance-Prod,rg-prod,Database,Azure SQL Database,West Europe,4.01,786.44,ZAR
+2024-02-10,Retail-Prod,rg-platform,Serverless,Azure Functions,UK South,52.39,301.83,ZAR
+2024-02-05,Finance-Prod,rg-platform,Compute,App Service,West Europe,46.71,33.85,ZAR
+2024-06-26,Data-Platform,rg-analytics,Compute,Virtual Machines,West Europe,95.01,589.96,ZAR
+2024-01-11,Dev-Subscription,rg-finance,Compute,Virtual Machines,Germany West Central,48.27,24.39,ZAR
+2024-02-02,Data-Platform,rg-finance,Storage,Storage,UK South,19.21,508.46,ZAR
+2024-07-21,Dev-Subscription,rg-finance,Compute,App Service,France Central,4.57,613.35,ZAR
+2024-06-25,Dev-Subscription,rg-prod,Networking,Bandwidth,UK South,28.95,16.91,ZAR
+2024-07-29,Data-Platform,rg-platform,Serverless,Azure Functions,North Europe,35.28,665.81,ZAR
+2024-01-03,Dev-Subscription,rg-dev,Networking,Bandwidth,France Central,42.12,216.04,ZAR
+2024-07-29,Dev-Subscription,rg-analytics,Serverless,Azure Functions,UK South,50.95,97.46,ZAR
+2024-08-20,Retail-Prod,rg-analytics,Compute,Virtual Machines,France Central,103.18,462.42,ZAR
+2024-02-13,Data-Platform,rg-finance,Compute,App Service,Germany West Central,111.5,444.74,ZAR
+2024-08-16,Retail-Prod,rg-dev,Containers,Azure Kubernetes Service,Germany West Central,60.45,520.37,ZAR
+2024-07-29,Finance-Prod,rg-prod,Compute,Virtual Machines,Germany West Central,55.26,864.03,ZAR
+2024-10-10,Finance-Prod,rg-finance,Storage,Storage,West Europe,103.23,60.66,ZAR
+2024-03-03,Data-Platform,rg-analytics,Compute,App Service,West Europe,109.71,583.44,ZAR
+2024-04-20,Retail-Prod,rg-dev,Storage,Storage,Germany West Central,67.8,302.96,ZAR
+2024-03-04,Dev-Subscription,rg-analytics,Compute,App Service,Germany West Central,31.65,93.75,ZAR
+2024-08-10,Dev-Subscription,rg-analytics,Compute,Virtual Machines,Germany West Central,67.87,726.03,ZAR
+2024-03-31,Data-Platform,rg-dev,Serverless,Azure Functions,North Europe,30.7,720.3,ZAR
+2024-01-13,Retail-Prod,rg-prod,Storage,Storage,UK South,113.92,663.79,ZAR
+2024-05-16,Data-Platform,rg-finance,Networking,Bandwidth,France Central,56.96,471.45,ZAR
+2024-07-06,Finance-Prod,rg-finance,Networking,Bandwidth,West Europe,113.0,404.54,ZAR
+2024-08-12,Finance-Prod,rg-analytics,Containers,Azure Kubernetes Service,West Europe,41.34,223.93,ZAR
+2024-04-26,Dev-Subscription,rg-finance,Serverless,Azure Functions,West Europe,96.57,105.2,ZAR
+2024-10-25,Retail-Prod,rg-dev,Storage,Storage,UK South,24.07,83.81,ZAR
+2024-08-31,Retail-Prod,rg-platform,Database,Azure SQL Database,France Central,75.66,183.2,ZAR
+2024-03-19,Data-Platform,rg-finance,Storage,Storage,West Europe,45.15,184.75,ZAR
+2024-10-08,Finance-Prod,rg-finance,Storage,Storage,North Europe,5.11,800.58,ZAR
+2024-04-10,Data-Platform,rg-finance,Database,Azure SQL Database,UK South,28.65,552.71,ZAR
+2024-01-24,Data-Platform,rg-finance,Networking,Load Balancer,West Europe,42.0,597.23,ZAR
+2024-08-10,Data-Platform,rg-platform,Compute,Virtual Machines,UK South,13.84,376.34,ZAR
+2024-06-20,Retail-Prod,rg-analytics,Serverless,Azure Functions,North Europe,86.71,427.27,ZAR
+2024-03-19,Data-Platform,rg-finance,Compute,Virtual Machines,UK South,69.02,393.29,ZAR
+2024-02-10,Data-Platform,rg-prod,Networking,Bandwidth,North Europe,52.73,421.89,ZAR
+2024-07-08,Data-Platform,rg-prod,Compute,Virtual Machines,UK South,6.53,105.93,ZAR
+2024-07-31,Data-Platform,rg-prod,Compute,App Service,West Europe,46.58,419.34,ZAR
+2024-09-13,Finance-Prod,rg-dev,Serverless,Azure Functions,North Europe,17.6,428.68,ZAR
+2024-07-11,Data-Platform,rg-platform,Networking,Load Balancer,North Europe,83.8,272.91,ZAR
+2024-07-18,Data-Platform,rg-prod,Networking,Load Balancer,France Central,16.6,443.87,ZAR
+2024-03-09,Dev-Subscription,rg-dev,Storage,Storage,West Europe,24.62,838.96,ZAR
+2024-07-23,Dev-Subscription,rg-analytics,Compute,App Service,UK South,98.73,813.09,ZAR
+2024-04-16,Data-Platform,rg-platform,Compute,Virtual Machines,UK South,23.53,434.6,ZAR
+2024-08-08,Data-Platform,rg-analytics,Database,Azure SQL Database,France Central,33.53,319.88,ZAR
+2024-01-26,Retail-Prod,rg-dev,Networking,Bandwidth,West Europe,20.76,639.74,ZAR
+2024-03-29,Dev-Subscription,rg-prod,Storage,Storage,UK South,58.83,276.47,ZAR
+2024-06-07,Retail-Prod,rg-platform,Database,Azure SQL Database,Germany West Central,113.46,615.15,ZAR
+2024-05-05,Data-Platform,rg-finance,Database,Azure SQL Database,Germany West Central,5.19,304.17,ZAR
+2024-03-16,Data-Platform,rg-analytics,Compute,App Service,France Central,17.41,528.14,ZAR
+2024-05-27,Dev-Subscription,rg-finance,Serverless,Azure Functions,Germany West Central,77.57,498.09,ZAR
+2024-10-15,Finance-Prod,rg-platform,Containers,Azure Kubernetes Service,UK South,51.75,486.96,ZAR
+2024-04-11,Data-Platform,rg-analytics,Serverless,Azure Functions,UK South,72.91,486.73,ZAR
+2024-08-18,Dev-Subscription,rg-finance,Serverless,Azure Functions,North Europe,43.04,333.85,ZAR
+2024-09-18,Finance-Prod,rg-dev,Serverless,Azure Functions,UK South,28.48,630.72,ZAR
+2024-09-18,Finance-Prod,rg-finance,Compute,Virtual Machines,North Europe,94.1,658.81,ZAR
+2024-02-27,Finance-Prod,rg-analytics,Storage,Storage,North Europe,87.42,725.39,ZAR
+2024-08-03,Finance-Prod,rg-dev,Containers,Azure Kubernetes Service,North Europe,116.52,193.91,ZAR
+2024-10-26,Retail-Prod,rg-platform,Networking,Load Balancer,France Central,72.86,709.45,ZAR
+2024-04-13,Retail-Prod,rg-dev,Compute,App Service,UK South,87.7,368.5,ZAR
+2024-01-15,Finance-Prod,rg-finance,Compute,App Service,North Europe,104.49,525.24,ZAR
+2024-06-06,Finance-Prod,rg-analytics,Networking,Bandwidth,France Central,114.06,384.92,ZAR
+2024-08-05,Data-Platform,rg-prod,Serverless,Azure Functions,North Europe,105.79,36.76,ZAR
+2024-02-23,Retail-Prod,rg-dev,Storage,Storage,North Europe,101.68,859.75,ZAR
+2024-08-02,Retail-Prod,rg-platform,Storage,Storage,UK South,101.36,96.31,ZAR
+2024-06-23,Finance-Prod,rg-platform,Networking,Load Balancer,France Central,45.48,633.14,ZAR
+2024-03-30,Retail-Prod,rg-platform,Storage,Storage,Germany West Central,10.59,127.86,ZAR
+2024-04-07,Dev-Subscription,rg-platform,Containers,Azure Kubernetes Service,France Central,69.95,589.2,ZAR
+2024-05-24,Retail-Prod,rg-analytics,Database,Azure SQL Database,North Europe,100.85,406.94,ZAR
+2024-10-07,Data-Platform,rg-platform,Serverless,Azure Functions,North Europe,6.54,260.32,ZAR
+2024-07-25,Finance-Prod,rg-analytics,Storage,Storage,France Central,8.68,815.85,ZAR
+2024-09-03,Data-Platform,rg-prod,Database,Azure SQL Database,Germany West Central,3.4,604.58,ZAR
+2024-08-26,Retail-Prod,rg-platform,Compute,App Service,Germany West Central,68.78,153.8,ZAR
+2024-10-10,Dev-Subscription,rg-finance,Serverless,Azure Functions,UK South,49.55,289.79,ZAR
+2024-03-14,Dev-Subscription,rg-analytics,Compute,Virtual Machines,France Central,95.3,712.03,ZAR
+2024-03-21,Finance-Prod,rg-finance,Serverless,Azure Functions,Germany West Central,82.99,646.02,ZAR
+2024-10-11,Finance-Prod,rg-prod,Serverless,Azure Functions,Germany West Central,31.4,352.8,ZAR
+2024-10-21,Retail-Prod,rg-prod,Storage,Storage,Germany West Central,104.12,864.71,ZAR
+2024-09-25,Data-Platform,rg-analytics,Database,Azure SQL Database,Germany West Central,34.48,592.3,ZAR
+2024-01-21,Dev-Subscription,rg-prod,Serverless,Azure Functions,UK South,47.25,147.36,ZAR
+2024-04-29,Dev-Subscription,rg-finance,Networking,Load Balancer,West Europe,90.32,33.19,ZAR
+2024-05-07,Finance-Prod,rg-dev,Compute,Virtual Machines,Germany West Central,92.51,578.58,ZAR
+2024-03-08,Retail-Prod,rg-dev,Containers,Azure Kubernetes Service,France Central,10.83,508.72,ZAR
+2024-05-21,Data-Platform,rg-finance,Compute,App Service,North Europe,81.18,472.26,ZAR
+2024-09-23,Retail-Prod,rg-prod,Serverless,Azure Functions,France Central,95.23,809.4,ZAR
+2024-07-31,Finance-Prod,rg-platform,Networking,Bandwidth,UK South,82.84,139.03,ZAR
+2024-02-25,Data-Platform,rg-finance,Storage,Storage,UK South,68.46,154.35,ZAR
+2024-05-23,Dev-Subscription,rg-dev,Storage,Storage,North Europe,46.1,523.48,ZAR
+2024-06-19,Dev-Subscription,rg-finance,Database,Azure SQL Database,West Europe,59.93,381.78,ZAR
+2024-01-09,Dev-Subscription,rg-dev,Storage,Storage,Germany West Central,91.45,470.74,ZAR
+2024-08-20,Dev-Subscription,rg-platform,Compute,Virtual Machines,UK South,75.48,619.49,ZAR
+2024-05-29,Dev-Subscription,rg-prod,Networking,Load Balancer,North Europe,42.11,242.18,ZAR
+2024-09-17,Retail-Prod,rg-finance,Networking,Load Balancer,Germany West Central,80.43,338.31,ZAR
+2024-07-19,Data-Platform,rg-dev,Containers,Azure Kubernetes Service,North Europe,65.18,294.51,ZAR
+2024-04-24,Data-Platform,rg-platform,Containers,Azure Kubernetes Service,UK South,49.46,788.49,ZAR
+2024-09-21,Data-Platform,rg-analytics,Compute,Virtual Machines,France Central,89.01,837.53,ZAR
+2024-10-08,Dev-Subscription,rg-platform,Networking,Load Balancer,UK South,75.17,71.01,ZAR
+2024-10-10,Finance-Prod,rg-analytics,Compute,App Service,Germany West Central,118.08,13.95,ZAR
+2024-09-21,Data-Platform,rg-analytics,Database,Azure SQL Database,UK South,31.64,91.33,ZAR
+2024-03-31,Retail-Prod,rg-finance,Compute,Virtual Machines,West Europe,31.72,79.46,ZAR
+2024-05-14,Finance-Prod,rg-finance,Containers,Azure Kubernetes Service,France Central,92.87,423.45,ZAR
+2024-03-02,Dev-Subscription,rg-dev,Database,Azure SQL Database,UK South,79.6,377.98,ZAR
+2024-08-31,Retail-Prod,rg-analytics,Networking,Bandwidth,France Central,94.56,759.39,ZAR
+2024-09-02,Retail-Prod,rg-prod,Compute,App Service,West Europe,47.79,275.78,ZAR
+2024-02-08,Retail-Prod,rg-finance,Storage,Storage,Germany West Central,49.8,843.69,ZAR
+2024-04-07,Data-Platform,rg-analytics,Compute,Virtual Machines,UK South,93.43,557.38,ZAR
+2024-07-11,Dev-Subscription,rg-prod,Networking,Bandwidth,North Europe,47.1,158.6,ZAR
+2024-07-15,Dev-Subscription,rg-dev,Networking,Load Balancer,North Europe,111.98,124.29,ZAR
+2024-06-07,Retail-Prod,rg-finance,Database,Azure SQL Database,Germany West Central,17.25,566.35,ZAR
+2024-07-18,Retail-Prod,rg-dev,Compute,Virtual Machines,France Central,29.49,806.41,ZAR
+2024-03-16,Finance-Prod,rg-finance,Containers,Azure Kubernetes Service,West Europe,82.48,450.73,ZAR
+2024-01-31,Dev-Subscription,rg-dev,Compute,App Service,UK South,29.34,891.27,ZAR
+2024-08-12,Finance-Prod,rg-platform,Storage,Storage,North Europe,99.58,150.45,ZAR
+2024-04-19,Dev-Subscription,rg-dev,Compute,Virtual Machines,West Europe,60.63,424.48,ZAR
+2024-09-03,Dev-Subscription,rg-platform,Networking,Bandwidth,North Europe,44.34,657.55,ZAR
+2024-10-10,Dev-Subscription,rg-prod,Storage,Storage,UK South,28.28,281.45,ZAR
+2024-05-07,Dev-Subscription,rg-dev,Networking,Bandwidth,West Europe,119.94,892.86,ZAR
+2024-04-09,Retail-Prod,rg-dev,Networking,Bandwidth,UK South,82.67,413.28,ZAR
+2024-10-22,Data-Platform,rg-platform,Networking,Bandwidth,France Central,75.52,516.87,ZAR
+2024-10-04,Finance-Prod,rg-dev,Containers,Azure Kubernetes Service,UK South,114.89,609.51,ZAR
+2024-05-13,Dev-Subscription,rg-platform,Networking,Load Balancer,West Europe,66.43,501.49,ZAR
+2024-10-04,Dev-Subscription,rg-analytics,Containers,Azure Kubernetes Service,France Central,42.46,861.94,ZAR
+2024-10-20,Data-Platform,rg-platform,Networking,Bandwidth,France Central,4.43,464.16,ZAR
+2024-08-26,Dev-Subscription,rg-analytics,Compute,App Service,France Central,92.46,666.21,ZAR
+2024-01-08,Retail-Prod,rg-prod,Storage,Storage,Germany West Central,10.99,658.97,ZAR
+2024-03-27,Data-Platform,rg-analytics,Containers,Azure Kubernetes Service,North Europe,98.37,522.87,ZAR
+2024-09-21,Dev-Subscription,rg-platform,Compute,App Service,France Central,84.41,82.27,ZAR
+2024-10-14,Data-Platform,rg-analytics,Networking,Bandwidth,North Europe,96.78,153.47,ZAR
+2024-09-25,Data-Platform,rg-finance,Database,Azure SQL Database,North Europe,62.01,761.19,ZAR
+2024-02-29,Data-Platform,rg-platform,Networking,Bandwidth,Germany West Central,46.17,429.2,ZAR
+2024-03-19,Dev-Subscription,rg-prod,Serverless,Azure Functions,North Europe,57.15,184.64,ZAR
+2024-05-04,Finance-Prod,rg-dev,Serverless,Azure Functions,UK South,11.64,881.47,ZAR
+2024-03-27,Data-Platform,rg-analytics,Compute,App Service,France Central,73.87,107.31,ZAR
+2024-03-18,Data-Platform,rg-finance,Networking,Bandwidth,North Europe,108.71,885.49,ZAR
+2024-02-14,Data-Platform,rg-analytics,Compute,Virtual Machines,Germany West Central,45.89,629.93,ZAR
+2024-05-16,Dev-Subscription,rg-platform,Database,Azure SQL Database,West Europe,12.86,593.62,ZAR
+2024-03-28,Finance-Prod,rg-finance,Database,Azure SQL Database,Germany West Central,54.49,810.85,ZAR
+2024-06-17,Finance-Prod,rg-dev,Compute,Virtual Machines,North Europe,26.38,181.0,ZAR
+2024-05-10,Dev-Subscription,rg-finance,Compute,Virtual Machines,North Europe,43.4,544.65,ZAR
+2024-09-17,Finance-Prod,rg-finance,Containers,Azure Kubernetes Service,Germany West Central,8.62,449.68,ZAR
+2024-08-13,Data-Platform,rg-platform,Serverless,Azure Functions,UK South,105.95,274.72,ZAR
+2024-01-08,Finance-Prod,rg-dev,Containers,Azure Kubernetes Service,West Europe,57.19,657.06,ZAR
+2024-04-05,Retail-Prod,rg-platform,Serverless,Azure Functions,Germany West Central,26.31,348.83,ZAR
+2024-01-01,Data-Platform,rg-prod,Networking,Load Balancer,Germany West Central,81.91,484.54,ZAR
+2024-04-22,Dev-Subscription,rg-analytics,Containers,Azure Kubernetes Service,France Central,57.62,196.68,ZAR
+2024-03-30,Data-Platform,rg-dev,Compute,Virtual Machines,UK South,75.27,867.18,ZAR
+2024-05-16,Finance-Prod,rg-platform,Storage,Storage,France Central,15.25,587.18,ZAR
+2024-01-13,Dev-Subscription,rg-finance,Containers,Azure Kubernetes Service,Germany West Central,60.19,853.37,ZAR
+2024-03-21,Retail-Prod,rg-dev,Containers,Azure Kubernetes Service,UK South,47.87,701.41,ZAR
+2024-03-05,Finance-Prod,rg-finance,Networking,Bandwidth,UK South,90.33,29.38,ZAR
+2024-04-16,Retail-Prod,rg-prod,Storage,Storage,France Central,105.07,374.6,ZAR
+2024-07-16,Retail-Prod,rg-finance,Networking,Bandwidth,West Europe,73.49,440.69,ZAR
+2024-09-19,Retail-Prod,rg-dev,Storage,Storage,UK South,8.02,240.77,ZAR
+2024-02-16,Retail-Prod,rg-analytics,Networking,Load Balancer,West Europe,92.16,847.88,ZAR
+2024-10-02,Dev-Subscription,rg-dev,Containers,Azure Kubernetes Service,North Europe,22.09,884.47,ZAR
+2024-08-31,Retail-Prod,rg-finance,Compute,Virtual Machines,West Europe,11.58,108.74,ZAR
+2024-01-19,Dev-Subscription,rg-dev,Networking,Load Balancer,West Europe,69.11,814.06,ZAR
+2024-05-01,Data-Platform,rg-analytics,Database,Azure SQL Database,North Europe,51.03,545.08,ZAR
+2024-04-06,Dev-Subscription,rg-finance,Serverless,Azure Functions,West Europe,117.32,693.93,ZAR
+2024-07-23,Dev-Subscription,rg-finance,Serverless,Azure Functions,France Central,92.33,354.38,ZAR
+2024-06-15,Data-Platform,rg-analytics,Compute,Virtual Machines,West Europe,9.56,220.25,ZAR
+2024-07-08,Dev-Subscription,rg-platform,Networking,Bandwidth,West Europe,63.66,89.03,ZAR
+2024-02-11,Data-Platform,rg-platform,Storage,Storage,Germany West Central,119.51,578.94,ZAR
+2024-07-23,Retail-Prod,rg-analytics,Containers,Azure Kubernetes Service,France Central,118.21,773.89,ZAR
+2024-07-31,Dev-Subscription,rg-platform,Compute,App Service,West Europe,108.27,541.05,ZAR
+2024-10-09,Data-Platform,rg-analytics,Serverless,Azure Functions,France Central,52.14,898.36,ZAR
+2024-03-30,Dev-Subscription,rg-platform,Networking,Bandwidth,Germany West Central,27.38,725.8,ZAR
+2024-04-15,Finance-Prod,rg-analytics,Database,Azure SQL Database,UK South,11.87,741.29,ZAR
+2024-09-09,Retail-Prod,rg-analytics,Compute,App Service,North Europe,16.92,702.63,ZAR
+2024-08-25,Data-Platform,rg-prod,Networking,Load Balancer,West Europe,90.14,101.16,ZAR
+2024-05-30,Finance-Prod,rg-dev,Networking,Bandwidth,France Central,75.92,834.92,ZAR
+2024-10-14,Dev-Subscription,rg-analytics,Compute,Virtual Machines,West Europe,47.87,290.05,ZAR
+2024-07-16,Dev-Subscription,rg-prod,Containers,Azure Kubernetes Service,Germany West Central,37.73,817.51,ZAR
+2024-10-21,Dev-Subscription,rg-prod,Database,Azure SQL Database,North Europe,42.35,515.06,ZAR
+2024-04-03,Finance-Prod,rg-platform,Containers,Azure Kubernetes Service,UK South,109.25,163.23,ZAR
+2024-05-24,Data-Platform,rg-dev,Storage,Storage,North Europe,87.71,485.17,ZAR
+2024-09-14,Retail-Prod,rg-dev,Networking,Bandwidth,France Central,42.49,538.99,ZAR
+2024-09-30,Dev-Subscription,rg-dev,Networking,Bandwidth,West Europe,80.99,17.51,ZAR
+2024-06-03,Finance-Prod,rg-platform,Networking,Load Balancer,France Central,111.3,88.56,ZAR
+2024-05-28,Retail-Prod,rg-platform,Database,Azure SQL Database,Germany West Central,47.47,396.23,ZAR
+2024-08-18,Dev-Subscription,rg-platform,Compute,Virtual Machines,West Europe,79.14,207.75,ZAR
+2024-09-20,Data-Platform,rg-dev,Containers,Azure Kubernetes Service,North Europe,86.58,836.73,ZAR
+2024-01-07,Finance-Prod,rg-finance,Serverless,Azure Functions,North Europe,101.17,786.55,ZAR
+2024-02-08,Finance-Prod,rg-finance,Storage,Storage,North Europe,79.57,502.6,ZAR
+2024-07-23,Dev-Subscription,rg-platform,Database,Azure SQL Database,UK South,89.44,864.26,ZAR
+2024-09-11,Finance-Prod,rg-finance,Database,Azure SQL Database,France Central,101.19,247.98,ZAR
+2024-02-03,Data-Platform,rg-prod,Compute,Virtual Machines,West Europe,61.25,632.77,ZAR
+2024-02-13,Finance-Prod,rg-finance,Networking,Bandwidth,UK South,87.3,94.98,ZAR
+2024-07-09,Retail-Prod,rg-dev,Containers,Azure Kubernetes Service,North Europe,45.05,698.64,ZAR
+2024-06-20,Finance-Prod,rg-prod,Compute,App Service,France Central,99.42,142.16,ZAR
+2024-08-15,Finance-Prod,rg-analytics,Database,Azure SQL Database,North Europe,1.58,878.6,ZAR
+2024-04-12,Dev-Subscription,rg-platform,Database,Azure SQL Database,France Central,87.04,635.58,ZAR
+2024-03-17,Finance-Prod,rg-finance,Storage,Storage,France Central,96.32,616.73,ZAR
+2024-06-15,Dev-Subscription,rg-finance,Serverless,Azure Functions,North Europe,104.68,476.57,ZAR
+2024-04-24,Data-Platform,rg-dev,Networking,Bandwidth,West Europe,43.32,799.22,ZAR
+2024-07-03,Retail-Prod,rg-platform,Networking,Bandwidth,North Europe,85.25,709.46,ZAR
+2024-03-12,Retail-Prod,rg-dev,Networking,Load Balancer,Germany West Central,27.9,792.24,ZAR
+2024-06-01,Data-Platform,rg-platform,Serverless,Azure Functions,West Europe,116.14,75.48,ZAR
+2024-06-05,Retail-Prod,rg-dev,Database,Azure SQL Database,North Europe,119.49,653.38,ZAR
+2024-04-09,Dev-Subscription,rg-platform,Networking,Load Balancer,North Europe,21.07,592.32,ZAR
+2024-06-30,Retail-Prod,rg-prod,Compute,Virtual Machines,France Central,36.36,26.11,ZAR
+2024-03-25,Finance-Prod,rg-prod,Networking,Bandwidth,North Europe,113.2,794.47,ZAR
+2024-01-10,Data-Platform,rg-dev,Storage,Storage,West Europe,102.57,71.84,ZAR
+2024-04-26,Finance-Prod,rg-platform,Networking,Bandwidth,France Central,117.15,34.56,ZAR
+2024-08-30,Data-Platform,rg-platform,Compute,App Service,UK South,58.08,802.42,ZAR
+2024-02-20,Finance-Prod,rg-analytics,Compute,App Service,Germany West Central,42.42,214.97,ZAR
+2024-02-15,Finance-Prod,rg-finance,Networking,Bandwidth,France Central,70.08,283.41,ZAR
+2024-03-14,Finance-Prod,rg-platform,Networking,Bandwidth,Germany West Central,65.4,683.54,ZAR
+2024-04-12,Retail-Prod,rg-platform,Database,Azure SQL Database,Germany West Central,94.86,798.65,ZAR
+2024-07-21,Dev-Subscription,rg-analytics,Containers,Azure Kubernetes Service,Germany West Central,101.04,289.75,ZAR
+2024-07-27,Finance-Prod,rg-dev,Database,Azure SQL Database,France Central,2.73,243.16,ZAR
+2024-10-21,Finance-Prod,rg-platform,Compute,Virtual Machines,Germany West Central,33.13,820.77,ZAR
+2024-06-02,Finance-Prod,rg-analytics,Compute,App Service,West Europe,7.8,731.12,ZAR
+2024-05-01,Data-Platform,rg-analytics,Database,Azure SQL Database,North Europe,59.99,630.75,ZAR
+2024-04-27,Retail-Prod,rg-dev,Database,Azure SQL Database,West Europe,4.71,124.41,ZAR
+2024-08-18,Retail-Prod,rg-prod,Compute,Virtual Machines,North Europe,63.89,239.52,ZAR
+2024-05-24,Retail-Prod,rg-platform,Compute,Virtual Machines,North Europe,61.11,466.27,ZAR
+2024-04-25,Retail-Prod,rg-analytics,Networking,Bandwidth,France Central,38.12,857.27,ZAR
+2024-09-28,Data-Platform,rg-analytics,Containers,Azure Kubernetes Service,France Central,109.25,542.41,ZAR
+2024-06-11,Data-Platform,rg-finance,Compute,Virtual Machines,UK South,71.02,673.84,ZAR
+2024-06-13,Data-Platform,rg-finance,Networking,Load Balancer,West Europe,112.67,827.92,ZAR
+2024-08-20,Finance-Prod,rg-analytics,Compute,Virtual Machines,UK South,49.93,671.71,ZAR
+2024-04-28,Finance-Prod,rg-prod,Compute,App Service,UK South,37.32,748.35,ZAR
+2024-02-24,Dev-Subscription,rg-dev,Storage,Storage,West Europe,113.09,183.92,ZAR
+2024-10-23,Dev-Subscription,rg-analytics,Storage,Storage,North Europe,119.66,556.55,ZAR
+2024-01-29,Dev-Subscription,rg-finance,Storage,Storage,UK South,57.04,193.5,ZAR
+2024-10-01,Dev-Subscription,rg-platform,Storage,Storage,North Europe,24.97,779.7,ZAR
+2024-09-29,Dev-Subscription,rg-dev,Database,Azure SQL Database,Germany West Central,71.97,750.74,ZAR
+2024-05-20,Retail-Prod,rg-prod,Compute,App Service,UK South,20.06,875.96,ZAR
+2024-01-29,Data-Platform,rg-dev,Compute,App Service,Germany West Central,92.55,487.96,ZAR
+2024-05-10,Data-Platform,rg-prod,Compute,App Service,Germany West Central,22.86,281.38,ZAR
+2024-05-15,Retail-Prod,rg-dev,Networking,Load Balancer,UK South,30.49,316.85,ZAR
+2024-03-11,Retail-Prod,rg-prod,Database,Azure SQL Database,France Central,95.01,744.84,ZAR
+2024-07-03,Data-Platform,rg-platform,Serverless,Azure Functions,West Europe,46.6,863.68,ZAR
+2024-04-24,Data-Platform,rg-analytics,Storage,Storage,UK South,21.27,245.9,ZAR
+2024-05-06,Retail-Prod,rg-dev,Containers,Azure Kubernetes Service,Germany West Central,15.89,551.27,ZAR
+2024-08-03,Retail-Prod,rg-dev,Compute,App Service,France Central,115.62,172.46,ZAR
+2024-07-23,Retail-Prod,rg-finance,Compute,App Service,Germany West Central,96.19,655.06,ZAR
+2024-01-11,Finance-Prod,rg-analytics,Compute,App Service,West Europe,65.03,399.11,ZAR
+2024-01-30,Retail-Prod,rg-dev,Storage,Storage,UK South,3.03,102.6,ZAR
+2024-04-28,Retail-Prod,rg-prod,Compute,App Service,France Central,34.5,819.6,ZAR
+2024-08-24,Retail-Prod,rg-dev,Storage,Storage,UK South,14.53,489.25,ZAR
+2024-05-23,Finance-Prod,rg-platform,Storage,Storage,UK South,73.94,111.94,ZAR
+2024-03-12,Data-Platform,rg-dev,Database,Azure SQL Database,North Europe,35.71,849.01,ZAR
+2024-09-08,Finance-Prod,rg-prod,Containers,Azure Kubernetes Service,France Central,74.79,116.43,ZAR
+2024-03-12,Retail-Prod,rg-prod,Compute,Virtual Machines,Germany West Central,101.18,894.94,ZAR
+2024-02-27,Dev-Subscription,rg-prod,Networking,Load Balancer,France Central,47.38,105.15,ZAR
+2024-03-31,Retail-Prod,rg-platform,Storage,Storage,North Europe,111.71,870.82,ZAR
+2024-10-27,Data-Platform,rg-platform,Database,Azure SQL Database,West Europe,22.82,688.9,ZAR
+2024-05-24,Finance-Prod,rg-prod,Containers,Azure Kubernetes Service,North Europe,12.54,222.76,ZAR
+2024-04-16,Dev-Subscription,rg-finance,Containers,Azure Kubernetes Service,UK South,109.45,796.3,ZAR
+2024-01-01,Data-Platform,rg-dev,Networking,Bandwidth,North Europe,13.47,84.32,ZAR
+2024-07-26,Finance-Prod,rg-analytics,Compute,Virtual Machines,North Europe,18.84,334.86,ZAR
+2024-09-18,Retail-Prod,rg-prod,Database,Azure SQL Database,Germany West Central,13.47,812.94,ZAR
+2024-02-13,Data-Platform,rg-finance,Containers,Azure Kubernetes Service,West Europe,2.32,631.67,ZAR
+2024-10-19,Data-Platform,rg-prod,Compute,Virtual Machines,North Europe,88.81,61.66,ZAR
+2024-05-22,Dev-Subscription,rg-platform,Database,Azure SQL Database,West Europe,29.49,131.32,ZAR
+2024-09-28,Dev-Subscription,rg-analytics,Containers,Azure Kubernetes Service,Germany West Central,38.1,893.3,ZAR
+2024-10-15,Retail-Prod,rg-platform,Compute,App Service,UK South,11.66,471.08,ZAR
+2024-02-02,Data-Platform,rg-dev,Networking,Load Balancer,West Europe,84.2,236.78,ZAR
+2024-02-03,Finance-Prod,rg-analytics,Networking,Bandwidth,West Europe,5.32,198.82,ZAR
+2024-05-27,Dev-Subscription,rg-dev,Containers,Azure Kubernetes Service,West Europe,86.33,596.09,ZAR
+2024-10-16,Dev-Subscription,rg-finance,Compute,Virtual Machines,Germany West Central,95.0,604.36,ZAR
+2024-07-06,Retail-Prod,rg-prod,Containers,Azure Kubernetes Service,Germany West Central,6.35,542.48,ZAR
+2024-02-14,Retail-Prod,rg-dev,Storage,Storage,North Europe,103.53,366.37,ZAR
+2024-04-07,Data-Platform,rg-finance,Containers,Azure Kubernetes Service,West Europe,15.8,710.53,ZAR
+2024-02-22,Finance-Prod,rg-analytics,Storage,Storage,Germany West Central,9.98,202.3,ZAR
+2024-03-26,Data-Platform,rg-dev,Compute,Virtual Machines,West Europe,48.27,107.9,ZAR
+2024-08-21,Finance-Prod,rg-platform,Compute,Virtual Machines,Germany West Central,26.42,699.72,ZAR
+2024-05-26,Dev-Subscription,rg-dev,Containers,Azure Kubernetes Service,France Central,112.93,94.86,ZAR
+2024-06-09,Retail-Prod,rg-platform,Networking,Bandwidth,Germany West Central,111.79,468.37,ZAR
+2024-09-26,Dev-Subscription,rg-prod,Networking,Load Balancer,North Europe,9.08,492.76,ZAR
+2024-10-19,Data-Platform,rg-prod,Serverless,Azure Functions,France Central,3.42,779.55,ZAR
+2024-08-22,Finance-Prod,rg-finance,Containers,Azure Kubernetes Service,North Europe,24.52,883.83,ZAR
+2024-02-20,Finance-Prod,rg-prod,Networking,Bandwidth,UK South,75.2,898.38,ZAR
+2024-01-27,Dev-Subscription,rg-dev,Compute,App Service,West Europe,7.9,96.36,ZAR
+2024-07-12,Data-Platform,rg-dev,Networking,Bandwidth,North Europe,42.5,474.21,ZAR
+2024-01-15,Finance-Prod,rg-prod,Storage,Storage,North Europe,33.1,475.54,ZAR
+2024-03-31,Data-Platform,rg-platform,Database,Azure SQL Database,North Europe,101.85,280.96,ZAR
+2024-05-15,Dev-Subscription,rg-analytics,Networking,Load Balancer,Germany West Central,4.49,695.0,ZAR
+2024-10-14,Dev-Subscription,rg-platform,Serverless,Azure Functions,North Europe,68.95,282.94,ZAR
+2024-03-12,Finance-Prod,rg-analytics,Compute,Virtual Machines,North Europe,42.78,846.61,ZAR
+2024-02-06,Retail-Prod,rg-platform,Containers,Azure Kubernetes Service,West Europe,20.11,885.39,ZAR
+2024-03-22,Dev-Subscription,rg-analytics,Networking,Load Balancer,West Europe,57.9,576.03,ZAR
+2024-09-12,Retail-Prod,rg-prod,Networking,Load Balancer,UK South,81.14,407.9,ZAR
+2024-06-15,Dev-Subscription,rg-platform,Database,Azure SQL Database,France Central,101.55,860.73,ZAR
+2024-02-24,Retail-Prod,rg-prod,Compute,App Service,Germany West Central,116.39,404.2,ZAR
+2024-01-16,Finance-Prod,rg-platform,Compute,App Service,UK South,74.08,436.01,ZAR
+2024-04-06,Finance-Prod,rg-platform,Serverless,Azure Functions,West Europe,52.88,657.18,ZAR
+2024-10-03,Retail-Prod,rg-prod,Storage,Storage,France Central,38.75,873.1,ZAR
+2024-09-07,Data-Platform,rg-prod,Compute,Virtual Machines,UK South,29.9,195.47,ZAR
+2024-05-30,Data-Platform,rg-finance,Database,Azure SQL Database,Germany West Central,47.44,522.05,ZAR
+2024-06-06,Data-Platform,rg-prod,Compute,App Service,UK South,108.74,722.32,ZAR
+2024-09-18,Dev-Subscription,rg-analytics,Compute,App Service,Germany West Central,99.58,97.14,ZAR
+2024-02-11,Retail-Prod,rg-finance,Containers,Azure Kubernetes Service,France Central,13.68,845.2,ZAR
+2024-05-22,Finance-Prod,rg-finance,Containers,Azure Kubernetes Service,Germany West Central,47.0,697.0,ZAR
+2024-10-01,Finance-Prod,rg-finance,Compute,App Service,West Europe,78.19,127.3,ZAR
+2024-03-05,Data-Platform,rg-analytics,Serverless,Azure Functions,UK South,91.65,58.81,ZAR

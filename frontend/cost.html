@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>DYNAMIS Enterprise Demo Mode</title>
+
+<link rel="stylesheet" href="/css/style.css">
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+margin:25px;
+background:#f4f6fb;
+}
+
+header{
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:20px;
+}
+
+#clientLogo{
+width:48px;
+height:48px;
+border-radius:8px;
+}
+
+h1{margin:0;font-size:28px;}
+.subtitle{color:#666;}
+
+.section{
+display:none;
+margin-top:25px;
+}
+
+.section.active{
+display:block;
+}
+
+.card{
+background:white;
+border-radius:14px;
+padding:24px;
+box-shadow:0 6px 16px rgba(0,0,0,0.08);
+}
+
+.sales-panel{
+background:linear-gradient(135deg,#111,#222);
+color:white;
+border-radius:14px;
+padding:24px;
+}
+
+.sales-value{
+font-size:36px;
+font-weight:bold;
+color:#00d2a8;
+}
+
+.insight-card{
+background:#0a5cff;
+color:white;
+border-radius:14px;
+padding:24px;
+}
+
+.close-card{
+background:linear-gradient(135deg,#00b894,#00d2a8);
+color:white;
+border-radius:14px;
+padding:28px;
+}
+
+.close-card h2{
+margin-top:0;
+}
+
+#impactBanner{
+background:#00b894;
+color:white;
+padding:18px 24px;
+border-radius:12px;
+font-size:20px;
+font-weight:bold;
+}
+
+button{
+padding:10px 14px;
+border-radius:8px;
+border:none;
+background:#111;
+color:white;
+cursor:pointer;
+margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SHARED SIDEBAR -->
+<div id="header-placeholder"></div>
+<script src="/js/header-loader.js"></script>
+
+<script type="module">
+
+import { supabase } from "./js/supabase.js"
+
+// SESSION GUARD
+const { data } = await supabase.auth.getUser()
+
+if(!data?.user){
+window.location.href="login.html"
+}
+
+</script>
+
+<header>
+
+<img id="clientLogo" src="">
+
+<div>
+<h1 id="pageTitle">DYNAMIS Enterprise Demo</h1>
+<div class="subtitle">Guided Executive Narrative</div>
+</div>
+
+</header>
+
+<div id="impactBanner">Loading...</div>
+
+<button onclick="nextSection()">Next ▶</button>
+
+
+<!-- SECTION 1 -->
+
+<div class="section active" id="sec1">
+
+<div class="card">
+
+<h2>Financial Impact</h2>
+
+<p id="impactText"></p>
+
+</div>
+
+</div>
+
+
+<!-- SECTION 2 -->
+
+<div class="section" id="sec2">
+
+<div class="card">
+
+<h2>Risk & Exposure</h2>
+
+<p id="riskText"></p>
+
+</div>
+
+</div>
+
+
+<!-- SECTION 3 -->
+
+<div class="section" id="sec3">
+
+<div class="card">
+
+<h2>Primary Spend Driver</h2>
+
+<p id="driverText"></p>
+
+</div>
+
+</div>
+
+
+<!-- SECTION 4 -->
+
+<div class="section" id="sec4">
+
+<div class="sales-panel">
+
+<h2>Annual Margin Recovery Opportunity</h2>
+
+<div class="sales-value" id="annualOpportunity">R —</div>
+
+<p id="salesNarrative"></p>
+
+</div>
+
+</div>
+
+
+<!-- SECTION 5 -->
+
+<div class="section" id="sec5">
+
+<div class="insight-card">
+
+<h2>Executive Summary</h2>
+
+<p id="execNarrative"></p>
+
+</div>
+
+</div>
+
+
+<!-- SECTION 6 -->
+
+<div class="section" id="sec6">
+
+<div class="close-card">
+
+<h2>Recommended Next Step</h2>
+
+<p>✔ 30–60 Day Margin Recovery Assessment</p>
+
+<p>✔ Executive Review Workshop</p>
+
+<p>✔ Savings Validation & Governance Setup</p>
+
+<br>
+
+<strong>
+DYNAMIS recommends initiating an advisory assessment to validate recoverable margin and establish an optimization roadmap.
+</strong>
+
+</div>
+
+</div>
+
+
+<script src="/js/cost.js"></script>
+
+</body>
+
+</html>

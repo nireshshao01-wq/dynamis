@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Validation Report | DYNAMIS</title>
+  <link rel="stylesheet" href="cloudhealth.css">
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+<script src="header-loader.js"></script>
+<script src="config.js"></script>
+<script src="dynamis-engine.js"></script>
+<script src="header-cloudhealth.js"></script>
+<script src="access-control.js"></script>
+
+<div class="page-title">
+  <div>
+    <h2>Validation Report</h2>
+    <div class="hint">
+      Baseline vs Validation Month – Governed Attribution Model
+    </div>
+  </div>
+</div>
+
+<div class="grid">
+
+  <!-- Baseline -->
+  <div class="card" style="grid-column: span 4;">
+    <div class="section-title">Baseline</div>
+    <div id="baselineInfo"></div>
+  </div>
+
+  <!-- Validation Month -->
+  <div class="card" style="grid-column: span 4;">
+    <div class="section-title">Validation Month</div>
+    <select id="validationMonth"></select>
+    <div style="margin-top:10px;">
+      <button class="ch-btn" onclick="runValidation()">Run Validation</button>
+    </div>
+  </div>
+
+  <!-- Totals -->
+  <div class="card" style="grid-column: span 4;">
+    <div class="section-title">Totals</div>
+    <div id="totals"></div>
+  </div>
+
+  <!-- Success Fee -->
+  <div class="card" style="grid-column: span 4;">
+    <div class="section-title">Success Fee</div>
+
+    <label>Success Fee %</label>
+    <input id="feePct" type="number" style="width:100%; margin-top:6px;">
+
+    <div style="margin-top:10px;">
+      <button class="ch-btn" onclick="saveFeePct()">Save %</button>
+    </div>
+
+    <div style="margin-top:15px;" id="feeResults"></div>
+  </div>
+
+  <!-- Service-Level Validation -->
+  <div class="card" style="grid-column: span 12;">
+    <div class="section-title">Service-Level Validation</div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Baseline</th>
+          <th>Current</th>
+          <th>Actual Reduction</th>
+          <th>Expected</th>
+          <th>Validated</th>
+          <th>Unexplained</th>
+          <th>% Coverage</th>
+        </tr>
+      </thead>
+      <tbody id="validationTable"></tbody>
+    </table>
+  </div>
+
+  <!-- History -->
+  <div class="card" style="grid-column: span 12;">
+    <div class="section-title">Validation History (Cumulative)</div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Validated</th>
+          <th>Fee %</th>
+          <th>Monthly Fee</th>
+          <th>Date Logged</th>
+        </tr>
+      </thead>
+      <tbody id="historyTable"></tbody>
+    </table>
+
+    <div style="margin-top:15px;" id="cumulativeSummary"></div>
+  </div>
+
+</div>
+
+<script>
+
+// ---------------- Helpers ----------------
+
+function getRun(){
+  return window.DynamisEngine.getActiveRun();
+}
+
+function money(v){
+  return "R " + Number(v || 0).toLocaleString("en-ZA");
+}
+
+function pct(v){
+  return (v || 0).toFixed(1) + "%";
+}
+
+// ---------------- Success Fee ----------------
+
+function getFeePct(){
+  return Number(localStorage.getItem("dynamis_fee_pct") || 7);
+}
+
+function saveFeePct(){
+  const val = Number(document.getElementById("feePct").value);
+  if(val > 0){
+    localStorage.setItem("dynamis_fee_pct", val);
+    runValidation();
+  }
+}
+
+// ---------------- History ----------------
+
+function loadHistory(){
+  return JSON.parse(localStorage.getItem("dynamis_validation_history") || "[]");
+}
+
+function saveHistory(history){
+  localStorage.setItem("dynamis_validation_history", JSON.stringify(history));
+}
+
+function renderHistory(){
+
+  const history = loadHistory();
+  const tbody = document.getElementById("historyTable");
+  tbody.innerHTML = "";
+
+  let cumulativeValidated = 0;
+  let cumulativeFee = 0;
+
+  history.forEach(h=>{
+    cumulativeValidated += h.validated;
+    cumulativeFee += h.monthlyFee;
+
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${h.month}</td>
+      <td>${money(h.validated)}</td>
+      <td>${h.feePct}%</td>
+      <td>${money(h.monthlyFee)}</td>
+      <td>${new Date(h.timestamp).toLocaleDateString()}</td>
+    `;
+    tbody.appendChild(row);
+  });
+
+  document.getElementById("cumulativeSummary").innerHTML = `
+    <div><strong>Cumulative Validated Savings:</strong> ${money(cumulativeValidated)}</div>
+    <div><strong>Cumulative Success Fees:</strong> ${money(cumulativeFee)}</div>
+  `;
+}
+
+// ---------------- Baseline ----------------
+
+function renderBaseline(){
+  const run = getRun();
+  const el = document.getElementById("baselineInfo");
+
+  if(!run || !run.baselineSnapshot){
+    el.innerHTML = "No baseline set.";
+    return;
+  }
+
+  el.innerHTML = `
+    <div><strong>Month:</strong> ${run.baselineSnapshot.monthLabel}</div>
+    <div><strong>Total:</strong> ${money(run.baselineSnapshot.totalCost)}</div>
+  `;
+}
+
+// ---------------- Validation ----------------
+
+function populateValidationMonths(){
+  const run = getRun();
+  const sel = document.getElementById("validationMonth");
+  sel.innerHTML = "";
+
+  if(!run || !run.monthlyUploads){
+    sel.innerHTML = "<option>No validation months</option>";
+    return;
+  }
+
+  run.monthlyUploads.forEach(m=>{
+    const opt = document.createElement("option");
+    opt.value = m.monthLabel;
+    opt.textContent = m.monthLabel;
+    sel.appendChild(opt);
+  });
+}
+
+function runValidation(){
+
+  const run = getRun();
+  if(!run || !run.baselineSnapshot){
+    alert("Baseline not set.");
+    return;
+  }
+
+  const selectedMonth = document.getElementById("validationMonth").value;
+  const currentMonth = run.monthlyUploads.find(m => m.monthLabel === selectedMonth);
+
+  if(!currentMonth){
+    alert("Validation month not found.");
+    return;
+  }
+
+  const baselineServices = run.baselineSnapshot.serviceTotals;
+  const currentServices = currentMonth.serviceTotals;
+
+  const services = new Set([
+    ...Object.keys(baselineServices),
+    ...Object.keys(currentServices)
+  ]);
+
+  const tbody = document.getElementById("validationTable");
+  tbody.innerHTML = "";
+
+  let totalValidated = 0;
+
+  services.forEach(service => {
+
+    const baselineSpend = baselineServices[service] || 0;
+    const currentSpend = currentServices[service] || 0;
+
+    const actualReduction = Math.max(0, baselineSpend - currentSpend);
+
+    const serviceActions = (run.actions || []).filter(a =>
+      a.serviceName === service &&
+      a.status === "Implemented"
+    );
+
+    const expected = serviceActions.reduce(
+      (sum, a) => sum + (a.expectedMonthlySaving || 0),
+      0
+    );
+
+    const validated = Math.min(expected, actualReduction);
+    const unexplained = actualReduction - validated;
+    const coverage = actualReduction > 0
+      ? (validated / actualReduction) * 100
+      : 0;
+
+    totalValidated += validated;
+
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
+      <td>${service}</td>
+      <td>${money(baselineSpend)}</td>
+      <td>${money(currentSpend)}</td>
+      <td>${money(actualReduction)}</td>
+      <td>${money(expected)}</td>
+      <td style="color:#15803d; font-weight:900;">${money(validated)}</td>
+      <td>${money(unexplained)}</td>
+      <td>${pct(coverage)}</td>
+    `;
+
+    tbody.appendChild(row);
+  });
+
+  const feePct = getFeePct();
+  const monthlyFee = totalValidated * (feePct / 100);
+
+  // ---------------- Duplicate Protection ----------------
+  let history = loadHistory();
+  const existingIndex = history.findIndex(h => h.month === selectedMonth);
+
+  const record = {
+    month: selectedMonth,
+    validated: totalValidated,
+    feePct: feePct,
+    monthlyFee: monthlyFee,
+    timestamp: new Date().toISOString()
+  };
+
+  if(existingIndex !== -1){
+
+    if(!confirm("Validation for this month already exists. Overwrite?")){
+      return;
+    }
+
+    history[existingIndex] = record;
+
+  } else {
+    history.push(record);
+  }
+
+  saveHistory(history);
+
+  document.getElementById("totals").innerHTML = `
+    <div><strong>Total Validated:</strong> ${money(totalValidated)}</div>
+  `;
+
+  document.getElementById("feeResults").innerHTML = `
+    <div><strong>Monthly Success Fee (${feePct}%):</strong> ${money(monthlyFee)}</div>
+  `;
+
+  renderHistory();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderBaseline();
+  populateValidationMonths();
+  document.getElementById("feePct").value = getFeePct();
+  renderHistory();
+});
+
+</script>
+
+</body>
+</html>

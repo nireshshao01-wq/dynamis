@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Generate PDF | DYNAMIS</title>
+  <link rel="stylesheet" href="cloudhealth.css">
+</head>
+<body>
+
+<script src="config.js"></script>
+<script src="dynamis-engine.js"></script>
+<script src="header-cloudhealth.js"></script>
+
+<div class="page-title">
+  <div>
+    <h2>Generate PDF (Internal)</h2>
+    <div class="hint">Select a saved assessment run, choose a tier, then open the report and Save as PDF.</div>
+  </div>
+</div>
+
+<div class="split">
+  <div class="panel">
+    <div class="panel-head">
+      <h3 style="margin:0;">Client & Tier</h3>
+      <span class="pill green">Internal</span>
+    </div>
+
+    <div class="filters" style="margin:12px 0 0; padding:0; box-shadow:none; border:none;">
+      <div class="filter" style="min-width:340px;">
+        <label>Assessment run</label>
+        <select id="runSelect"></select>
+        <div class="small" style="margin-top:6px;color:var(--muted);">This controls what data appears in the report.</div>
+      </div>
+
+      <div class="filter" style="min-width:260px;">
+        <label>Client name</label>
+        <input id="clientName" placeholder="e.g., Standard Bank" />
+      </div>
+
+      <div class="filter" style="min-width:220px;">
+        <label>Assessment period</label>
+        <input id="period" placeholder="e.g., Jan 2026" />
+      </div>
+
+      <div class="filter" style="min-width:260px;">
+        <label>Tier</label>
+        <select id="tier">
+          <option value="1">Tier 1 — Snapshot (Executive)</option>
+          <option value="2">Tier 2 — Diagnostic (Team-ready)</option>
+          <option value="3">Tier 3 — Audit (Controls + Evidence)</option>
+        </select>
+      </div>
+
+      <div class="filter" style="min-width:220px;">
+        <label>Prepared by</label>
+        <input id="preparedBy" value="BlueCloud" />
+      </div>
+
+      <div class="filter" style="min-width:420px;">
+        <label>Scope notes (optional)</label>
+        <input id="notes" placeholder="Scope, subscriptions, constraints…" />
+      </div>
+    </div>
+
+    <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+      <button class="ch-btn" onclick="openReport()">Open Report & Print</button>
+      <button class="ch-btn" style="background:#475569;" onclick="openDashboard()">Back to Dashboard</button>
+      <span class="hint" id="dataHint"></span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3 style="margin:0;">Checklist</h3>
+    <div class="callouts">
+      <div class="callout">
+        <div class="callout-title">1) Upload Azure CSV</div>
+        <div class="callout-text">Upload → Process CSV creates a saved run.</div>
+      </div>
+      <div class="callout">
+        <div class="callout-title">2) Select the run</div>
+        <div class="callout-text">Pick the correct client/period run from the dropdown.</div>
+      </div>
+      <div class="callout">
+        <div class="callout-title">3) Save as PDF</div>
+        <div class="callout-text">In Chrome Print: Destination → Save as PDF.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function loadRunsIntoSelect(){
+    const runs = window.DynamisEngine.loadRuns();
+    const sel = document.getElementById("runSelect");
+    sel.innerHTML = "";
+
+    if (!runs.length){
+      const opt = document.createElement("option");
+      opt.value = "";
+      opt.textContent = "No runs yet — upload CSV first";
+      sel.appendChild(opt);
+      document.getElementById("dataHint").textContent = "⚠ No uploaded data yet";
+      return;
+    }
+
+    runs.forEach(r=>{
+      const c = r.client || {};
+      const opt = document.createElement("option");
+      opt.value = r.runId;
+      opt.textContent = `${c.clientName || "Client"} • ${c.period || ""} • Tier ${c.tier || 1} • ${new Date(r.createdAt).toLocaleDateString()} • ${r.fileName}`;
+      sel.appendChild(opt);
+    });
+
+    const activeId = localStorage.getItem("dynamis_active_run_id");
+    if (activeId) sel.value = activeId;
+
+    document.getElementById("dataHint").textContent = "✓ Runs found";
+  }
+
+  function syncFieldsFromActiveRun(){
+    const run = window.DynamisEngine.getActiveRun();
+    if (!run) return;
+
+    const c = run.client || {};
+    document.getElementById("clientName").value = c.clientName || "";
+    document.getElementById("period").value = c.period || "";
+    document.getElementById("tier").value = String(c.tier || 1);
+    document.getElementById("preparedBy").value = c.preparedBy || "BlueCloud";
+    document.getElementById("notes").value = c.notes || "";
+  }
+
+  function onRunChange(){
+    const runId = document.getElementById("runSelect").value;
+    if (!runId) return;
+    window.DynamisEngine.setActiveRunId(runId);
+    syncFieldsFromActiveRun();
+  }
+
+  function openReport(){
+    const runId = document.getElementById("runSelect").value;
+    if (!runId){
+      alert("Please upload a CSV first (no runs available).");
+      return;
+    }
+
+    // Save client/tier details (these override what was captured during upload)
+    const c = {
+      clientName: document.getElementById("clientName").value.trim(),
+      period: document.getElementById("period").value.trim(),
+      tier: Number(document.getElementById("tier").value),
+      preparedBy: document.getElementById("preparedBy").value.trim(),
+      notes: document.getElementById("notes").value.trim()
+    };
+    localStorage.setItem("dynamis_client", JSON.stringify(c));
+
+    // Set active run for the report
+    window.DynamisEngine.setActiveRunId(runId);
+
+    // Open report in print mode (auto print dialog)
+    window.open("report.html?print=1", "_blank");
+  }
+
+  function openDashboard(){
+    location.href = "dashboard.html";
+  }
+
+  // Wire events
+  document.addEventListener("DOMContentLoaded", ()=>{
+    loadRunsIntoSelect();
+    syncFieldsFromActiveRun();
+    document.getElementById("runSelect").addEventListener("change", onRunChange);
+  });
+</script>
+
+</body>
+</html>

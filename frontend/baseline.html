@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Baseline | DYNAMIS</title>
+  <link rel="stylesheet" href="cloudhealth.css">
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+<script src="header-loader.js"></script>
+<script src="config.js"></script>
+<script src="dynamis-engine.js"></script>
+<script src="header-cloudhealth.js"></script>
+<script src="access-control.js"></script>
+
+<div class="page-title">
+  <div>
+    <h2>Baseline Lock</h2>
+    <div class="hint">
+      Select and lock the official optimisation starting point.
+    </div>
+  </div>
+</div>
+
+<div class="card" style="max-width:500px;">
+  <label>Select Baseline Month</label>
+  <select id="baselineSelect"></select>
+
+  <div style="margin-top:15px;">
+    <button class="ch-btn" onclick="lockBaseline()">Set Baseline</button>
+  </div>
+
+  <div id="status" style="margin-top:10px;"></div>
+</div>
+
+<script>
+
+function getRun(){
+  return window.DynamisEngine.getActiveRun();
+}
+
+function saveRun(run){
+  window.DynamisEngine.saveRun(run);
+}
+
+function populateMonths(){
+
+  const run = getRun();
+  const select = document.getElementById("baselineSelect");
+  select.innerHTML = "";
+
+  if(!run || !run.serviceTotalsByMonth){
+    select.innerHTML = "<option>No data uploaded</option>";
+    return;
+  }
+
+  const months = Object.keys(run.serviceTotalsByMonth);
+
+  months.forEach(m => {
+    const opt = document.createElement("option");
+    opt.value = m;
+    opt.textContent = m;
+    select.appendChild(opt);
+  });
+}
+
+function lockBaseline(){
+
+  const run = getRun();
+  const month = document.getElementById("baselineSelect").value;
+
+  if(!run.serviceTotalsByMonth[month]){
+    alert("Invalid month.");
+    return;
+  }
+
+  run.baselineSnapshot = {
+    monthLabel: month,
+    serviceTotals: run.serviceTotalsByMonth[month],
+    totalCost: run.totalByMonth[month]
+  };
+
+  saveRun(run);
+
+  document.getElementById("status").textContent =
+    "Baseline locked for " + month;
+}
+
+document.addEventListener("DOMContentLoaded", populateMonths);
+
+</script>
+
+</body>
+</html>

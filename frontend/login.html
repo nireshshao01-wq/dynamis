@@ -1,79 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DYNAMIS Login</title>
 
 <style>
-  body {
-    background: #0f172a;
-    color: white;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+body {
+  background: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  .login-box {
-    background: #1e293b;
-    padding: 30px;
-    border-radius: 10px;
-    width: 320px;
-  }
+.login-box {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
 
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 6px;
-  }
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  button {
-    width: 100%;
-    margin-top: 15px;
-    padding: 10px;
-    background: #3b82f6;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+}
 
-  #errorBox {
-    color: #f87171;
-    margin-top: 10px;
-    font-size: 14px;
-  }
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+#errorBox {
+  color: #f87171;
+  margin-top: 10px;
+  font-size: 14px;
+}
 </style>
+
 </head>
 
 <body>
 
 <div class="login-box">
-  <h2>DYNAMIS Login</h2>
 
-  <form id="loginForm">
-    <input id="email" type="email" placeholder="Email" required />
-    <input id="password" type="password" placeholder="Password" required />
-    <button id="loginBtn" type="submit">Secure Sign In</button>
-    <div id="errorBox"></div>
-  </form>
+<h2>DYNAMIS Login</h2>
+
+<form id="loginForm">
+
+<input 
+id="email" 
+type="email" 
+placeholder="Email"
+autocomplete="username"
+required
+/>
+
+<input 
+id="password" 
+type="password" 
+placeholder="Password"
+autocomplete="current-password"
+required
+/>
+
+<button id="loginBtn" type="submit">
+Secure Sign In
+</button>
+
+<div id="errorBox"></div>
+
+</form>
+
 </div>
 
 <script type="module">
 
-import { supabase } from "./supabase.js";
+import { supabase } from "./js/supabase.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
 
-  // 🔹 If already logged in → go to dashboard
-  const { data } = await supabase.auth.getUser();
-  if (data?.user) {
-    window.location.href = "dashboard.html";
-    return;
+  try {
+
+    const { data } = await supabase.auth.getUser();
+
+    if (data?.user) {
+      window.location.href = "dashboard.html";
+      return;
+    }
+
+  } catch(err) {
+    console.warn("Session check skipped");
   }
 
   const form = document.getElementById("loginForm");
@@ -81,6 +121,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const button = document.getElementById("loginBtn");
 
   form.addEventListener("submit", async (e) => {
+
     e.preventDefault();
 
     errorBox.innerText = "";
@@ -96,14 +137,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     if (error) {
+
       errorBox.innerText = error.message;
       button.innerText = "Secure Sign In";
       button.disabled = false;
       return;
+
     }
 
-    // 🔹 Successful login
     window.location.href = "dashboard.html";
+
   });
 
 });

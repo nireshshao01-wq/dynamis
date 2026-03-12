@@ -32,8 +32,9 @@ const opportunitiesRoute = require("./routes/opportunities")
 const anomaliesRoute = require("./routes/anomalies")
 const reportRoute = require("./routes/report")
 const aiRoute = require("./routes/ai")
-const partnerRoute = require("./routes/partner")   // NEW ROUTE
+const partnerRoute = require("./routes/partner")
 
+// Register API endpoints
 app.use("/api/upload", uploadRoute)
 app.use("/api/clients", clientsRoute)
 app.use("/api/dashboard", dashboardRoute)
@@ -41,16 +42,23 @@ app.use("/api/opportunities", opportunitiesRoute)
 app.use("/api/anomalies", anomaliesRoute)
 app.use("/api/report", reportRoute)
 app.use("/api/ai", aiRoute)
-app.use("/api/partner", partnerRoute)              // REGISTER PARTNER API
+app.use("/api/partner", partnerRoute)
 
 /* -----------------------------
 FINOPS AUTOMATION
 Nightly optimisation scans
 ----------------------------- */
 
-const startFinopsScheduler = require("./scheduler/scanJob")
+try {
 
+const startFinopsScheduler = require("./scheduler/scanJob")
 startFinopsScheduler()
+
+} catch (err) {
+
+console.log("Scheduler not started:", err.message)
+
+}
 
 /* -----------------------------
 HEALTH CHECK
@@ -58,10 +66,12 @@ Useful for testing server status
 ----------------------------- */
 
 app.get("/api/health", (req, res) => {
+
 res.json({
 status: "DYNAMIS API running",
 time: new Date()
 })
+
 })
 
 /* -----------------------------
@@ -70,7 +80,9 @@ Loads frontend index
 ----------------------------- */
 
 app.get("*", (req, res) => {
+
 res.sendFile(path.join(frontendPath, "index.html"))
+
 })
 
 /* -----------------------------
@@ -80,5 +92,7 @@ START SERVER
 const PORT = process.env.PORT || 3001
 
 app.listen(PORT, () => {
-console.log("DYNAMIS running on http://localhost:" + PORT)
+
+console.log(`DYNAMIS API running on port ${PORT}`)
+
 })

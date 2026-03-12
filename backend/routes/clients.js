@@ -1,106 +1,74 @@
-const express = require("express")
-const { createClient } = require("@supabase/supabase-js")
-
-const router = express.Router()
-
-// Supabase connection
-const supabase = createClient(
-    process.env.SUPABASE_URL,
-    process.env.SUPABASE_SERVICE_KEY
-)
+const express = require("express");
+const router = express.Router();
+const supabase = require("../supabaseClient");
 
 
 // GET ALL CLIENTS
 router.get("/", async (req, res) => {
 
-    try {
+try {
 
-        const { data, error } = await supabase
-            .from("dynamis_clients")
-            .select("*")
-            .order("created_at", { ascending: true })
+const { data, error } = await supabase
+.from("clients")
+.select("*")
+.order("created_at", { ascending: false });
 
-        if (error) {
-            console.error(error)
-            return res.status(500).json({ error: "Failed to fetch clients" })
-        }
+if (error) {
+console.error("Error loading clients:", error);
+return res.status(500).json({ error: "Failed to load clients" });
+}
 
-        res.json(data)
+res.json(data);
 
-    } catch (err) {
+} catch (err) {
 
-        console.error(err)
-        res.status(500).json({ error: "Server error" })
+console.error(err);
+res.status(500).json({ error: "Server error" });
 
-    }
+}
 
-})
+});
 
 
-// CREATE CLIENT
+
+// CREATE NEW CLIENT
 router.post("/", async (req, res) => {
 
-    try {
+try {
 
-        const { name, industry } = req.body
+const { name, cloud, industry } = req.body;
 
-        if (!name) {
-            return res.status(400).json({ error: "Client name required" })
-        }
+if (!name) {
+return res.status(400).json({ error: "Client name required" });
+}
 
-        const { data, error } = await supabase
-            .from("dynamis_clients")
-            .insert([
-                {
-                    name: name,
-                    industry: industry || "Unknown"
-                }
-            ])
-            .select()
+const { data, error } = await supabase
+.from("clients")
+.insert([
+{
+name,
+cloud,
+industry,
+created_at: new Date()
+}
+])
+.select();
 
-        if (error) {
-            console.error(error)
-            return res.status(500).json({ error: "Failed to create client" })
-        }
+if (error) {
+console.error("Error creating client:", error);
+return res.status(500).json({ error: "Failed to create client" });
+}
 
-        res.json(data[0])
+res.json(data[0]);
 
-    } catch (err) {
+} catch (err) {
 
-        console.error(err)
-        res.status(500).json({ error: "Server error" })
+console.error(err);
+res.status(500).json({ error: "Server error" });
 
-    }
+}
 
-})
+});
 
 
-// DELETE CLIENT
-router.delete("/:id", async (req, res) => {
-
-    try {
-
-        const { id } = req.params
-
-        const { error } = await supabase
-            .from("dynamis_clients")
-            .delete()
-            .eq("id", id)
-
-        if (error) {
-            console.error(error)
-            return res.status(500).json({ error: "Failed to delete client" })
-        }
-
-        res.json({ success: true })
-
-    } catch (err) {
-
-        console.error(err)
-        res.status(500).json({ error: "Server error" })
-
-    }
-
-})
-
-module.exports = router
+module.exports = router;

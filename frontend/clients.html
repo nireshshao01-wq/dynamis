@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>DYNAMIS Clients</title>
+
+<link rel="stylesheet" href="/css/style.css">
+
+<style>
+
+body{
+background:#0f172a;
+color:white;
+font-family:Arial;
+}
+
+.container{
+margin-left:220px;
+padding:40px;
+}
+
+input,select{
+padding:10px;
+margin-top:10px;
+width:300px;
+border-radius:6px;
+border:none;
+}
+
+button{
+margin-top:15px;
+padding:10px 20px;
+background:#3b82f6;
+border:none;
+border-radius:6px;
+color:white;
+cursor:pointer;
+}
+
+table{
+margin-top:30px;
+width:100%;
+border-collapse:collapse;
+}
+
+td,th{
+padding:10px;
+border-bottom:1px solid #334155;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="header-placeholder"></div>
+<script src="/js/header-loader.js"></script>
+
+<div class="container">
+
+<h1>Clients</h1>
+
+<h3>Add New Client</h3>
+
+<input id="clientName" placeholder="Client Name">
+<br>
+
+<select id="clientCloud">
+<option>AWS</option>
+<option>Azure</option>
+<option>GCP</option>
+<option>Multi Cloud</option>
+</select>
+<br>
+
+<input id="clientIndustry" placeholder="Industry">
+<br>
+
+<button onclick="createClient()">Create Client</button>
+
+<h3>Existing Clients</h3>
+
+<table id="clientTable">
+<tr>
+<th>Name</th>
+<th>Cloud</th>
+<th>Industry</th>
+</tr>
+</table>
+
+</div>
+
+<script>
+
+const API="https://your-render-backend-url/api";
+
+async function createClient(){
+
+const name=document.getElementById("clientName").value;
+const cloud=document.getElementById("clientCloud").value;
+const industry=document.getElementById("clientIndustry").value;
+
+await fetch(API+"/clients",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({
+name,
+cloud,
+industry
+})
+
+});
+
+loadClients();
+
+}
+
+async function loadClients(){
+
+const res=await fetch(API+"/clients");
+
+const data=await res.json();
+
+const table=document.getElementById("clientTable");
+
+table.innerHTML="<tr><th>Name</th><th>Cloud</th><th>Industry</th></tr>";
+
+data.forEach(c=>{
+
+table.innerHTML+=`
+
+<tr>
+<td>${c.name}</td>
+<td>${c.cloud}</td>
+<td>${c.industry}</td>
+</tr>
+
+`;
+
+});
+
+}
+
+loadClients();
+
+</script>
+
+</body>
+
+</html>

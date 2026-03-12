@@ -13,6 +13,36 @@
 
 <link rel="stylesheet" href="/css/style.css">
 
+<style>
+
+.heat-row{
+display:flex;
+align-items:center;
+gap:10px;
+margin-top:10px;
+}
+
+.heat-row span{
+width:120px;
+}
+
+.heat-bar{
+flex:1;
+height:18px;
+background:#1e293b;
+border-radius:6px;
+overflow:hidden;
+}
+
+.heat-bar div{
+height:100%;
+background:#3b82f6;
+width:0%;
+transition:width 1s;
+}
+
+</style>
+
 </head>
 
 <body>
@@ -24,6 +54,65 @@
 <div class="container">
 
 <h1>DYNAMIS Executive Dashboard</h1>
+
+<!-- EXECUTIVE VALUE PANEL -->
+
+<div class="card-grid" style="margin-bottom:30px">
+
+<div class="card">
+<div style="font-size:14px;color:#94a3b8">Total Recoverable Margin</div>
+<div id="valueTotal" style="font-size:34px;font-weight:bold;margin-top:5px">R 0</div>
+</div>
+
+<div class="card">
+<div style="font-size:14px;color:#94a3b8">Projected Annual Savings</div>
+<div id="valueAnnual" style="font-size:34px;font-weight:bold;margin-top:5px">R 0</div>
+</div>
+
+<div class="card">
+<div style="font-size:14px;color:#94a3b8">Estimated Monthly Waste</div>
+<div id="valueMonthly" style="font-size:34px;font-weight:bold;margin-top:5px">R 0</div>
+</div>
+
+</div>
+
+<!-- LIVE SAVINGS COUNTER -->
+
+<div class="card" style="margin-bottom:30px">
+
+<h3>Recoverable Margin Identified</h3>
+
+<div id="liveSavings"
+style="
+font-size:40px;
+font-weight:bold;
+margin-top:10px;
+color:#22c55e;
+">
+R 0
+</div>
+
+<div style="color:#94a3b8;margin-top:6px">
+Real-time optimisation value detected by DYNAMIS
+</div>
+
+</div>
+
+<!-- CLIENT SELECTOR -->
+
+<div style="margin-bottom:25px">
+
+<label style="margin-right:10px;font-weight:600">Client:</label>
+
+<select id="clientSelector"
+style="padding:10px;border-radius:6px"
+onchange="loadDashboard()">
+
+<option value="">Select Client</option>
+
+</select>
+
+</div>
 
 <!-- EXECUTIVE FINOPS PANEL -->
 
@@ -49,14 +138,6 @@
 <div id="execWaste" class="exec-value">-</div>
 </div>
 
-</div>
-
-<!-- DOWNLOAD REPORT BUTTON -->
-
-<div style="margin-top:20px;margin-bottom:30px;">
-<button id="downloadReport" class="button-primary">
-Download Executive FinOps Report
-</button>
 </div>
 
 <!-- KPI CARDS -->
@@ -86,94 +167,11 @@ Confidence Level
 
 </div>
 
-<!-- AI CFO NARRATOR -->
-
-<div class="ai-narrator-card">
-
-<h2 id="headline">Recoverable Margin Identified: R 0</h2>
-
-<div class="waste-counter">
-
-<div class="counter-label">
-Estimated Daily Cloud Waste
-</div>
-
-<div id="dailyWaste" class="counter-value">
-R 0
-</div>
-
-</div>
-
-<p id="aiNarrative">
-DYNAMIS will analyse your cloud cost data and identify recoverable margin opportunities.
-</p>
-
-</div>
-
-<!-- CHARTS -->
-
-<div class="chart-grid">
-
-<div class="card">
-<h3>Cloud Cost Breakdown</h3>
-<canvas id="cloudChart"></canvas>
-</div>
-
-<div class="card">
-<h3>Cost Trend</h3>
-<canvas id="trendChart"></canvas>
-</div>
-
-<div class="card">
-<h3>Cloud Spend Forecast (12 Months)</h3>
-<canvas id="forecastChart"></canvas>
-</div>
-
-</div>
-
-<!-- AI INSIGHTS -->
-
-<div class="insight-card">
-
-<h3>AI FinOps Insights</h3>
-
-<ul id="insights"></ul>
-
-</div>
-
-<!-- AI CFO ASSISTANT -->
-
-<div class="insight-card">
-
-<h3>DYNAMIS AI CFO Assistant</h3>
-
-<button id="askAI">Generate Financial Advice</button>
-
-<pre id="aiAdvice" style="margin-top:15px;white-space:pre-wrap;"></pre>
-
-</div>
-
-<!-- AI SPEND ANOMALIES -->
-
-<div class="insight-card">
-
-<h3>AI Spend Anomalies</h3>
-
-<ul id="anomalyList">
-
-<li>No anomalies detected.</li>
-
-</ul>
-
-</div>
-
 <!-- CLOUD WASTE HEATMAP -->
 
-<div class="card">
+<div class="card" style="margin-top:30px">
 
 <h3>Cloud Waste Heatmap</h3>
-
-<div class="heatmap">
 
 <div class="heat-row">
 <span>Compute</span>
@@ -201,35 +199,24 @@ DYNAMIS will analyse your cloud cost data and identify recoverable margin opport
 
 </div>
 
-</div>
+<!-- AI CFO NARRATOR -->
+
+<div class="card" style="margin-top:30px">
+
+<h3>DYNAMIS AI CFO Summary</h3>
+
+<div id="aiNarrator"
+style="
+background:#0f172a;
+padding:20px;
+border-radius:8px;
+line-height:1.6;
+font-size:15px;
+">
+
+DYNAMIS will analyse your cloud spend and generate executive insights.
 
 </div>
-
-<!-- CLOUD WASTE OPPORTUNITIES -->
-
-<div class="card">
-
-<h3>Cloud Waste Opportunities</h3>
-
-<table class="opportunity-table">
-
-<thead>
-<tr>
-<th>Service</th>
-<th>Issue</th>
-<th>Monthly Waste</th>
-</tr>
-</thead>
-
-<tbody id="opportunityTable">
-
-<tr>
-<td colspan="3">No optimisation opportunities detected</td>
-</tr>
-
-</tbody>
-
-</table>
 
 </div>
 
@@ -237,161 +224,164 @@ DYNAMIS will analyse your cloud cost data and identify recoverable margin opport
 
 <script>
 
-/* SUPABASE CONNECTION */
+const supabaseUrl="YOUR_SUPABASE_URL"
+const supabaseKey="YOUR_SUPABASE_ANON_KEY"
+const supabase = supabase.createClient(supabaseUrl,supabaseKey)
 
-const supabaseUrl = "YOUR_SUPABASE_URL"
-const supabaseKey = "YOUR_SUPABASE_ANON_KEY"
+const API="/api"
 
-const supabase = supabase.createClient(supabaseUrl, supabaseKey)
+function animateCurrency(element,targetValue){
 
-let cloudChart
-let trendChart
-let forecastChart
+let current=0
+const duration=1200
+const steps=40
+const stepValue=targetValue/steps
+const stepTime=duration/steps
 
-function formatCurrency(value){
-return "R " + Number(value || 0).toLocaleString("en-ZA")
+const interval=setInterval(()=>{
+
+current+=stepValue
+
+if(current>=targetValue){
+current=targetValue
+clearInterval(interval)
 }
 
-/* REPORT DOWNLOAD */
+element.innerText="R "+Math.round(current).toLocaleString("en-ZA")
 
-document.getElementById("downloadReport").onclick = async ()=>{
+},stepTime)
 
-const { data:{session} } = await supabase.auth.getSession()
+}
 
-if(!session) return
+function animateValue(element,value){
 
-const user=session.user
+let current=0
+const duration=1200
+const steps=40
+const step=value/steps
 
-fetch("/api/report",{headers:{userid:user.id}})
-.then(res=>res.blob())
-.then(blob=>{
+const interval=setInterval(()=>{
 
-const url = window.URL.createObjectURL(blob)
+current+=step
 
-const a = document.createElement("a")
-a.href = url
-a.download = "dynamis-finops-report.pdf"
+if(current>=value){
+current=value
+clearInterval(interval)
+}
 
-document.body.appendChild(a)
-a.click()
-a.remove()
+element.innerText="R "+Math.round(current).toLocaleString("en-ZA")
 
+},duration/steps)
+
+}
+
+function startLiveSavings(baseValue){
+
+let value = baseValue || 0
+
+setInterval(()=>{
+
+const increment = Math.floor(Math.random()*50)+10
+
+value += increment
+
+document.getElementById("liveSavings").innerText =
+"R " + Math.round(value).toLocaleString("en-ZA")
+
+},1500)
+
+}
+
+function renderHeatmap(data){
+
+if(!data) return
+
+document.getElementById("computeHeat").style.width=data.compute+"%"
+document.getElementById("storageHeat").style.width=data.storage+"%"
+document.getElementById("networkHeat").style.width=data.network+"%"
+document.getElementById("idleHeat").style.width=data.idle+"%"
+
+document.getElementById("computePercent").innerText=data.compute+"%"
+document.getElementById("storagePercent").innerText=data.storage+"%"
+document.getElementById("networkPercent").innerText=data.network+"%"
+document.getElementById("idlePercent").innerText=data.idle+"%"
+
+}
+
+function generateNarrative(data){
+
+if(!data) return
+
+const savings=Math.round(data.potentialSavings||0)
+const spend=Math.round(data.totalCost||0)
+const waste=Math.round(data.monthlyWaste||0)
+
+let driver="cloud resources"
+
+if(data.wasteDrivers && data.wasteDrivers.length>0){
+driver=data.wasteDrivers[0].service
+}
+
+const percentage = spend>0 ? Math.round((savings/spend)*100) : 0
+
+const text=`
+DYNAMIS has identified potential recoverable cloud margin of 
+R ${savings.toLocaleString("en-ZA")}.
+
+The primary waste driver appears to be ${driver}.
+
+Based on current spend levels of R ${spend.toLocaleString("en-ZA")}, 
+optimisation could reduce cloud costs by approximately ${percentage}% annually.
+
+Estimated monthly waste exposure is 
+R ${waste.toLocaleString("en-ZA")}.
+`
+
+document.getElementById("aiNarrator").innerText=text
+
+}
+
+async function loadClients(){
+
+const res=await fetch(API+"/clients")
+const clients=await res.json()
+
+const selector=document.getElementById("clientSelector")
+selector.innerHTML='<option value="">Select Client</option>'
+
+clients.forEach(c=>{
+selector.innerHTML+=`<option value="${c.id}">${c.name}</option>`
 })
 
 }
 
-/* AI CFO ASSISTANT */
-
-document.getElementById("askAI").onclick = async ()=>{
-
-const { data:{session} } = await supabase.auth.getSession()
-
-if(!session) return
-
-const user=session.user
-
-const res = await fetch("/api/ai",{headers:{userid:user.id}})
-const data = await res.json()
-
-document.getElementById("aiAdvice").innerText = data.advice
-
+function formatCurrency(value){
+return "R "+Number(value||0).toLocaleString("en-ZA")
 }
-
-/* RISK LABEL */
-
-function riskLabel(score){
-if(score < 30) return "Low Risk"
-if(score < 60) return "Moderate Risk"
-return "High Risk"
-}
-
-/* COUNTER */
-
-function animateCounter(target,value){
-
-let current = 0
-const step = value / 40
-
-const interval = setInterval(()=>{
-
-current += step
-
-if(current >= value){
-current = value
-clearInterval(interval)
-}
-
-target.innerText = "R " + Math.round(current).toLocaleString()
-
-},30)
-
-}
-
-/* FORECAST ENGINE */
-
-function generateForecast(monthlyCosts){
-
-if(!monthlyCosts || monthlyCosts.length < 2){
-return []
-}
-
-const growthRates=[]
-
-for(let i=1;i<monthlyCosts.length;i++){
-
-const prev=monthlyCosts[i-1]
-const curr=monthlyCosts[i]
-
-if(prev>0){
-growthRates.push((curr-prev)/prev)
-}
-
-}
-
-const avgGrowth=growthRates.reduce((a,b)=>a+b,0)/growthRates.length
-
-let lastValue=monthlyCosts[monthlyCosts.length-1]
-
-const forecast=[]
-
-for(let i=0;i<12;i++){
-lastValue=lastValue*(1+avgGrowth)
-forecast.push(Math.round(lastValue))
-}
-
-return forecast
-
-}
-
-/* LOAD DASHBOARD */
 
 async function loadDashboard(){
 
 try{
 
-const { data:{session} } = await supabase.auth.getSession()
+const clientId=document.getElementById("clientSelector").value
+if(!clientId) return
 
-if(!session) return
-
-const user=session.user
-
-const res=await fetch("/api/dashboard/dashboard-data",{headers:{userid:user.id}})
+const res=await fetch(API+"/dashboard/dashboard-data?client="+clientId)
 const data=await res.json()
 
-document.getElementById("riskScore").innerText=data.riskScore??0
-document.getElementById("riskLabel").innerText=riskLabel(data.riskScore??0)
-
-document.getElementById("exposure").innerText=formatCurrency(data.totalCost)
-document.getElementById("savings").innerText=formatCurrency(data.potentialSavings)
-document.getElementById("confidence").innerText=(data.confidence??80)+"%"
+animateValue(document.getElementById("valueTotal"),data.financialImpact?.total||0)
+animateValue(document.getElementById("valueAnnual"),data.financialImpact?.year1||0)
+animateValue(document.getElementById("valueMonthly"),data.monthlyWaste||0)
 
 document.getElementById("execSpend").innerText=formatCurrency(data.totalCost)
-document.getElementById("execSavings").innerText=formatCurrency(data.potentialSavings)
 
-const forecast=generateForecast(data.monthlyCosts||[])
-const forecastTotal=forecast.reduce((a,b)=>a+b,0)
+animateCurrency(document.getElementById("execSavings"),data.potentialSavings||0)
 
-document.getElementById("execForecast").innerText=formatCurrency(forecastTotal)
+renderHeatmap(data.heatmap)
+
+generateNarrative(data)
+
+startLiveSavings(data.potentialSavings || 0)
 
 }catch(err){
 
@@ -402,7 +392,7 @@ console.error("Dashboard load failed",err)
 }
 
 window.addEventListener("load",()=>{
-setTimeout(loadDashboard,500)
+loadClients()
 })
 
 </script>

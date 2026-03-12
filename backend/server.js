@@ -15,6 +15,12 @@ app.use(express.static(frontendPath))
 
 console.log("Frontend served from:", frontendPath)
 
+/* ROOT HEALTH ROUTE (IMPORTANT FOR RENDER) */
+
+app.get("/", (req, res) => {
+  res.send("DYNAMIS backend running")
+})
+
 /* ROUTES */
 
 const uploadRoute = require("./routes/upload")
@@ -37,12 +43,10 @@ const startFinopsScheduler = require("./scheduler/scanJob")
 
 startFinopsScheduler()
 
-/* SERVER */
+/* SERVER (RENDER PORT FIX) */
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 
 app.listen(PORT, () => {
-
-console.log("DYNAMIS backend running on http://localhost:" + PORT)
-
+  console.log("DYNAMIS backend running on port " + PORT)
 })

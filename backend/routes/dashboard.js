@@ -1,57 +1,72 @@
-const express = require('express')
+const express = require("express")
 const router = express.Router()
-const supabase = require('../supabaseClient')
+const supabase = require("../supabaseClient")
+const finopsScore = require("../services/finopsScore")
+const savingsOpportunities = require("../services/savingsOpportunities")
 
-router.get('/dashboard-data', async (req, res) => {
+function getMonthFromDate(usageDate) {
+  if (!usageDate) return null
+  const s = typeof usageDate === "string" ? usageDate : (usageDate.toISOString && usageDate.toISOString()) || String(usageDate)
+  return s.slice(0, 7)
+}
+
+/* TEST ROUTE */
+
+router.get("/test", (req,res)=>{
+  res.json({status:"dashboard router working"})
+})
+
+/* CFO METRICS – Executive dashboard metrics only */
+
+router.get("/cfo-metrics", async (req, res) => {
+  try {
+    const clientId = req.query.client
+    if (!clientId) return res.status(400).json({ success: false, error: "Client ID missing" })
+    const [scoreResult, savingsResult] = await Promise.all([
+      finopsScore.getFinOpsScore(clientId).catch(() => ({ score: 0, totalCost: 0, totalWaste: 0, breakdown: {} })),
+      savingsOpportunities.getSavingsOpportunities(clientId, { limit: 5 }).catch(() => ({ totalPotentialSavings: 0 })),
+    ])
+    res.json({
+      success: true,
+      totalCloudSpend: scoreResult.totalCost,
+      potentialSavings: scoreResult.totalWaste,
+      finopsMaturityScore: scoreResult.score,
+      wasteBreakdown: scoreResult.breakdown || {},
+      topSavingsOpportunity: savingsResult.totalPotentialSavings,
+    })
+  } catch (err) {
+    console.error("CFO metrics error:", err)
+    res.status(500).json({ success: false, error: "CFO metrics failed", message: err.message })
+  }
+})
+
+/* MAIN DASHBOARD ROUTE */
+
+router.get("/dashboard-data", async (req, res) => {
 
 try {
 
-const userId = req.headers.userid
-
-if(!userId){
-return res.status(401).json({error:'User not authenticated'})
-}
-
-/* STEP 1
-GET CLIENT LINKED TO USER
-*/
-
-const { data: profile, error: profileError } = await supabase
-.from('profiles')
-.select('client_id')
-.eq('id', userId)
-.single()
-
-if(profileError){
-return res.status(500).json(profileError)
-}
-
-const clientId = profile.client_id
+const clientId = req.query.client
 
 if(!clientId){
-return res.status(400).json({error:'User not assigned to client'})
+return res.status(400).json({ success: false, error: "Client ID missing" })
 }
 
-/* STEP 2
-LOAD CLOUD DATA
-*/
+const { data: rows, error } = await supabase
+.from("cloud_cost_data")
+.select("cost, usage_date, cloud_provider, service, category, utilization")
+.eq("client_id", clientId)
 
-const { data: cloudData, error: cloudError } = await supabase
-.from('cloud_cost_data')
-.select('*')
-.eq('client_id', clientId)
-
-if(cloudError){
-return res.status(500).json(cloudError)
+if(error){
+console.error("Supabase error:", error)
+return res.status(500).json({ success: false, error: "Failed to load cloud data", message: error.message })
 }
 
-/* STEP 3
-INITIALISE METRICS
-*/
+const dataRows = rows || []
+
+/* METRICS */
 
 let totalCost = 0
-let potentialSavings = 0
-
 let awsCost = 0
 let azureCost = 0
 let gcpCost = 0
@@ -63,144 +78,106 @@ let idleWaste = 0
 
 let monthlyMap = {}
 
-/* STEP 4
-PROCESS DATA
-*/
-
-cloudData.forEach(row => {
-
-const cost = Number(row.cost || 0)
-
+for(const r of dataRows){
+const cost = Number(r.cost || 0)
 totalCost += cost
-
-/* CLOUD SPLIT */
-
-if(row.cloud === "AWS") awsCost += cost
-if(row.cloud === "AZURE") azureCost += cost
-if(row.cloud === "GCP") gcpCost += cost
-
-/* SAVINGS LOGIC */
-
-if(row.utilization && row.utilization < 40){
-potentialSavings += cost * 0.25
+const provider = (r.cloud_provider || r.cloud || "").toString().toUpperCase()
+const service = (r.service || "").toString().toUpperCase()
+if(provider === "AWS") awsCost += cost
+if(provider === "AZURE") azureCost += cost
+if(provider === "GCP") gcpCost += cost
+if(service.includes("EC2") || service.includes("VIRTUAL") || service.includes("VM")) computeWaste += cost * 0.20
+if(service.includes("S3") || service.includes("BLOB")) storageWaste += cost * 0.15
+if(service.includes("CDN") || service.includes("CLOUDFRONT") || service.includes("NETWORK")) networkWaste += cost * 0.10
+if(service.includes("LAMBDA") || service.includes("FUNCTION")) idleWaste += cost * 0.05
+const month = getMonthFromDate(r.usage_date)
+if(month){ monthlyMap[month] = (monthlyMap[month] || 0) + cost }
 }
 
-/* CATEGORY WASTE */
+/* TOTAL WASTE */
 
-if(row.category === "compute") computeWaste += cost
-if(row.category === "storage") storageWaste += cost
-if(row.category === "network") networkWaste += cost
-if(row.category === "idle") idleWaste += cost
+const totalWaste = computeWaste + storageWaste + networkWaste + idleWaste
 
-/* MONTHLY TREND */
+/* MONTHLY SERIES */
 
-const month = row.month || "Unknown"
+const monthlySeries = Object.keys(monthlyMap)
+.sort()
+.map(m=>({
+month:m,
+cost:Number(monthlyMap[m].toFixed(2))
+}))
 
-if(!monthlyMap[month]){
-monthlyMap[month] = 0
+/* WASTE PERCENTAGES */
+
+const computeWastePercent = totalWaste ? Math.round((computeWaste/totalWaste)*100) : 0
+const storageWastePercent = totalWaste ? Math.round((storageWaste/totalWaste)*100) : 0
+const networkWastePercent = totalWaste ? Math.round((networkWaste/totalWaste)*100) : 0
+const idleWastePercent = totalWaste ? Math.round((idleWaste/totalWaste)*100) : 0
+
+/* RISK SCORE */
+
+const riskScore = totalCost
+? Math.min(100, Math.round((totalWaste/totalCost)*100))
+: 0
+
+/* CFO FINANCIAL IMPACT */
+
+const recoverableValue = totalWaste * 36   // 3 year value
+
+const platformFee = recoverableValue * 0.20   // DYNAMIS fee model
+
+const netClientBenefit = recoverableValue - platformFee
+
+const roi = platformFee > 0 ? Math.round((netClientBenefit / platformFee) * 100) : 0
+
+let finopsScoreResult = { score: Math.max(0, 100 - riskScore), breakdown: {} }
+let savingsSummary = { opportunities: [], totalPotentialSavings: 0 }
+try {
+  finopsScoreResult = await finopsScore.getFinOpsScore(clientId)
+  const savings = await savingsOpportunities.getSavingsOpportunities(clientId, { limit: 10 })
+  savingsSummary = { opportunities: savings.opportunities, totalPotentialSavings: savings.totalPotentialSavings }
+} catch (e) {
+  console.warn("FinOps/savings optional load failed:", e.message)
 }
-
-monthlyMap[month] += cost
-
-})
-
-/* STEP 5
-MONTHLY TREND ARRAYS
-*/
-
-const monthLabels = Object.keys(monthlyMap)
-const monthlyCosts = Object.values(monthlyMap)
-
-/* STEP 6
-RISK SCORE
-*/
-
-let riskScore = 0
-
-if(totalCost > 0){
-riskScore = Math.min(
-100,
-Math.round((potentialSavings / totalCost) * 100)
-)
-}
-
-/* STEP 7
-HEATMAP PERCENTAGES
-*/
-
-const computeWastePercent = totalCost ? Math.round((computeWaste / totalCost) * 100) : 0
-const storageWastePercent = totalCost ? Math.round((storageWaste / totalCost) * 100) : 0
-const networkWastePercent = totalCost ? Math.round((networkWaste / totalCost) * 100) : 0
-const idleWastePercent = totalCost ? Math.round((idleWaste / totalCost) * 100) : 0
-
-/* STEP 8
-AI INSIGHTS
-*/
-
-let insights = []
-
-if(computeWastePercent > 40){
-insights.push("High compute spend detected. Rightsizing instances could significantly reduce costs.")
-}
-
-if(storageWastePercent > 20){
-insights.push("Storage optimisation opportunity detected. Review unused or cold storage tiers.")
-}
-
-if(networkWastePercent > 15){
-insights.push("Network transfer costs appear high. Investigate cross-region data transfers.")
-}
-
-if(idleWastePercent > 10){
-insights.push("Idle resources detected. Removing unused infrastructure could reduce waste.")
-}
-
-/* STEP 9
-CONFIDENCE SCORE
-*/
-
-let confidence = 80
-
-if(cloudData.length > 200){
-confidence = 92
-}
-
-if(cloudData.length > 500){
-confidence = 96
-}
-
-/* STEP 10
-RESPONSE
-*/
 
 res.json({
-
-totalCost,
-potentialSavings,
-riskScore,
-confidence,
-
-awsCost,
-azureCost,
-gcpCost,
-
-monthLabels,
-monthlyCosts,
-
-computeWastePercent,
-storageWastePercent,
-networkWastePercent,
-idleWastePercent,
-
-insights
-
+  success: true,
+  totalCost: Number(totalCost.toFixed(2)),
+  potentialSavings: Number(totalWaste.toFixed(2)),
+  awsCost: Number(awsCost.toFixed(2)),
+  azureCost: Number(azureCost.toFixed(2)),
+  gcpCost: Number(gcpCost.toFixed(2)),
+  providerTotals: {
+    AWS: Number(awsCost.toFixed(2)),
+    AZURE: Number(azureCost.toFixed(2)),
+    GCP: Number(gcpCost.toFixed(2))
+  },
+  computeWaste: Number(computeWaste.toFixed(2)),
+  storageWaste: Number(storageWaste.toFixed(2)),
+  networkWaste: Number(networkWaste.toFixed(2)),
+  idleWaste: Number(idleWaste.toFixed(2)),
+  computeWastePercent,
+  storageWastePercent,
+  networkWastePercent,
+  idleWastePercent,
+  monthlySeries,
+  riskScore,
+  confidence: 80,
+  finopsScore: finopsScoreResult.score,
+  wasteBreakdown: finopsScoreResult.breakdown || {},
+  savingsOpportunities: savingsSummary.opportunities,
+  totalPotentialSavingsFromEngine: savingsSummary.totalPotentialSavings,
+  cfoImpact: {
+    recoverableValue: Number(recoverableValue.toFixed(2)),
+    platformFee: Number(platformFee.toFixed(2)),
+    netClientBenefit: Number(netClientBenefit.toFixed(2)),
+    roi
+  }
 })
 
-} catch(err){
-
-console.error("Dashboard error:",err)
-res.status(500).json(err)
-
+} catch (err) {
+  console.error("Dashboard error:", err)
+  res.status(500).json({ success: false, error: "Dashboard processing failed", message: err.message })
 }
 
 })

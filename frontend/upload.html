@@ -6,8 +6,6 @@
 <meta charset="UTF-8">
 <title>DYNAMIS Cloud Billing Upload</title>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-
 <link rel="stylesheet" href="/css/style.css">
 
 </head>
@@ -37,7 +35,7 @@
 <option>Loading clients...</option>
 </select>
 
-<br>
+<br><br>
 
 <label>Billing CSV</label>
 
@@ -61,47 +59,49 @@
 
 <script>
 
-/* SUPABASE CONNECTION */
+/* API BASE */
 
-const supabaseUrl = "YOUR_SUPABASE_URL"
-const supabaseKey = "YOUR_SUPABASE_ANON_KEY"
-
-const supabase = supabase.createClient(supabaseUrl, supabaseKey)
-
+const API = "/api"
 
 /* LOAD CLIENTS */
 
 async function loadClients(){
 
-const { data, error } = await supabase
-.from("clients")
-.select("*")
-.order("name")
+try{
 
-if(error){
-console.error("Client load error",error)
-return
-}
+const res = await fetch(API + "/clients")
+
+const clients = await res.json()
 
 const select = document.getElementById("clientSelect")
 
-select.innerHTML=""
+select.innerHTML = '<option value="">Select Client</option>'
 
-data.forEach(client =>{
+if(!Array.isArray(clients)){
+console.error("Invalid client list:", clients)
+return
+}
 
-const option=document.createElement("option")
+clients.forEach(client =>{
 
-option.value=client.id
-option.textContent=client.name
+const option = document.createElement("option")
+
+option.value = client.id
+option.textContent = client.name
 
 select.appendChild(option)
 
 })
 
+}catch(err){
+
+console.error("Client loading failed:", err)
+
 }
 
+}
 
-/* UPLOAD FORM */
+/* HANDLE UPLOAD */
 
 document.getElementById("uploadForm").addEventListener("submit", async (e)=>{
 
@@ -109,51 +109,59 @@ e.preventDefault()
 
 const formData = new FormData(e.target)
 
+console.log("Uploading CSV for client:", formData.get("client_id"))
+
 document.getElementById("result").innerHTML =
-"Processing billing file..."
+"Uploading billing file..."
 
 try{
 
-const res = await fetch("/api/upload",{
+const res = await fetch(API + "/upload",{
 method:"POST",
 body:formData
 })
 
 const data = await res.json()
 
-console.log("UPLOAD RESULT:",data)
+console.log("Upload response:", data)
+
+if(res.ok){
 
 document.getElementById("result").innerHTML = `
-<h3>Analysis Complete</h3>
+<h3>Upload Successful</h3>
 
-<b>Total Cloud Spend:</b> R ${Number(data.totalCost || 0).toLocaleString()} <br>
-<b>Projected Savings:</b> R ${Number(data.potentialSavings || 0).toLocaleString()} <br>
-<b>Risk Score:</b> ${data.riskScore || 0}
+Rows Inserted: <b>${data.rowsInserted || 0}</b>
 
 <br><br>
 
-Loading Executive Dashboard...
+Opening Executive Dashboard...
 `
 
 setTimeout(()=>{
 
-window.location.href="/executive-dashboard.html"
+window.location.href="/dashboard.html"
 
 },2000)
 
-}catch(err){
-
-console.error(err)
+}else{
 
 document.getElementById("result").innerHTML =
-"Upload failed. Please try again."
+"Upload failed: " + (data.error || "Unknown error")
+
+}
+
+}catch(err){
+
+console.error("Upload error:", err)
+
+document.getElementById("result").innerHTML =
+"Upload failed. Please check console."
 
 }
 
 })
 
-
-/* INITIALISE PAGE */
+/* INITIALISE */
 
 window.addEventListener("load", loadClients)
 

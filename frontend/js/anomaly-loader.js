@@ -6,7 +6,8 @@ const res = await fetch("/api/anomalies",{
 headers:{userid:user.id}
 })
 
-const anomalies = await res.json()
+const data = await res.json()
+const anomalies = Array.isArray(data) ? data : (data.anomalies || [])
 
 const container = document.getElementById("anomalyList")
 

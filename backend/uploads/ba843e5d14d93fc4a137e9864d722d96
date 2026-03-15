@@ -1,0 +1,501 @@
+cloud_provider,service,region,resource,usage_date,cost
+Azure,CosmosDB,eastus,CosmosDB-resource-1,2026-03-11,132.99
+Azure,AKS,southafricanorth,AKS-resource-2,2026-01-17,39.21
+Azure,AKS,eastus,AKS-resource-3,2026-03-16,13.95
+Azure,Functions,eastus,Functions-resource-4,2026-02-15,68.45
+Azure,CDN,westeurope,CDN-resource-5,2026-01-17,158.8
+Azure,AKS,eastus,AKS-resource-6,2026-02-14,156.56
+Azure,Functions,eastus,Functions-resource-7,2026-03-15,55.75
+Azure,App Service,eastus,App Service-resource-8,2026-03-28,190.21
+Azure,SQL Database,southafricanorth,SQL Database-resource-9,2026-03-20,892.62
+Azure,App Service,westeurope,App Service-resource-10,2026-02-22,141.49
+Azure,Functions,westeurope,Functions-resource-11,2026-01-27,150.72
+Azure,App Service,westeurope,App Service-resource-12,2026-01-11,63.98
+Azure,Functions,southafricanorth,Functions-resource-13,2026-02-10,160.29
+Azure,Blob Storage,centralus,Blob Storage-resource-14,2026-01-24,94.36
+Azure,App Service,centralus,App Service-resource-15,2026-03-12,790.75
+Azure,CosmosDB,westeurope,CosmosDB-resource-16,2026-01-24,88.35
+Azure,Virtual Machines,centralus,Virtual Machines-resource-17,2026-01-17,320.5
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-18,2026-01-09,198.63
+Azure,CosmosDB,centralus,CosmosDB-resource-19,2026-02-12,24.69
+Azure,AKS,southafricanorth,AKS-resource-20,2026-03-07,173.75
+Azure,Blob Storage,centralus,Blob Storage-resource-21,2026-03-09,177.12
+Azure,Functions,eastus,Functions-resource-22,2026-02-12,1166.74
+Azure,AKS,southafricanorth,AKS-resource-23,2026-03-02,102.45
+Azure,Virtual Machines,eastus,Virtual Machines-resource-24,2026-02-07,38.19
+Azure,SQL Database,westeurope,SQL Database-resource-25,2026-01-17,45.9
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-26,2026-03-03,106.46
+Azure,SQL Database,westeurope,SQL Database-resource-27,2026-01-25,21.14
+Azure,Functions,centralus,Functions-resource-28,2026-04-01,106.23
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-29,2026-02-22,173.47
+Azure,Functions,southafricanorth,Functions-resource-30,2026-03-10,67.62
+Azure,Blob Storage,eastus,Blob Storage-resource-31,2026-03-04,17.41
+Azure,Functions,eastus,Functions-resource-32,2026-03-24,165.91
+Azure,App Service,eastus,App Service-resource-33,2026-03-12,142.83
+Azure,Functions,westeurope,Functions-resource-34,2026-03-18,88.73
+Azure,AKS,centralus,AKS-resource-35,2026-02-28,66.63
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-36,2026-03-26,76.13
+Azure,Functions,centralus,Functions-resource-37,2026-01-09,78.18
+Azure,App Service,westeurope,App Service-resource-38,2026-03-18,164.77
+Azure,Functions,southafricanorth,Functions-resource-39,2026-02-10,19.85
+Azure,Functions,westeurope,Functions-resource-40,2026-03-25,26.1
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-41,2026-01-02,33.4
+Azure,SQL Database,centralus,SQL Database-resource-42,2026-01-30,182.37
+Azure,App Service,southafricanorth,App Service-resource-43,2026-02-15,93.67
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-44,2026-03-22,61.22
+Azure,Blob Storage,eastus,Blob Storage-resource-45,2026-02-17,138.18
+Azure,CosmosDB,southafricanorth,CosmosDB-resource-46,2026-02-08,1186.2
+Azure,AKS,southafricanorth,AKS-resource-47,2026-02-07,99.69
+Azure,App Service,westeurope,App Service-resource-48,2026-01-19,94.13
+Azure,Virtual Machines,centralus,Virtual Machines-resource-49,2026-03-18,128.28
+Azure,Functions,eastus,Functions-resource-50,2026-01-08,111.02
+Azure,Virtual Machines,eastus,Virtual Machines-resource-51,2026-04-01,161.2
+Azure,Virtual Machines,centralus,Virtual Machines-resource-52,2026-03-02,177.12
+Azure,Blob Storage,centralus,Blob Storage-resource-53,2026-02-01,143.38
+Azure,App Service,southafricanorth,App Service-resource-54,2026-03-31,121.67
+Azure,SQL Database,eastus,SQL Database-resource-55,2026-02-08,188.59
+Azure,SQL Database,southafricanorth,SQL Database-resource-56,2026-01-20,108.66
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-57,2026-03-09,159.89
+Azure,CosmosDB,centralus,CosmosDB-resource-58,2026-02-18,102.28
+Azure,App Service,westeurope,App Service-resource-59,2026-02-22,197.69
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-60,2026-01-22,82.55
+Azure,CDN,westeurope,CDN-resource-61,2026-03-30,119.56
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-62,2026-04-01,62.04
+Azure,Blob Storage,eastus,Blob Storage-resource-63,2026-03-13,24.69
+Azure,Virtual Machines,centralus,Virtual Machines-resource-64,2026-01-12,68.36
+Azure,CosmosDB,westeurope,CosmosDB-resource-65,2026-01-13,103.16
+Azure,Virtual Machines,centralus,Virtual Machines-resource-66,2026-02-04,20.81
+Azure,Virtual Machines,eastus,Virtual Machines-resource-67,2026-03-11,180.28
+Azure,Functions,westeurope,Functions-resource-68,2026-01-01,197.83
+Azure,CosmosDB,eastus,CosmosDB-resource-69,2026-02-25,170.6
+Azure,App Service,westeurope,App Service-resource-70,2026-01-25,133.65
+Azure,CosmosDB,centralus,CosmosDB-resource-71,2026-01-08,140.89
+Azure,AKS,eastus,AKS-resource-72,2026-03-05,48.38
+Azure,Functions,westeurope,Functions-resource-73,2026-01-19,45.13
+Azure,App Service,southafricanorth,App Service-resource-74,2026-03-15,16.67
+Azure,App Service,eastus,App Service-resource-75,2026-03-23,123.23
+Azure,CosmosDB,eastus,CosmosDB-resource-76,2026-03-24,178.85
+Azure,Functions,southafricanorth,Functions-resource-77,2026-01-14,103.62
+Azure,AKS,westeurope,AKS-resource-78,2026-03-04,190.65
+Azure,AKS,eastus,AKS-resource-79,2026-02-24,176.5
+Azure,App Service,centralus,App Service-resource-80,2026-02-05,11.05
+Azure,Functions,centralus,Functions-resource-81,2026-03-19,140.65
+Azure,Functions,eastus,Functions-resource-82,2026-03-31,179.33
+Azure,Virtual Machines,centralus,Virtual Machines-resource-83,2026-03-02,123.29
+Azure,AKS,southafricanorth,AKS-resource-84,2026-01-01,168.65
+Azure,Blob Storage,westeurope,Blob Storage-resource-85,2026-01-07,42.13
+Azure,SQL Database,centralus,SQL Database-resource-86,2026-01-08,184.77
+Azure,CDN,centralus,CDN-resource-87,2026-03-08,90.35
+Azure,SQL Database,southafricanorth,SQL Database-resource-88,2026-01-07,115.09
+Azure,CosmosDB,westeurope,CosmosDB-resource-89,2026-01-21,105.03
+Azure,CDN,westeurope,CDN-resource-90,2026-02-17,160.37
+Azure,Blob Storage,centralus,Blob Storage-resource-91,2026-03-16,196.02
+Azure,CDN,eastus,CDN-resource-92,2026-03-23,37.82
+Azure,Blob Storage,eastus,Blob Storage-resource-93,2026-02-02,94.28
+Azure,CDN,westeurope,CDN-resource-94,2026-03-28,139.24
+Azure,SQL Database,southafricanorth,SQL Database-resource-95,2026-01-27,30.55
+Azure,Virtual Machines,centralus,Virtual Machines-resource-96,2026-02-16,30.1
+Azure,CDN,eastus,CDN-resource-97,2026-01-18,81.84
+Azure,Virtual Machines,eastus,Virtual Machines-resource-98,2026-01-14,177.25
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-99,2026-03-30,113.06
+Azure,CDN,southafricanorth,CDN-resource-100,2026-01-18,48.62
+Azure,SQL Database,centralus,SQL Database-resource-101,2026-02-10,139.09
+Azure,Functions,westeurope,Functions-resource-102,2026-03-07,65.75
+Azure,AKS,westeurope,AKS-resource-103,2026-02-16,140.93
+Azure,App Service,eastus,App Service-resource-104,2026-03-25,153.16
+Azure,CosmosDB,westeurope,CosmosDB-resource-105,2026-02-25,111.6
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-106,2026-01-31,1397.77
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-107,2026-03-01,58.4
+Azure,AKS,centralus,AKS-resource-108,2026-03-07,142.6
+Azure,CosmosDB,eastus,CosmosDB-resource-109,2026-02-27,183.03
+Azure,Functions,southafricanorth,Functions-resource-110,2026-02-19,15.38
+Azure,AKS,westeurope,AKS-resource-111,2026-01-17,137.9
+Azure,App Service,westeurope,App Service-resource-112,2026-01-03,185.14
+Azure,AKS,eastus,AKS-resource-113,2026-01-11,122.55
+Azure,Functions,centralus,Functions-resource-114,2026-01-28,552.89
+Azure,AKS,eastus,AKS-resource-115,2026-01-18,120.87
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-116,2026-03-06,29.05
+Azure,Virtual Machines,eastus,Virtual Machines-resource-117,2026-02-18,129.74
+Azure,AKS,westeurope,AKS-resource-118,2026-01-24,109.07
+Azure,App Service,eastus,App Service-resource-119,2026-02-25,117.96
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-120,2026-01-10,83.99
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-121,2026-03-03,459.2
+Azure,CosmosDB,eastus,CosmosDB-resource-122,2026-01-25,17.74
+Azure,Blob Storage,westeurope,Blob Storage-resource-123,2026-01-06,153.33
+Azure,Functions,centralus,Functions-resource-124,2026-01-28,123.81
+Azure,SQL Database,southafricanorth,SQL Database-resource-125,2026-03-20,179.08
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-126,2026-01-28,120.71
+Azure,Blob Storage,westeurope,Blob Storage-resource-127,2026-01-05,50.55
+Azure,Functions,southafricanorth,Functions-resource-128,2026-01-26,154.79
+Azure,AKS,centralus,AKS-resource-129,2026-03-21,166.0
+Azure,App Service,westeurope,App Service-resource-130,2026-02-22,530.22
+Azure,Functions,westeurope,Functions-resource-131,2026-01-25,28.58
+Azure,CDN,westeurope,CDN-resource-132,2026-01-19,87.94
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-133,2026-02-15,120.22
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-134,2026-01-30,144.4
+Azure,AKS,eastus,AKS-resource-135,2026-01-01,19.89
+Azure,Virtual Machines,eastus,Virtual Machines-resource-136,2026-03-01,136.89
+Azure,App Service,southafricanorth,App Service-resource-137,2026-01-21,95.32
+Azure,AKS,centralus,AKS-resource-138,2026-03-17,134.45
+Azure,CDN,westeurope,CDN-resource-139,2026-02-19,69.3
+Azure,CDN,southafricanorth,CDN-resource-140,2026-03-14,185.66
+Azure,Blob Storage,centralus,Blob Storage-resource-141,2026-01-26,157.57
+Azure,SQL Database,southafricanorth,SQL Database-resource-142,2026-01-06,99.01
+Azure,App Service,centralus,App Service-resource-143,2026-02-26,120.41
+Azure,SQL Database,eastus,SQL Database-resource-144,2026-01-03,160.91
+Azure,Blob Storage,centralus,Blob Storage-resource-145,2026-01-08,157.07
+Azure,AKS,southafricanorth,AKS-resource-146,2026-03-03,73.45
+Azure,Blob Storage,westeurope,Blob Storage-resource-147,2026-01-04,20.24
+Azure,Blob Storage,centralus,Blob Storage-resource-148,2026-02-06,29.74
+Azure,Functions,eastus,Functions-resource-149,2026-03-02,199.66
+Azure,App Service,southafricanorth,App Service-resource-150,2026-01-08,147.37
+Azure,Virtual Machines,centralus,Virtual Machines-resource-151,2026-01-11,172.42
+Azure,CosmosDB,southafricanorth,CosmosDB-resource-152,2026-02-07,14.06
+Azure,CosmosDB,eastus,CosmosDB-resource-153,2026-03-28,148.69
+Azure,Blob Storage,centralus,Blob Storage-resource-154,2026-01-21,51.35
+Azure,Functions,westeurope,Functions-resource-155,2026-03-03,195.81
+Azure,Functions,westeurope,Functions-resource-156,2026-03-13,73.77
+Azure,Functions,southafricanorth,Functions-resource-157,2026-03-20,150.01
+Azure,CDN,westeurope,CDN-resource-158,2026-01-09,20.64
+Azure,AKS,westeurope,AKS-resource-159,2026-02-21,31.49
+Azure,Virtual Machines,centralus,Virtual Machines-resource-160,2026-01-24,182.18
+Azure,Functions,westeurope,Functions-resource-161,2026-03-21,183.37
+Azure,SQL Database,centralus,SQL Database-resource-162,2026-03-10,90.97
+Azure,CosmosDB,centralus,CosmosDB-resource-163,2026-02-09,11.19
+Azure,AKS,westeurope,AKS-resource-164,2026-03-05,131.44
+Azure,App Service,westeurope,App Service-resource-165,2026-01-10,166.58
+Azure,AKS,eastus,AKS-resource-166,2026-01-28,134.52
+Azure,App Service,southafricanorth,App Service-resource-167,2026-03-07,189.38
+Azure,AKS,centralus,AKS-resource-168,2026-03-21,198.65
+Azure,Functions,centralus,Functions-resource-169,2026-01-30,198.65
+Azure,Functions,eastus,Functions-resource-170,2026-02-26,29.96
+Azure,CDN,westeurope,CDN-resource-171,2026-01-22,94.1
+Azure,CosmosDB,westeurope,CosmosDB-resource-172,2026-03-04,92.92
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-173,2026-01-29,15.69
+Azure,App Service,westeurope,App Service-resource-174,2026-03-25,97.71
+Azure,Virtual Machines,eastus,Virtual Machines-resource-175,2026-01-04,68.75
+Azure,CDN,westeurope,CDN-resource-176,2026-03-16,175.05
+Azure,CosmosDB,westeurope,CosmosDB-resource-177,2026-01-13,148.73
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-178,2026-02-22,150.01
+Azure,Functions,southafricanorth,Functions-resource-179,2026-03-04,78.59
+Azure,CDN,westeurope,CDN-resource-180,2026-03-18,138.96
+Azure,Functions,centralus,Functions-resource-181,2026-01-11,124.48
+Azure,Virtual Machines,eastus,Virtual Machines-resource-182,2026-02-20,104.43
+Azure,AKS,westeurope,AKS-resource-183,2026-03-05,70.39
+Azure,CDN,southafricanorth,CDN-resource-184,2026-03-13,187.25
+Azure,App Service,southafricanorth,App Service-resource-185,2026-03-23,148.43
+Azure,CosmosDB,centralus,CosmosDB-resource-186,2026-03-07,98.1
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-187,2026-01-15,199.97
+Azure,CDN,eastus,CDN-resource-188,2026-02-15,154.52
+Azure,CDN,centralus,CDN-resource-189,2026-01-17,55.01
+Azure,Blob Storage,westeurope,Blob Storage-resource-190,2026-01-24,176.72
+Azure,CDN,southafricanorth,CDN-resource-191,2026-02-25,128.09
+Azure,Virtual Machines,centralus,Virtual Machines-resource-192,2026-02-11,143.68
+Azure,CDN,southafricanorth,CDN-resource-193,2026-03-14,31.56
+Azure,Functions,westeurope,Functions-resource-194,2026-02-03,97.89
+Azure,CDN,eastus,CDN-resource-195,2026-02-06,50.19
+Azure,App Service,southafricanorth,App Service-resource-196,2026-02-19,501.56
+Azure,AKS,southafricanorth,AKS-resource-197,2026-01-13,95.62
+Azure,Functions,westeurope,Functions-resource-198,2026-01-12,70.26
+Azure,CDN,southafricanorth,CDN-resource-199,2026-01-29,177.0
+Azure,CDN,southafricanorth,CDN-resource-200,2026-01-22,79.02
+Azure,SQL Database,westeurope,SQL Database-resource-201,2026-02-10,41.56
+Azure,Virtual Machines,eastus,Virtual Machines-resource-202,2026-03-23,137.41
+Azure,App Service,eastus,App Service-resource-203,2026-01-14,74.0
+Azure,Functions,westeurope,Functions-resource-204,2026-01-11,126.71
+Azure,App Service,centralus,App Service-resource-205,2026-02-03,196.81
+Azure,CDN,centralus,CDN-resource-206,2026-03-22,185.19
+Azure,Functions,eastus,Functions-resource-207,2026-01-03,29.34
+Azure,Blob Storage,eastus,Blob Storage-resource-208,2026-03-02,37.27
+Azure,CDN,southafricanorth,CDN-resource-209,2026-02-12,188.47
+Azure,App Service,centralus,App Service-resource-210,2026-03-09,78.45
+Azure,AKS,centralus,AKS-resource-211,2026-01-03,190.9
+Azure,SQL Database,westeurope,SQL Database-resource-212,2026-03-07,131.09
+Azure,CosmosDB,southafricanorth,CosmosDB-resource-213,2026-03-21,52.97
+Azure,Functions,centralus,Functions-resource-214,2026-01-02,189.28
+Azure,Functions,centralus,Functions-resource-215,2026-02-26,102.75
+Azure,CDN,centralus,CDN-resource-216,2026-03-19,28.52
+Azure,Virtual Machines,centralus,Virtual Machines-resource-217,2026-01-24,524.49
+Azure,SQL Database,southafricanorth,SQL Database-resource-218,2026-02-07,155.61
+Azure,CosmosDB,southafricanorth,CosmosDB-resource-219,2026-01-09,91.64
+Azure,CDN,eastus,CDN-resource-220,2026-02-12,17.22
+Azure,CosmosDB,westeurope,CosmosDB-resource-221,2026-02-19,20.41
+Azure,Functions,westeurope,Functions-resource-222,2026-01-15,141.8
+Azure,Blob Storage,centralus,Blob Storage-resource-223,2026-01-31,72.98
+Azure,Virtual Machines,eastus,Virtual Machines-resource-224,2026-03-10,27.3
+Azure,CosmosDB,southafricanorth,CosmosDB-resource-225,2026-01-12,125.51
+Azure,SQL Database,southafricanorth,SQL Database-resource-226,2026-03-28,144.38
+Azure,App Service,westeurope,App Service-resource-227,2026-01-30,82.9
+Azure,CDN,westeurope,CDN-resource-228,2026-02-25,48.67
+Azure,SQL Database,eastus,SQL Database-resource-229,2026-03-28,134.12
+Azure,Blob Storage,centralus,Blob Storage-resource-230,2026-02-13,156.12
+Azure,Functions,eastus,Functions-resource-231,2026-03-29,157.8
+Azure,AKS,southafricanorth,AKS-resource-232,2026-03-08,146.92
+Azure,Virtual Machines,centralus,Virtual Machines-resource-233,2026-03-29,146.14
+Azure,Functions,eastus,Functions-resource-234,2026-03-06,199.74
+Azure,CosmosDB,southafricanorth,CosmosDB-resource-235,2026-01-02,136.97
+Azure,CDN,southafricanorth,CDN-resource-236,2026-03-25,172.82
+Azure,SQL Database,westeurope,SQL Database-resource-237,2026-03-05,195.26
+Azure,CosmosDB,eastus,CosmosDB-resource-238,2026-01-28,184.48
+Azure,CDN,westeurope,CDN-resource-239,2026-01-08,168.52
+Azure,CDN,centralus,CDN-resource-240,2026-01-21,63.71
+Azure,App Service,southafricanorth,App Service-resource-241,2026-03-26,123.32
+Azure,CDN,westeurope,CDN-resource-242,2026-01-07,196.43
+Azure,AKS,eastus,AKS-resource-243,2026-03-15,42.94
+Azure,SQL Database,southafricanorth,SQL Database-resource-244,2026-01-17,102.72
+Azure,AKS,centralus,AKS-resource-245,2026-03-13,188.0
+Azure,AKS,eastus,AKS-resource-246,2026-02-13,123.79
+Azure,SQL Database,southafricanorth,SQL Database-resource-247,2026-01-17,78.41
+Azure,CosmosDB,westeurope,CosmosDB-resource-248,2026-03-23,27.29
+Azure,Virtual Machines,centralus,Virtual Machines-resource-249,2026-02-01,46.74
+Azure,SQL Database,eastus,SQL Database-resource-250,2026-01-18,134.0
+Azure,CosmosDB,westeurope,CosmosDB-resource-251,2026-03-26,188.94
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-252,2026-01-10,144.74
+Azure,CDN,eastus,CDN-resource-253,2026-01-11,26.27
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-254,2026-02-10,158.5
+Azure,SQL Database,eastus,SQL Database-resource-255,2026-01-21,134.23
+Azure,CDN,centralus,CDN-resource-256,2026-03-07,154.36
+Azure,Virtual Machines,centralus,Virtual Machines-resource-257,2026-03-27,41.62
+Azure,Functions,southafricanorth,Functions-resource-258,2026-03-06,138.35
+Azure,SQL Database,eastus,SQL Database-resource-259,2026-02-18,197.46
+Azure,Blob Storage,eastus,Blob Storage-resource-260,2026-03-26,23.62
+Azure,SQL Database,southafricanorth,SQL Database-resource-261,2026-01-10,112.36
+Azure,CosmosDB,centralus,CosmosDB-resource-262,2026-02-12,83.29
+Azure,CDN,eastus,CDN-resource-263,2026-01-19,149.57
+Azure,App Service,westeurope,App Service-resource-264,2026-02-10,35.65
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-265,2026-02-20,175.94
+Azure,CDN,eastus,CDN-resource-266,2026-02-14,181.89
+Azure,CosmosDB,westeurope,CosmosDB-resource-267,2026-02-27,107.91
+Azure,App Service,eastus,App Service-resource-268,2026-01-13,95.38
+Azure,CDN,westeurope,CDN-resource-269,2026-01-16,196.36
+Azure,CosmosDB,westeurope,CosmosDB-resource-270,2026-01-16,375.57
+Azure,Virtual Machines,centralus,Virtual Machines-resource-271,2026-01-29,96.01
+Azure,Blob Storage,westeurope,Blob Storage-resource-272,2026-01-02,105.77
+Azure,CosmosDB,westeurope,CosmosDB-resource-273,2026-01-25,22.42
+Azure,CDN,eastus,CDN-resource-274,2026-02-02,25.3
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-275,2026-03-08,119.0
+Azure,Functions,southafricanorth,Functions-resource-276,2026-02-14,90.35
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-277,2026-02-20,172.67
+Azure,SQL Database,centralus,SQL Database-resource-278,2026-01-10,15.29
+Azure,CDN,southafricanorth,CDN-resource-279,2026-02-11,40.66
+Azure,CDN,centralus,CDN-resource-280,2026-03-24,49.33
+Azure,Functions,centralus,Functions-resource-281,2026-03-16,58.93
+Azure,Blob Storage,eastus,Blob Storage-resource-282,2026-02-21,17.87
+Azure,App Service,eastus,App Service-resource-283,2026-03-23,80.77
+Azure,App Service,eastus,App Service-resource-284,2026-03-05,136.89
+Azure,SQL Database,centralus,SQL Database-resource-285,2026-01-25,55.17
+Azure,CDN,centralus,CDN-resource-286,2026-02-20,171.54
+Azure,Functions,southafricanorth,Functions-resource-287,2026-02-10,122.78
+Azure,App Service,southafricanorth,App Service-resource-288,2026-04-01,58.34
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-289,2026-02-02,191.02
+Azure,CosmosDB,southafricanorth,CosmosDB-resource-290,2026-01-26,118.17
+Azure,AKS,southafricanorth,AKS-resource-291,2026-03-09,76.45
+Azure,CosmosDB,westeurope,CosmosDB-resource-292,2026-02-18,158.61
+Azure,AKS,westeurope,AKS-resource-293,2026-01-31,170.66
+Azure,AKS,westeurope,AKS-resource-294,2026-03-06,47.7
+Azure,App Service,centralus,App Service-resource-295,2026-02-24,47.22
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-296,2026-03-05,161.93
+Azure,Blob Storage,westeurope,Blob Storage-resource-297,2026-02-27,73.03
+Azure,CDN,westeurope,CDN-resource-298,2026-03-30,11.08
+Azure,App Service,westeurope,App Service-resource-299,2026-02-06,144.37
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-300,2026-03-26,116.07
+Azure,Functions,southafricanorth,Functions-resource-301,2026-03-08,61.33
+Azure,SQL Database,westeurope,SQL Database-resource-302,2026-02-21,12.01
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-303,2026-02-06,117.23
+Azure,Functions,westeurope,Functions-resource-304,2026-02-13,186.33
+Azure,App Service,centralus,App Service-resource-305,2026-03-23,108.7
+Azure,CDN,southafricanorth,CDN-resource-306,2026-03-18,107.97
+Azure,Functions,centralus,Functions-resource-307,2026-01-10,91.87
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-308,2026-03-03,14.45
+Azure,Virtual Machines,centralus,Virtual Machines-resource-309,2026-01-24,159.32
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-310,2026-01-02,188.48
+Azure,CDN,westeurope,CDN-resource-311,2026-01-02,53.75
+Azure,AKS,eastus,AKS-resource-312,2026-02-02,148.04
+Azure,CosmosDB,southafricanorth,CosmosDB-resource-313,2026-02-23,155.75
+Azure,Functions,eastus,Functions-resource-314,2026-01-19,123.93
+Azure,CDN,eastus,CDN-resource-315,2026-01-30,68.56
+Azure,SQL Database,southafricanorth,SQL Database-resource-316,2026-01-07,98.74
+Azure,SQL Database,eastus,SQL Database-resource-317,2026-01-01,140.53
+Azure,CDN,westeurope,CDN-resource-318,2026-03-21,154.54
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-319,2026-03-14,403.65
+Azure,CDN,eastus,CDN-resource-320,2026-02-28,20.76
+Azure,CosmosDB,southafricanorth,CosmosDB-resource-321,2026-03-15,104.03
+Azure,Blob Storage,westeurope,Blob Storage-resource-322,2026-01-31,137.55
+Azure,Functions,westeurope,Functions-resource-323,2026-03-09,199.91
+Azure,SQL Database,eastus,SQL Database-resource-324,2026-02-04,155.81
+Azure,Functions,centralus,Functions-resource-325,2026-01-24,165.94
+Azure,SQL Database,eastus,SQL Database-resource-326,2026-03-03,127.52
+Azure,SQL Database,westeurope,SQL Database-resource-327,2026-03-18,97.45
+Azure,Virtual Machines,eastus,Virtual Machines-resource-328,2026-02-13,97.88
+Azure,CosmosDB,westeurope,CosmosDB-resource-329,2026-02-22,183.79
+Azure,AKS,eastus,AKS-resource-330,2026-01-08,122.46
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-331,2026-01-11,74.86
+Azure,AKS,southafricanorth,AKS-resource-332,2026-01-30,91.4
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-333,2026-03-23,75.54
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-334,2026-01-17,76.15
+Azure,Functions,westeurope,Functions-resource-335,2026-01-21,128.79
+Azure,CosmosDB,westeurope,CosmosDB-resource-336,2026-01-05,103.14
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-337,2026-02-20,76.77
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-338,2026-01-04,196.75
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-339,2026-02-06,107.52
+Azure,Functions,centralus,Functions-resource-340,2026-02-17,37.23
+Azure,SQL Database,southafricanorth,SQL Database-resource-341,2026-03-09,43.87
+Azure,Blob Storage,westeurope,Blob Storage-resource-342,2026-03-06,121.29
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-343,2026-03-13,170.39
+Azure,Functions,eastus,Functions-resource-344,2026-02-06,42.42
+Azure,SQL Database,southafricanorth,SQL Database-resource-345,2026-01-06,181.26
+Azure,SQL Database,westeurope,SQL Database-resource-346,2026-01-05,176.83
+Azure,Virtual Machines,centralus,Virtual Machines-resource-347,2026-01-27,124.56
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-348,2026-01-04,197.41
+Azure,Functions,centralus,Functions-resource-349,2026-03-24,192.33
+Azure,AKS,centralus,AKS-resource-350,2026-03-10,100.89
+Azure,Blob Storage,westeurope,Blob Storage-resource-351,2026-02-21,84.75
+Azure,Virtual Machines,centralus,Virtual Machines-resource-352,2026-02-06,107.01
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-353,2026-02-10,36.55
+Azure,SQL Database,westeurope,SQL Database-resource-354,2026-01-02,36.76
+Azure,Functions,eastus,Functions-resource-355,2026-02-16,22.44
+Azure,SQL Database,centralus,SQL Database-resource-356,2026-01-26,149.11
+Azure,App Service,centralus,App Service-resource-357,2026-02-14,13.73
+Azure,AKS,centralus,AKS-resource-358,2026-01-12,90.79
+Azure,Blob Storage,westeurope,Blob Storage-resource-359,2026-01-16,101.95
+Azure,AKS,southafricanorth,AKS-resource-360,2026-02-23,65.16
+Azure,AKS,centralus,AKS-resource-361,2026-01-18,64.09
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-362,2026-03-10,105.11
+Azure,App Service,centralus,App Service-resource-363,2026-02-19,50.37
+Azure,App Service,centralus,App Service-resource-364,2026-03-25,152.15
+Azure,CosmosDB,centralus,CosmosDB-resource-365,2026-03-01,66.23
+Azure,AKS,westeurope,AKS-resource-366,2026-02-07,95.27
+Azure,SQL Database,eastus,SQL Database-resource-367,2026-02-20,121.99
+Azure,AKS,centralus,AKS-resource-368,2026-02-27,145.67
+Azure,Blob Storage,westeurope,Blob Storage-resource-369,2026-03-09,146.93
+Azure,App Service,westeurope,App Service-resource-370,2026-01-06,68.58
+Azure,SQL Database,southafricanorth,SQL Database-resource-371,2026-01-12,850.83
+Azure,AKS,centralus,AKS-resource-372,2026-01-24,26.37
+Azure,SQL Database,eastus,SQL Database-resource-373,2026-01-24,141.19
+Azure,SQL Database,westeurope,SQL Database-resource-374,2026-01-10,110.9
+Azure,SQL Database,eastus,SQL Database-resource-375,2026-01-04,78.1
+Azure,AKS,centralus,AKS-resource-376,2026-03-27,43.04
+Azure,CDN,southafricanorth,CDN-resource-377,2026-03-18,105.48
+Azure,CDN,southafricanorth,CDN-resource-378,2026-01-05,26.16
+Azure,CosmosDB,westeurope,CosmosDB-resource-379,2026-03-16,105.88
+Azure,CosmosDB,westeurope,CosmosDB-resource-380,2026-01-26,62.47
+Azure,Functions,southafricanorth,Functions-resource-381,2026-02-03,760.3
+Azure,Blob Storage,eastus,Blob Storage-resource-382,2026-01-21,14.12
+Azure,CDN,westeurope,CDN-resource-383,2026-02-04,118.92
+Azure,AKS,westeurope,AKS-resource-384,2026-03-25,168.07
+Azure,Functions,southafricanorth,Functions-resource-385,2026-02-02,695.22
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-386,2026-01-14,167.01
+Azure,AKS,centralus,AKS-resource-387,2026-03-30,122.38
+Azure,AKS,centralus,AKS-resource-388,2026-03-24,32.96
+Azure,Virtual Machines,centralus,Virtual Machines-resource-389,2026-01-02,174.31
+Azure,CosmosDB,westeurope,CosmosDB-resource-390,2026-02-05,73.46
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-391,2026-02-10,110.43
+Azure,CDN,eastus,CDN-resource-392,2026-01-11,100.88
+Azure,Functions,southafricanorth,Functions-resource-393,2026-02-20,151.35
+Azure,AKS,centralus,AKS-resource-394,2026-01-18,10.58
+Azure,AKS,westeurope,AKS-resource-395,2026-02-13,29.41
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-396,2026-03-29,381.83
+Azure,SQL Database,southafricanorth,SQL Database-resource-397,2026-02-15,127.7
+Azure,App Service,southafricanorth,App Service-resource-398,2026-02-19,157.25
+Azure,App Service,eastus,App Service-resource-399,2026-03-26,24.65
+Azure,CDN,southafricanorth,CDN-resource-400,2026-02-12,15.22
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-401,2026-01-10,135.0
+Azure,CosmosDB,eastus,CosmosDB-resource-402,2026-02-21,60.12
+Azure,Blob Storage,centralus,Blob Storage-resource-403,2026-02-02,32.83
+Azure,CosmosDB,southafricanorth,CosmosDB-resource-404,2026-03-16,61.12
+Azure,CDN,centralus,CDN-resource-405,2026-01-30,193.76
+Azure,CDN,southafricanorth,CDN-resource-406,2026-03-13,102.84
+Azure,CosmosDB,westeurope,CosmosDB-resource-407,2026-02-08,52.08
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-408,2026-01-02,46.9
+Azure,Functions,eastus,Functions-resource-409,2026-02-27,102.36
+Azure,CDN,eastus,CDN-resource-410,2026-03-09,96.35
+Azure,Virtual Machines,eastus,Virtual Machines-resource-411,2026-03-12,35.3
+Azure,App Service,southafricanorth,App Service-resource-412,2026-02-06,92.4
+Azure,SQL Database,westeurope,SQL Database-resource-413,2026-01-18,166.24
+Azure,App Service,westeurope,App Service-resource-414,2026-01-08,16.06
+Azure,AKS,centralus,AKS-resource-415,2026-02-22,83.38
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-416,2026-02-18,53.62
+Azure,App Service,westeurope,App Service-resource-417,2026-02-10,99.35
+Azure,AKS,eastus,AKS-resource-418,2026-01-09,78.3
+Azure,CDN,westeurope,CDN-resource-419,2026-03-01,22.83
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-420,2026-03-25,113.52
+Azure,Functions,eastus,Functions-resource-421,2026-03-09,39.95
+Azure,SQL Database,centralus,SQL Database-resource-422,2026-01-26,17.94
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-423,2026-03-23,195.4
+Azure,CosmosDB,centralus,CosmosDB-resource-424,2026-02-15,52.63
+Azure,SQL Database,centralus,SQL Database-resource-425,2026-03-23,115.58
+Azure,AKS,westeurope,AKS-resource-426,2026-02-04,135.76
+Azure,CosmosDB,southafricanorth,CosmosDB-resource-427,2026-01-02,80.84
+Azure,SQL Database,eastus,SQL Database-resource-428,2026-01-29,183.78
+Azure,Functions,centralus,Functions-resource-429,2026-01-30,26.64
+Azure,AKS,southafricanorth,AKS-resource-430,2026-02-22,168.61
+Azure,SQL Database,westeurope,SQL Database-resource-431,2026-02-02,191.11
+Azure,Blob Storage,centralus,Blob Storage-resource-432,2026-01-13,84.27
+Azure,Virtual Machines,centralus,Virtual Machines-resource-433,2026-02-09,65.82
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-434,2026-01-01,36.15
+Azure,AKS,eastus,AKS-resource-435,2026-02-02,15.09
+Azure,AKS,southafricanorth,AKS-resource-436,2026-02-07,75.04
+Azure,App Service,westeurope,App Service-resource-437,2026-02-16,181.65
+Azure,Blob Storage,westeurope,Blob Storage-resource-438,2026-03-24,85.23
+Azure,Virtual Machines,eastus,Virtual Machines-resource-439,2026-03-02,71.93
+Azure,Blob Storage,centralus,Blob Storage-resource-440,2026-02-27,126.34
+Azure,CosmosDB,eastus,CosmosDB-resource-441,2026-01-11,134.04
+Azure,App Service,westeurope,App Service-resource-442,2026-02-16,93.38
+Azure,Blob Storage,westeurope,Blob Storage-resource-443,2026-03-22,143.4
+Azure,AKS,southafricanorth,AKS-resource-444,2026-01-05,126.87
+Azure,Virtual Machines,eastus,Virtual Machines-resource-445,2026-03-07,403.77
+Azure,SQL Database,eastus,SQL Database-resource-446,2026-01-19,169.81
+Azure,AKS,centralus,AKS-resource-447,2026-03-21,145.17
+Azure,CosmosDB,eastus,CosmosDB-resource-448,2026-01-20,106.78
+Azure,Functions,westeurope,Functions-resource-449,2026-01-13,131.86
+Azure,CDN,southafricanorth,CDN-resource-450,2026-01-04,180.64
+Azure,CosmosDB,centralus,CosmosDB-resource-451,2026-01-12,57.91
+Azure,AKS,eastus,AKS-resource-452,2026-03-18,75.22
+Azure,Blob Storage,westeurope,Blob Storage-resource-453,2026-01-23,181.35
+Azure,Blob Storage,southafricanorth,Blob Storage-resource-454,2026-03-07,86.42
+Azure,Blob Storage,westeurope,Blob Storage-resource-455,2026-01-30,63.28
+Azure,AKS,eastus,AKS-resource-456,2026-03-10,106.33
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-457,2026-01-29,183.68
+Azure,Virtual Machines,centralus,Virtual Machines-resource-458,2026-04-01,51.64
+Azure,CosmosDB,centralus,CosmosDB-resource-459,2026-01-28,17.24
+Azure,SQL Database,centralus,SQL Database-resource-460,2026-01-30,72.6
+Azure,CDN,eastus,CDN-resource-461,2026-01-22,20.85
+Azure,AKS,westeurope,AKS-resource-462,2026-03-13,176.81
+Azure,CosmosDB,eastus,CosmosDB-resource-463,2026-02-16,196.48
+Azure,Blob Storage,eastus,Blob Storage-resource-464,2026-03-06,20.95
+Azure,AKS,centralus,AKS-resource-465,2026-02-23,15.08
+Azure,App Service,eastus,App Service-resource-466,2026-03-20,124.46
+Azure,CosmosDB,eastus,CosmosDB-resource-467,2026-03-28,66.68
+Azure,CDN,eastus,CDN-resource-468,2026-01-31,191.17
+Azure,CDN,westeurope,CDN-resource-469,2026-01-03,135.62
+Azure,App Service,westeurope,App Service-resource-470,2026-03-16,107.69
+Azure,CosmosDB,eastus,CosmosDB-resource-471,2026-03-01,101.33
+Azure,SQL Database,centralus,SQL Database-resource-472,2026-03-10,166.69
+Azure,SQL Database,southafricanorth,SQL Database-resource-473,2026-03-26,81.14
+Azure,SQL Database,westeurope,SQL Database-resource-474,2026-01-19,213.8
+Azure,CosmosDB,centralus,CosmosDB-resource-475,2026-01-18,124.47
+Azure,Functions,eastus,Functions-resource-476,2026-03-15,114.87
+Azure,CDN,eastus,CDN-resource-477,2026-01-07,348.53
+Azure,AKS,westeurope,AKS-resource-478,2026-02-22,725.65
+Azure,Virtual Machines,westeurope,Virtual Machines-resource-479,2026-03-18,150.33
+Azure,CosmosDB,centralus,CosmosDB-resource-480,2026-02-11,102.76
+Azure,Blob Storage,westeurope,Blob Storage-resource-481,2026-02-15,112.18
+Azure,CosmosDB,westeurope,CosmosDB-resource-482,2026-01-06,182.2
+Azure,Functions,westeurope,Functions-resource-483,2026-01-29,31.68
+Azure,SQL Database,centralus,SQL Database-resource-484,2026-02-21,139.77
+Azure,Virtual Machines,centralus,Virtual Machines-resource-485,2026-03-08,164.71
+Azure,Virtual Machines,southafricanorth,Virtual Machines-resource-486,2026-02-12,118.09
+Azure,CDN,eastus,CDN-resource-487,2026-03-04,139.22
+Azure,CDN,westeurope,CDN-resource-488,2026-03-17,522.32
+Azure,SQL Database,westeurope,SQL Database-resource-489,2026-03-13,26.44
+Azure,CosmosDB,eastus,CosmosDB-resource-490,2026-03-14,102.39
+Azure,Functions,eastus,Functions-resource-491,2026-03-08,187.53
+Azure,Blob Storage,eastus,Blob Storage-resource-492,2026-02-02,33.54
+Azure,App Service,westeurope,App Service-resource-493,2026-02-09,129.66
+Azure,Virtual Machines,centralus,Virtual Machines-resource-494,2026-03-23,69.17
+Azure,App Service,centralus,App Service-resource-495,2026-01-03,1354.61
+Azure,Blob Storage,westeurope,Blob Storage-resource-496,2026-03-20,94.32
+Azure,App Service,westeurope,App Service-resource-497,2026-02-25,98.71
+Azure,CDN,eastus,CDN-resource-498,2026-01-19,135.1
+Azure,Virtual Machines,eastus,Virtual Machines-resource-499,2026-01-09,418.27
+Azure,CDN,westeurope,CDN-resource-500,2026-03-07,156.28

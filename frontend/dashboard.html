@@ -7,9 +7,7 @@
 <title>DYNAMIS Executive Dashboard</title>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<!-- SUPABASE -->
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-sankey@0.12.0/dist/chartjs-chart-sankey.min.js"></script>
 
 <link rel="stylesheet" href="/css/style.css">
 
@@ -41,13 +39,30 @@ width:0%;
 transition:width 1s;
 }
 
+.opportunity-row{
+display:flex;
+justify-content:space-between;
+padding:8px 0;
+border-bottom:1px solid #1e293b;
+}
+
+.roi-grid{
+display:flex;
+gap:40px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.roi-details div{
+margin-bottom:10px;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<!-- HEADER -->
 <div id="header-placeholder"></div>
 <script src="/js/header-loader.js"></script>
 
@@ -55,7 +70,9 @@ transition:width 1s;
 
 <h1>DYNAMIS Executive Dashboard</h1>
 
-<!-- EXECUTIVE VALUE PANEL -->
+<h3 id="clientName" style="margin-bottom:25px;color:#94a3b8"></h3>
+
+<!-- VALUE PANEL -->
 
 <div class="card-grid" style="margin-bottom:30px">
 
@@ -76,45 +93,19 @@ transition:width 1s;
 
 </div>
 
-<!-- LIVE SAVINGS COUNTER -->
-
-<div class="card" style="margin-bottom:30px">
-
-<h3>Recoverable Margin Identified</h3>
-
-<div id="liveSavings"
-style="
-font-size:40px;
-font-weight:bold;
-margin-top:10px;
-color:#22c55e;
-">
-R 0
-</div>
-
-<div style="color:#94a3b8;margin-top:6px">
-Real-time optimisation value detected by DYNAMIS
-</div>
-
-</div>
-
 <!-- CLIENT SELECTOR -->
 
 <div style="margin-bottom:25px">
 
 <label style="margin-right:10px;font-weight:600">Client:</label>
 
-<select id="clientSelector"
-style="padding:10px;border-radius:6px"
-onchange="loadDashboard()">
-
+<select id="clientSelector" style="padding:10px;border-radius:6px">
 <option value="">Select Client</option>
-
 </select>
 
 </div>
 
-<!-- EXECUTIVE FINOPS PANEL -->
+<!-- EXEC PANEL -->
 
 <div class="exec-panel">
 
@@ -140,14 +131,34 @@ onchange="loadDashboard()">
 
 </div>
 
-<!-- KPI CARDS -->
+<!-- PROVIDER BREAKDOWN -->
+
+<div class="card-grid">
+
+<div class="card">
+AWS Spend
+<div id="awsSpend" class="value">R 0</div>
+</div>
+
+<div class="card">
+Azure Spend
+<div id="azureSpend" class="value">R 0</div>
+</div>
+
+<div class="card">
+GCP Spend
+<div id="gcpSpend" class="value">R 0</div>
+</div>
+
+</div>
+
+<!-- KPI -->
 
 <div class="card-grid">
 
 <div class="card">
 Risk Score
 <div id="riskScore" class="value">0</div>
-<div id="riskLabel"></div>
 </div>
 
 <div class="card">
@@ -165,57 +176,120 @@ Confidence Level
 <div id="confidence" class="value">0%</div>
 </div>
 
+<div class="card">
+Cloud Efficiency Score
+<div id="efficiencyScore" class="value">0 / 100</div>
 </div>
 
-<!-- CLOUD WASTE HEATMAP -->
+</div>
+
+<!-- WASTE HEATMAP -->
 
 <div class="card" style="margin-top:30px">
 
-<h3>Cloud Waste Heatmap</h3>
+<h3>Waste Distribution</h3>
 
 <div class="heat-row">
 <span>Compute</span>
 <div class="heat-bar"><div id="computeHeat"></div></div>
-<span id="computePercent">0%</span>
 </div>
 
 <div class="heat-row">
 <span>Storage</span>
 <div class="heat-bar"><div id="storageHeat"></div></div>
-<span id="storagePercent">0%</span>
 </div>
 
 <div class="heat-row">
 <span>Network</span>
 <div class="heat-bar"><div id="networkHeat"></div></div>
-<span id="networkPercent">0%</span>
 </div>
 
 <div class="heat-row">
-<span>Idle Resources</span>
+<span>Idle</span>
 <div class="heat-bar"><div id="idleHeat"></div></div>
-<span id="idlePercent">0%</span>
 </div>
 
 </div>
 
-<!-- AI CFO NARRATOR -->
+<!-- ROI PERFORMANCE -->
 
 <div class="card" style="margin-top:30px">
 
-<h3>DYNAMIS AI CFO Summary</h3>
+<h3>Investment Performance</h3>
 
-<div id="aiNarrator"
-style="
-background:#0f172a;
-padding:20px;
-border-radius:8px;
-line-height:1.6;
-font-size:15px;
-">
+<div class="roi-grid">
 
-DYNAMIS will analyse your cloud spend and generate executive insights.
+<div style="width:260px;height:260px">
+<canvas id="roiGauge"></canvas>
+</div>
 
+<div class="roi-details">
+
+<div>
+<b>3 Year Recoverable Value</b><br>
+<span id="roiRecoverable"></span>
+</div>
+
+<div>
+<b>DYNAMIS Platform Fee</b><br>
+<span id="roiFee"></span>
+</div>
+
+<div>
+<b>Net Client Benefit</b><br>
+<span id="roiBenefit"></span>
+</div>
+
+<div>
+<b>Return on Investment</b><br>
+<span id="roiPercent"></span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- SAVINGS BREAKDOWN -->
+
+<div class="card" style="margin-top:30px">
+<h3>Savings Composition</h3>
+<div style="height:280px">
+<canvas id="savingsChart"></canvas>
+</div>
+</div>
+
+<!-- AI CFO INSIGHT -->
+
+<div class="card" style="margin-top:30px">
+
+<h3>DYNAMIS Executive Insight</h3>
+
+<div id="aiInsight" style="color:#94a3b8;line-height:1.6"></div>
+
+</div>
+
+<!-- SPEND TREND -->
+
+<div class="card" style="margin-top:30px">
+
+<h3>Cloud Spend Trend</h3>
+
+<div style="height:320px">
+<canvas id="spendChart"></canvas>
+</div>
+
+</div>
+
+<!-- WASTE FLOW -->
+
+<div class="card" style="margin-top:30px">
+
+<h3>Cloud Waste Flow</h3>
+
+<div style="height:320px">
+<canvas id="wasteFlow"></canvas>
 </div>
 
 </div>
@@ -224,122 +298,15 @@ DYNAMIS will analyse your cloud spend and generate executive insights.
 
 <script>
 
-const supabaseUrl="YOUR_SUPABASE_URL"
-const supabaseKey="YOUR_SUPABASE_ANON_KEY"
-const supabase = supabase.createClient(supabaseUrl,supabaseKey)
-
 const API="/api"
 
-function animateCurrency(element,targetValue){
+let spendChart
+let wasteChart
+let roiChart
+let savingsChart
 
-let current=0
-const duration=1200
-const steps=40
-const stepValue=targetValue/steps
-const stepTime=duration/steps
-
-const interval=setInterval(()=>{
-
-current+=stepValue
-
-if(current>=targetValue){
-current=targetValue
-clearInterval(interval)
-}
-
-element.innerText="R "+Math.round(current).toLocaleString("en-ZA")
-
-},stepTime)
-
-}
-
-function animateValue(element,value){
-
-let current=0
-const duration=1200
-const steps=40
-const step=value/steps
-
-const interval=setInterval(()=>{
-
-current+=step
-
-if(current>=value){
-current=value
-clearInterval(interval)
-}
-
-element.innerText="R "+Math.round(current).toLocaleString("en-ZA")
-
-},duration/steps)
-
-}
-
-function startLiveSavings(baseValue){
-
-let value = baseValue || 0
-
-setInterval(()=>{
-
-const increment = Math.floor(Math.random()*50)+10
-
-value += increment
-
-document.getElementById("liveSavings").innerText =
-"R " + Math.round(value).toLocaleString("en-ZA")
-
-},1500)
-
-}
-
-function renderHeatmap(data){
-
-if(!data) return
-
-document.getElementById("computeHeat").style.width=data.compute+"%"
-document.getElementById("storageHeat").style.width=data.storage+"%"
-document.getElementById("networkHeat").style.width=data.network+"%"
-document.getElementById("idleHeat").style.width=data.idle+"%"
-
-document.getElementById("computePercent").innerText=data.compute+"%"
-document.getElementById("storagePercent").innerText=data.storage+"%"
-document.getElementById("networkPercent").innerText=data.network+"%"
-document.getElementById("idlePercent").innerText=data.idle+"%"
-
-}
-
-function generateNarrative(data){
-
-if(!data) return
-
-const savings=Math.round(data.potentialSavings||0)
-const spend=Math.round(data.totalCost||0)
-const waste=Math.round(data.monthlyWaste||0)
-
-let driver="cloud resources"
-
-if(data.wasteDrivers && data.wasteDrivers.length>0){
-driver=data.wasteDrivers[0].service
-}
-
-const percentage = spend>0 ? Math.round((savings/spend)*100) : 0
-
-const text=`
-DYNAMIS has identified potential recoverable cloud margin of 
-R ${savings.toLocaleString("en-ZA")}.
-
-The primary waste driver appears to be ${driver}.
-
-Based on current spend levels of R ${spend.toLocaleString("en-ZA")}, 
-optimisation could reduce cloud costs by approximately ${percentage}% annually.
-
-Estimated monthly waste exposure is 
-R ${waste.toLocaleString("en-ZA")}.
-`
-
-document.getElementById("aiNarrator").innerText=text
-
-}
+function r(v){ return "R "+Number(v||0).toLocaleString("en-ZA") }
+function n(v){ return Number(v||0) }
 
 async function loadClients(){
 
@@ -347,53 +314,209 @@ const res=await fetch(API+"/clients")
 const clients=await res.json()
 
 const selector=document.getElementById("clientSelector")
+
 selector.innerHTML='<option value="">Select Client</option>'
 
 clients.forEach(c=>{
 selector.innerHTML+=`<option value="${c.id}">${c.name}</option>`
 })
 
+selector.addEventListener("change",loadDashboard)
+
+if(clients.length>0){
+selector.value=clients[0].id
+loadDashboard()
 }
 
-function formatCurrency(value){
-return "R "+Number(value||0).toLocaleString("en-ZA")
 }
 
 async function loadDashboard(){
 
-try{
-
 const clientId=document.getElementById("clientSelector").value
 if(!clientId) return
 
-const res=await fetch(API+"/dashboard/dashboard-data?client="+clientId)
+const res=await fetch(API+"/dashboard-data?client="+clientId)
 const data=await res.json()
 
-animateValue(document.getElementById("valueTotal"),data.financialImpact?.total||0)
-animateValue(document.getElementById("valueAnnual"),data.financialImpact?.year1||0)
-animateValue(document.getElementById("valueMonthly"),data.monthlyWaste||0)
+const totalCost=n(data.totalCost)
+const savings=n(data.potentialSavings)
 
-document.getElementById("execSpend").innerText=formatCurrency(data.totalCost)
+/* EXEC */
 
-animateCurrency(document.getElementById("execSavings"),data.potentialSavings||0)
+document.getElementById("execSpend").innerText=r(totalCost)
+document.getElementById("execForecast").innerText=r(totalCost*12)
+document.getElementById("execSavings").innerText=r(savings)
 
-renderHeatmap(data.heatmap)
+/* PROVIDERS */
 
-generateNarrative(data)
+document.getElementById("awsSpend").innerText=r(data.awsCost)
+document.getElementById("azureSpend").innerText=r(data.azureCost)
+document.getElementById("gcpSpend").innerText=r(data.gcpCost)
 
-startLiveSavings(data.potentialSavings || 0)
+/* KPI */
 
-}catch(err){
+document.getElementById("riskScore").innerText=data.riskScore
+document.getElementById("confidence").innerText=data.confidence+"%"
+document.getElementById("savings").innerText=r(savings*12)
+document.getElementById("exposure").innerText=r(savings)
 
-console.error("Dashboard load failed",err)
+const efficiency = data.finopsScore != null ? data.finopsScore : Math.max(0, 100 - n(data.riskScore))
+document.getElementById("efficiencyScore").innerText = efficiency + " / 100"
 
-}
+/* HEATMAP */
 
-}
+document.getElementById("computeHeat").style.width=data.computeWastePercent+"%"
+document.getElementById("storageHeat").style.width=data.storageWastePercent+"%"
+document.getElementById("networkHeat").style.width=data.networkWastePercent+"%"
+document.getElementById("idleHeat").style.width=data.idleWastePercent+"%"
 
-window.addEventListener("load",()=>{
-loadClients()
+/* ROI DATA */
+
+document.getElementById("roiRecoverable").innerText=r(data.cfoImpact.recoverableValue)
+document.getElementById("roiFee").innerText=r(data.cfoImpact.platformFee)
+document.getElementById("roiBenefit").innerText=r(data.cfoImpact.netClientBenefit)
+document.getElementById("roiPercent").innerText=data.cfoImpact.roi+"%"
+
+/* ROI GAUGE */
+
+if(roiChart) roiChart.destroy()
+
+roiChart=new Chart(document.getElementById("roiGauge"),{
+type:"doughnut",
+data:{
+datasets:[{
+data:[data.cfoImpact.roi,500-data.cfoImpact.roi],
+backgroundColor:["#22c55e","#1e293b"],
+borderWidth:0
+}]
+},
+options:{cutout:"80%",plugins:{legend:{display:false}}}
 })
+
+/* SAVINGS CHART */
+
+if(savingsChart) savingsChart.destroy()
+
+const wasteValues=[
+data.computeWaste,
+data.storageWaste,
+data.networkWaste,
+data.idleWaste
+]
+
+const totalWaste=
+data.computeWaste+
+data.storageWaste+
+data.networkWaste+
+data.idleWaste
+
+savingsChart=new Chart(document.getElementById("savingsChart"),{
+
+type:"bar",
+
+data:{
+labels:["Compute","Storage","Network","Idle"],
+datasets:[{
+data:wasteValues,
+backgroundColor:"#3b82f6"
+}]
+},
+
+options:{
+plugins:{
+legend:{display:false},
+tooltip:{
+callbacks:{
+label:function(ctx){
+const val=ctx.raw
+const pct=((val/totalWaste)*100).toFixed(1)
+return r(val)+" ("+pct+"%)"
+}
+}
+}
+},
+responsive:true
+}
+
+})
+
+/* SPEND TREND */
+
+const months=(data.monthlySeries||[]).map(m=>m.month)
+const values=(data.monthlySeries||[]).map(m=>n(m.cost))
+
+if(spendChart) spendChart.destroy()
+
+spendChart=new Chart(document.getElementById("spendChart"),{
+type:"line",
+data:{
+labels:months,
+datasets:[{
+data:values,
+borderColor:"#3b82f6",
+backgroundColor:"rgba(59,130,246,0.2)",
+fill:true,
+tension:0.4
+}]
+},
+options:{plugins:{legend:{display:false}},maintainAspectRatio:false}
+})
+
+/* WASTE FLOW */
+
+if(wasteChart) wasteChart.destroy()
+
+wasteChart=new Chart(document.getElementById("wasteFlow"),{
+
+type:"sankey",
+
+data:{
+datasets:[{
+data:[
+{from:"Cloud Spend",to:"Compute Waste",flow:n(data.computeWaste)},
+{from:"Cloud Spend",to:"Storage Waste",flow:n(data.storageWaste)},
+{from:"Cloud Spend",to:"Network Waste",flow:n(data.networkWaste)},
+{from:"Cloud Spend",to:"Idle Waste",flow:n(data.idleWaste)}
+],
+colorFrom:"#1e293b",
+colorTo:"#3b82f6",
+colorMode:"gradient"
+}]
+}
+
+})
+
+/* AI INSIGHT */
+
+const insight=document.getElementById("aiInsight")
+
+const wasteMap={
+Compute:data.computeWaste,
+Storage:data.storageWaste,
+Network:data.networkWaste,
+Idle:data.idleWaste
+}
+
+let primary="Compute"
+let max=0
+
+for(let k in wasteMap){
+if(wasteMap[k]>max){
+max=wasteMap[k]
+primary=k
+}
+}
+
+insight.innerHTML=
+`DYNAMIS has identified <b>${r(data.cfoImpact.recoverableValue)}</b>
+in recoverable margin over the next three years. 
+The largest optimisation opportunity exists in <b>${primary}</b>. 
+By implementing DYNAMIS recommendations the organisation can 
+achieve a projected ROI of <b>${data.cfoImpact.roi}%</b>.`
+
+}
+
+window.addEventListener("load",loadClients)
 
 </script>
 
